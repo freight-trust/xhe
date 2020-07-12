@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XHE xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="oasis-cefact-xhe-1.0-ExchangeHeaderEnvelope xsd/XHE-1.0.xsd"
+  xmlns="oasis-cefact-xhe-1.0-ExchangeHeaderEnvelope"
+  xmlns:xha="oasis-cefact-xhe-1.0-AggregateComponents"
+  xmlns:ext="oasis-cefact-xhe-1.0-ExtensionComponents"
+  xmlns:xhb="oasis-cefact-xhe-1.0-BasicComponents">
+  <!-- Envelope/ebc:BDEVersionID -->
+  <xhb:XHEVersionID>1.1</xhb:XHEVersionID>
+  
+  <xha:Header>
+    <!-- Envelope/ebc:ID -->
+    <xhb:ID>123</xhb:ID>
+    
+    <!-- Envelope/ebc:CreationDateTime -->
+    <xhb:CreationDateTime>2017-12-01T12:00:00Z</xhb:CreationDateTime>
+    
+    <!--<ebc:TestIndicator>true</ebc:TestIndicator>-->
+    <xha:BusinessScope>
+      <xha:BusinessScopeCriterion>
+        <xhb:BusinessScopeCriterionTypeCode>Test</xhb:BusinessScopeCriterionTypeCode>
+        <xhb:BusinessScopeCriterionValue>true</xhb:BusinessScopeCriterionValue>
+      </xha:BusinessScopeCriterion>
+    </xha:BusinessScope>
+    
+    <!--
+      Envelope/eac:FromParty/ebc:ID
+      Envelope/eac:FromParty/ebc:ID/@schemeAgencyName
+      Envelope/eac:FromParty/ebc:ID/@schemeID
+    -->
+    <xha:FromParty>
+      <xha:PartyIdentification>
+        <xhb:ID schemeAgencyName="GS1" schemeID="GLN">5798000012345</xhb:ID>
+      </xha:PartyIdentification>
+    </xha:FromParty>
+    
+    <!--
+      Envelope/eac:ToParty/ebc:ID
+      Envelope/eac:ToParty/ebc:ID/@schemeAgencyName
+      Envelope/eac:ToParty/ebc:ID/@schemeID
+    -->
+    <xha:ToParty>
+      <xha:PartyIdentification>
+        <xhb:ID schemeAgencyName="GS1" schemeAgencyID="GLN">7330001000001</xhb:ID>
+      </xha:PartyIdentification>
+    </xha:ToParty>
+    
+  </xha:Header>
+  
+  <xha:Payloads>
+    <!-- Envelope/eac:Payload -->
+    <xha:Payload>
+      
+      <!-- Envelope/eac:Payload/ebc:ID -->
+      <xhb:ID>imrid001</xhb:ID>
+      
+      <!-- Envelope/eac:Payload/ebc:DocumentTypeCode -->
+      <xhb:DocumentTypeCode>ApplicationResponse</xhb:DocumentTypeCode>
+      
+      <!-- Envelope/eac:Payload/ebc:CustomizationID -->
+      <xhb:CustomizationID>
+        urn:fdc:peppol.eu:poacc:trns:invoice_response:3
+      </xhb:CustomizationID>
+      
+      <!-- Envelope/eac:Payload/ebc:ProfileID -->
+      <xhb:ProfileID>urn:fdc:peppol.eu:poacc:bis:invoice_response:3</xhb:ProfileID>
+      
+      <xhb:InstanceEncryptionIndicator>false</xhb:InstanceEncryptionIndicator>
+      <!-- Envelope/eac:Payload/eac:PayloadContent -->
+      <xha:PayloadContent>
+        <ApplicationResponse
+          xmlns="urn:oasis:names:specification:ubl:schema:xsd:ApplicationResponse-2"
+          xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+          xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+          <cbc:CustomizationID>
+            urn:fdc:peppol.eu:poacc:trns:invoice_response:3
+          </cbc:CustomizationID>
+          <cbc:ProfileID>urn:fdc:peppol.eu:poacc:bis:invoice_response:3</cbc:ProfileID>
+          <cbc:ID>imrid001</cbc:ID>
+          <cbc:IssueDate>2017-12-01</cbc:IssueDate>
+          <cbc:IssueTime>12:00:00</cbc:IssueTime>
+          <cbc:Note>text</cbc:Note>
+          <cac:SenderParty>
+            <cac:PartyIdentification>
+              <cbc:ID schemeID="0184">DK88776655</cbc:ID>
+            </cac:PartyIdentification>
+            <cac:PartyLegalEntity>
+              <cbc:RegistrationName>Buyer organization</cbc:RegistrationName>
+            </cac:PartyLegalEntity>
+            <cac:Contact>
+              <cbc:Name>Jens Jensen</cbc:Name>
+              <cbc:Telephone>23232323</cbc:Telephone>
+              <cbc:ElectronicMail>jj@test-company.dk</cbc:ElectronicMail>
+            </cac:Contact>
+          </cac:SenderParty>
+          <cac:ReceiverParty>
+            <cac:PartyIdentification>
+              <cbc:ID schemeID="0192">98765432</cbc:ID>
+            </cac:PartyIdentification>
+            <cac:PartyLegalEntity>
+              <cbc:RegistrationName>Seller company</cbc:RegistrationName>
+            </cac:PartyLegalEntity>
+          </cac:ReceiverParty>
+          <cac:DocumentResponse>
+            <cac:Response>
+              <cbc:ResponseCode>RE</cbc:ResponseCode>
+              <cbc:EffectiveDate>2018-09-24</cbc:EffectiveDate>
+              <cac:Status>
+                <cbc:StatusReasonCode listID="OPStatusAction"
+                  >REF</cbc:StatusReasonCode>
+                <cbc:StatusReason>VAT Reference not found</cbc:StatusReason>
+                <cac:Condition>
+                  <cbc:AttributeID>BT-48</cbc:AttributeID>
+                  <cbc:Description>EU123456789</cbc:Description>
+                </cac:Condition>
+              </cac:Status>
+            </cac:Response>
+            <cac:DocumentReference>
+              <cbc:ID>inv021</cbc:ID>
+              <cbc:IssueDate>2018-09-22</cbc:IssueDate>
+              <cbc:DocumentTypeCode>380</cbc:DocumentTypeCode>
+            </cac:DocumentReference>
+            <cac:IssuerParty>
+              <cac:PartyIdentification>
+                <cbc:ID schemeID="0192">999888777</cbc:ID>
+              </cac:PartyIdentification>
+              <cac:PartyName>
+                <cbc:Name>Test Company AS</cbc:Name>
+              </cac:PartyName>
+            </cac:IssuerParty>
+          </cac:DocumentResponse>
+        </ApplicationResponse>
+      </xha:PayloadContent>
+    </xha:Payload>
+    
+    <!-- Envelope/eac:Payload/eac:Payload -->
+    <xha:Payload>
+      
+      <!-- Envelope/eac:Payload/ebc:ID -->
+      <xhb:ID>inv021</xhb:ID>
+      
+      <!-- Envelope/eac:Payload/ebc:DocumentTypeCode -->
+      <xhb:DocumentTypeCode>Invoice</xhb:DocumentTypeCode>
+      
+      <!-- Envelope/eac:Payload/ebc:CustomizationID -->
+      <xhb:CustomizationID>
+        urn:cen.eu:en16931:2017#compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0
+      </xhb:CustomizationID>
+      
+      <!-- Envelope/eac:Payload/ebc:ProfileID -->
+      <xhb:ProfileID>urn:fdc:peppol.eu:2017:poacc:billing:01:1.0</xhb:ProfileID>
+      
+      <!-- Envelope/eac:Payload/eac:PayloadContent -->
+      <xhb:InstanceEncryptionIndicator>false</xhb:InstanceEncryptionIndicator>
+      <xha:PayloadContent>
+        <Invoice xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2"
+          xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+          xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+          <cbc:CustomizationID>
+            urn:cen.eu:en16931:2017#compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0
+          </cbc:CustomizationID>
+          <cbc:ProfileID>urn:fdc:peppol.eu:2017:poacc:billing:01:1.0</cbc:ProfileID>
+          <cbc:ID>inv021</cbc:ID>
+          <cbc:IssueDate>2018-09-22</cbc:IssueDate>
+          <cbc:DocumentCurrencyCode>EUR</cbc:DocumentCurrencyCode>
+          <cac:AccountingSupplierParty>
+            <cac:Party>
+              <cac:PartyIdentification>
+                <cbc:ID schemeID="0184">DK88776655</cbc:ID>
+              </cac:PartyIdentification>
+              <cac:PartyLegalEntity>
+                <cbc:RegistrationName>Buyer organization</cbc:RegistrationName>
+              </cac:PartyLegalEntity>
+              <cac:Contact>
+                <cbc:Name>Jens Jensen</cbc:Name>
+                <cbc:Telephone>23232323</cbc:Telephone>
+                <cbc:ElectronicMail>jj@test-company.dk</cbc:ElectronicMail>
+              </cac:Contact>
+            </cac:Party>
+          </cac:AccountingSupplierParty>
+          <cac:AccountingCustomerParty>
+            <cac:Party>
+              <cac:PartyIdentification>
+                <cbc:ID schemeID="0192">98765432</cbc:ID>
+              </cac:PartyIdentification>
+              <cac:PartyLegalEntity>
+                <cbc:RegistrationName>Seller company</cbc:RegistrationName>
+              </cac:PartyLegalEntity>
+            </cac:Party>
+          </cac:AccountingCustomerParty>
+          <!-- reduced instance file -->
+        </Invoice>
+      </xha:PayloadContent>
+    </xha:Payload>
+  </xha:Payloads>
+</XHE>

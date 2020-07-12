@@ -1,0 +1,2474 @@
+
+<!-- saved from url=(0069)https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>XHE cs02 - ExchangeHeaderEnvelope</title><style type="text/css">
+.iT, .iR, .iC
+{
+  font-size:small;border:1px solid black; border-collapse:collapse;
+  vertical-align:top;
+}
+.sC
+{
+  vertical-align:baseline;
+}
+.uT
+{
+  font-size:small;
+}
+        </style></head>
+   <body data-gr-c-s-loaded="true">
+      <h2>XHE cs02 - ExchangeHeaderEnvelope</h2>
+      <!--Copyright © UN/CEFACT; Copyright © OASIS Open 
+   Rendering: 20190911-1750z Legends:Summary Legend:Name (Model line Object)
+   TYPE DescriptionTable Legend:^ = up-link to the containing ABIE of the BBIE 
+or the ASBIE (hover to see ABIE name)< = back-link to the ASBIE using the ABIE, or 
+to the BBIE using the data type (hover to see destination) Line number links: alternate between summary view and table view -->
+      <p>Index for all items: <a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Index_AVA">AVA</a> <a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Index_BUS">BUS</a> <a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Index_CON">CON</a> <a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Index_CRE">CRE</a> <a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Index_CUS">CUS</a> <a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Index_DES">DES</a> <a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Index_DOC">DOC</a> <a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Index_EXT">EXT</a> <a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Index_FRO">FRO</a> <a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Index_HAN">HAN</a> <a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Index_HEA">HEA</a> <a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Index_ID">ID</a> <a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Index_INS">INS</a> <a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Index_LOG">LOG</a> <a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Index_PAR">PAR</a> <a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Index_PAS">PAS</a> <a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Index_PAY">PAY</a> <a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Index_PRO">PRO</a> <a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Index_REL">REL</a> <a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Index_TOP">TOP</a> <a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Index_UUI">UUI</a> <a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Index_VAL">VAL</a> <a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Index_XHE">XHE</a> <a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-ExchangeHeaderEnvelope">ExchangeHeaderEnvelope</a> <a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-XHE-CommonLibrary-1.0">XHE-CommonLibrary-1.0</a> <a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#UDT">Unqualified Data Types</a> <a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Summary">Summary</a></p>
+      <p><small>Copyright © UN/CEFACT; Copyright © OASIS Open</small></p>
+      <p>
+         Rendering: 20190911-1750z
+      </p>
+      <table summary="Legends">
+         <tbody><tr>
+            <td rowspan="4" valign="top">Legends:</td>
+            <td>Summary Legend:</td>
+            <td valign="top">Name (<i>Model </i><small><u>line</u> Object</small>)
+               <small>TYPE Description</small></td>
+         </tr>
+         <tr>
+            <td rowspan="2" valign="top">Table Legend:</td>
+            <td valign="top"><span style="color:blue;text-decoration:underline">^</span><span> = up-link to the containing ABIE of the BBIE 
+                  or the ASBIE (hover to see ABIE name)</span></td>
+         </tr>
+         <tr>
+            <td valign="top"><span style="color:blue;text-decoration:underline">&lt;</span><span> = back-link to the ASBIE using the ABIE, or 
+                  to the BBIE using the data type (hover to see destination)</span></td>
+         </tr>
+         <tr>
+            <td valign="top"> Line number links: </td>
+            <td valign="top"><span>alternate between summary view and table view</span></td>
+         </tr>
+      </tbody></table><br><hr>
+      <h3><a name="Table-ExchangeHeaderEnvelope">ExchangeHeaderEnvelope</a></h3>
+      <table class="iT" summary="Module summary">
+         <tbody><tr class="iR">
+            <th class="iC"></th>
+            <th class="iC">Name</th>
+            <th class="iC">CEFACT Dictionary Entry Name</th>
+            <th class="iC">Card.</th>
+            <th class="iC">Rep. Term</th>
+            <th class="iC">Dictionary&nbsp;Entry&nbsp;Name</th>
+            <th class="iC">Ver.</th>
+            <th class="iC">Comp.<br>Type
+            </th>
+            <th class="iC">Class</th>
+            <th class="iC">Prop.&nbsp;Term<br>Poss.&nbsp;Noun
+            </th>
+            <th class="iC">Prop.&nbsp;Term<br>Prim.&nbsp;Noun
+            </th>
+            <th class="iC">Prop. Term</th>
+            <th class="iC">Data Type</th>
+            <th class="iC">Assoc.<br>Class
+            </th>
+         </tr>
+         <tr style="background-color:#f898c8;" class="iR">
+            <td class="iC" rowspan="2"><a name="Table-XHE.Details" href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Summary-XHE.Details">2</a></td>
+            <td class="iC" rowspan="2">XHE<br></td>
+            <td class="iC" colspan="12">The Exchange Header Envelope</td>
+         </tr>
+         <tr style="background-color:#f898c8;" class="iR">
+            <td class="iC">XHE_ Envelope. Details</td>
+            <td class="iC"></td>
+            <td class="iC"></td>
+            <td class="iC">XHE. Details</td>
+            <td class="iC">1.0</td>
+            <td class="iC">ABIE</td>
+            <td class="iC">XHE</td>
+            <td class="iC"></td>
+            <td class="iC"></td>
+            <td class="iC"></td>
+            <td class="iC"></td>
+            <td class="iC"></td>
+         </tr>
+         <tr style="background-color:#ffffff;" class="iR">
+            <td class="iC" rowspan="2"><a name="Table-XHE.XHEVersionIdentifier.Identifier" href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Summary-XHE.XHEVersionIdentifier.Identifier">3</a><br><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-XHE.Details">^</a></td>
+            <td class="iC" rowspan="2" style="font-weight:bold">XHEVersionID</td>
+            <td class="iC" colspan="12">The version of the specific envelope model in use.</td>
+         </tr>
+         <tr style="background-color:#ffffff;" class="iR">
+            <td class="iC">XHE_ Envelope. Version. Identifier</td>
+            <td class="iC">1</td>
+            <td class="iC"><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#UDT-Identifier.Type">Identifier</a></td>
+            <td class="iC">XHE. XHE Version Identifier. Identifier</td>
+            <td class="iC">1.0</td>
+            <td class="iC">BBIE</td>
+            <td class="iC"><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-XHE.Details">XHE</a></td>
+            <td class="iC">XHE Version</td>
+            <td class="iC">Identifier</td>
+            <td class="iC">XHE Version Identifier</td>
+            <td class="iC"><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#UDT-Identifier.Type">Identifier. Type</a></td>
+            <td class="iC"></td>
+         </tr>
+         <tr style="background-color:#ffffff;" class="iR">
+            <td class="iC" rowspan="2"><a name="Table-XHE.CustomizationIdentifier.Identifier" href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Summary-XHE.CustomizationIdentifier.Identifier">4</a><br><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-XHE.Details">^</a></td>
+            <td class="iC" rowspan="2">CustomizationID</td>
+            <td class="iC" colspan="12">The identification of a customization or use of the envelope model.</td>
+         </tr>
+         <tr style="background-color:#ffffff;" class="iR">
+            <td class="iC">XHE_ Envelope. Customization. Identifier</td>
+            <td class="iC">0..1</td>
+            <td class="iC"><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#UDT-Identifier.Type">Identifier</a></td>
+            <td class="iC">XHE. Customization Identifier. Identifier</td>
+            <td class="iC">1.0</td>
+            <td class="iC">BBIE</td>
+            <td class="iC"><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-XHE.Details">XHE</a></td>
+            <td class="iC">Customization</td>
+            <td class="iC">Identifier</td>
+            <td class="iC">Customization Identifier</td>
+            <td class="iC"><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#UDT-Identifier.Type">Identifier. Type</a></td>
+            <td class="iC"></td>
+         </tr>
+         <tr style="background-color:#ffffff;" class="iR">
+            <td class="iC" rowspan="2"><a name="Table-XHE.ProfileIdentifier.Identifier" href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Summary-XHE.ProfileIdentifier.Identifier">5</a><br><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-XHE.Details">^</a></td>
+            <td class="iC" rowspan="2">ProfileID</td>
+            <td class="iC" colspan="12">The identification of a specific profile found within the customization.</td>
+         </tr>
+         <tr style="background-color:#ffffff;" class="iR">
+            <td class="iC">XHE_ Envelope. Profile. Identifier</td>
+            <td class="iC">0..1</td>
+            <td class="iC"><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#UDT-Identifier.Type">Identifier</a></td>
+            <td class="iC">XHE. Profile Identifier. Identifier</td>
+            <td class="iC">1.0</td>
+            <td class="iC">BBIE</td>
+            <td class="iC"><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-XHE.Details">XHE</a></td>
+            <td class="iC">Profile</td>
+            <td class="iC">Identifier</td>
+            <td class="iC">Profile Identifier</td>
+            <td class="iC"><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#UDT-Identifier.Type">Identifier. Type</a></td>
+            <td class="iC"></td>
+         </tr>
+         <tr style="background-color:#ffffff;" class="iR">
+            <td class="iC" rowspan="2"><a name="Table-XHE.ProfileExecutionIdentifier.Identifier" href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Summary-XHE.ProfileExecutionIdentifier.Identifier">6</a><br><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-XHE.Details">^</a></td>
+            <td class="iC" rowspan="2">ProfileExecutionID</td>
+            <td class="iC" colspan="12">The identification of a particular instance of using the given profile.</td>
+         </tr>
+         <tr style="background-color:#ffffff;" class="iR">
+            <td class="iC">XHE_ Envelope. Profile Execution. Identifier</td>
+            <td class="iC">0..1</td>
+            <td class="iC"><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#UDT-Identifier.Type">Identifier</a></td>
+            <td class="iC">XHE. Profile Execution Identifier. Identifier</td>
+            <td class="iC">1.0</td>
+            <td class="iC">BBIE</td>
+            <td class="iC"><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-XHE.Details">XHE</a></td>
+            <td class="iC">Profile Execution</td>
+            <td class="iC">Identifier</td>
+            <td class="iC">Profile Execution Identifier</td>
+            <td class="iC"><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#UDT-Identifier.Type">Identifier. Type</a></td>
+            <td class="iC"></td>
+         </tr>
+         <tr style="background-color:#cbfbcb;" class="iR">
+            <td class="iC" rowspan="2"><a name="Table-XHE.Header" href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Summary-XHE.Header">7</a><br><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-XHE.Details">^</a></td>
+            <td class="iC" rowspan="2" style="font-weight:bold">Header</td>
+            <td class="iC" colspan="12">Information relevant to the header/envelope itself, independent of the information
+               it contains or references.
+            </td>
+         </tr>
+         <tr style="background-color:#cbfbcb;" class="iR">
+            <td class="iC">XHE_ Envelope. Metadata. XHE_ Document</td>
+            <td class="iC">1</td>
+            <td class="iC"><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-Header.Details">Header</a></td>
+            <td class="iC">XHE. Header</td>
+            <td class="iC">1.0</td>
+            <td class="iC">ASBIE</td>
+            <td class="iC"><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-XHE.Details">XHE</a></td>
+            <td class="iC"></td>
+            <td class="iC"></td>
+            <td class="iC">Header</td>
+            <td class="iC"></td>
+            <td class="iC"><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-Header.Details">Header</a></td>
+         </tr>
+         <tr style="background-color:#cbfbcb;" class="iR">
+            <td class="iC" rowspan="2"><a name="Table-XHE.Payloads" href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Summary-XHE.Payloads">8</a><br><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-XHE.Details">^</a></td>
+            <td class="iC" rowspan="2">Payloads</td>
+            <td class="iC" colspan="12">The set of payloads.</td>
+         </tr>
+         <tr style="background-color:#cbfbcb;" class="iR">
+            <td class="iC">XHE_ Envelope. Included. XHE_ Payload</td>
+            <td class="iC">0..1</td>
+            <td class="iC"><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-Payloads.Details">Payloads</a></td>
+            <td class="iC">XHE. Payloads</td>
+            <td class="iC">1.0</td>
+            <td class="iC">ASBIE</td>
+            <td class="iC"><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-XHE.Details">XHE</a></td>
+            <td class="iC"></td>
+            <td class="iC"></td>
+            <td class="iC">Payloads</td>
+            <td class="iC"></td>
+            <td class="iC"><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-Payloads.Details">Payloads</a></td>
+         </tr>
+      </tbody></table>
+      <h3><a name="Table-XHE-CommonLibrary-1.0">XHE-CommonLibrary-1.0</a></h3><small>
+         This summary of elements only includes those members of the common
+         library that are referenced directly or indirectly by
+         ExchangeHeaderEnvelope.</small><table class="iT" summary="Module summary">
+         <tbody><tr class="iR">
+            <th class="iC"></th>
+            <th class="iC">Name</th>
+            <th class="iC">CEFACT Dictionary Entry Name</th>
+            <th class="iC">Card.</th>
+            <th class="iC">Rep. Term</th>
+            <th class="iC">Examples</th>
+            <th class="iC">Dictionary&nbsp;Entry&nbsp;Name</th>
+            <th class="iC">Ver.</th>
+            <th class="iC">Comp.<br>Type
+            </th>
+            <th class="iC">Class</th>
+            <th class="iC">Prop.&nbsp;Term<br>Qualifier
+            </th>
+            <th class="iC">Prop.&nbsp;Term<br>Poss.&nbsp;Noun
+            </th>
+            <th class="iC">Prop.&nbsp;Term<br>Prim.&nbsp;Noun
+            </th>
+            <th class="iC">Prop. Term</th>
+            <th class="iC">Data Type</th>
+            <th class="iC">Assoc.<br>Class
+            </th>
+         </tr>
+         <tr style="background-color:#f898c8;" class="iR">
+            <td class="iC" rowspan="2"><a name="Table-BusinessScope.Details" href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Summary-BusinessScope.Details">2</a></td>
+            <td class="iC" rowspan="2">BusinessScope<br><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-Header.BusinessScope" title="Header. Business Scope">&lt;</a> 
+            </td>
+            <td class="iC" colspan="14">Documentation of the scope of business or other contextual details useful to understand
+               the purpose of the envelope and its contents.
+            </td>
+         </tr>
+         <tr style="background-color:#f898c8;" class="iR">
+            <td class="iC">XHE_ Context. Details</td>
+            <td class="iC"></td>
+            <td class="iC"></td>
+            <td class="iC"></td>
+            <td class="iC">Business Scope. Details</td>
+            <td class="iC">1.0</td>
+            <td class="iC">ABIE</td>
+            <td class="iC">Business Scope</td>
+            <td class="iC"></td>
+            <td class="iC"></td>
+            <td class="iC"></td>
+            <td class="iC"></td>
+            <td class="iC"></td>
+            <td class="iC"></td>
+         </tr>
+         <tr style="background-color:#cbfbcb;" class="iR">
+            <td class="iC" rowspan="2"><a name="Table-BusinessScope.BusinessScopeCriterion" href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Summary-BusinessScope.BusinessScopeCriterion">3</a><br><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-BusinessScope.Details">^</a></td>
+            <td class="iC" rowspan="2">BusinessScopeCriterion</td>
+            <td class="iC" colspan="14">Internal specification of the scope and/or context of business.</td>
+         </tr>
+         <tr style="background-color:#cbfbcb;" class="iR">
+            <td class="iC">XHE_ Context. Specified. XHE_ Parameter</td>
+            <td class="iC">0..n</td>
+            <td class="iC"><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-BusinessScopeCriterion.Details">Business Scope Criterion</a></td>
+            <td class="iC"></td>
+            <td class="iC">Business Scope. Business Scope Criterion</td>
+            <td class="iC">1.0</td>
+            <td class="iC">ASBIE</td>
+            <td class="iC"><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-BusinessScope.Details">Business Scope</a></td>
+            <td class="iC"></td>
+            <td class="iC"></td>
+            <td class="iC"></td>
+            <td class="iC">Business Scope Criterion</td>
+            <td class="iC"></td>
+            <td class="iC"><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-BusinessScopeCriterion.Details">Business Scope Criterion</a></td>
+         </tr>
+         <tr style="background-color:#cbfbcb;" class="iR">
+            <td class="iC" rowspan="2"><a name="Table-BusinessScope.ExternalReference" href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Summary-BusinessScope.ExternalReference">4</a><br><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-BusinessScope.Details">^</a></td>
+            <td class="iC" rowspan="2">ExternalReference</td>
+            <td class="iC" colspan="14">External documentation of the scope and/or context of business.</td>
+         </tr>
+         <tr style="background-color:#cbfbcb;" class="iR">
+            <td class="iC">XHE_ Context. Scope. XHE_ Reference</td>
+            <td class="iC">0..n</td>
+            <td class="iC"><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-ExternalReference.Details">External Reference</a></td>
+            <td class="iC"></td>
+            <td class="iC">Business Scope. External Reference</td>
+            <td class="iC">1.0</td>
+            <td class="iC">ASBIE</td>
+            <td class="iC"><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-BusinessScope.Details">Business Scope</a></td>
+            <td class="iC"></td>
+            <td class="iC"></td>
+            <td class="iC"></td>
+            <td class="iC">External Reference</td>
+            <td class="iC"></td>
+            <td class="iC"><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-ExternalReference.Details">External Reference</a></td>
+         </tr>
+         <tr style="background-color:#f898c8;" class="iR">
+            <td class="iC" rowspan="2"><a name="Table-BusinessScopeCriterion.Details" href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Summary-BusinessScopeCriterion.Details">5</a></td>
+            <td class="iC" rowspan="2">BusinessScopeCriterion<br><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-BusinessScope.BusinessScopeCriterion" title="Business Scope. Business Scope Criterion">&lt;</a> 
+            </td>
+            <td class="iC" colspan="14">Documentation of one aspect of the scope of business or other contextual detail useful
+               to understand the purpose of the envelope and its contents.
+            </td>
+         </tr>
+         <tr style="background-color:#f898c8;" class="iR">
+            <td class="iC">XHE_ Parameter. Details</td>
+            <td class="iC"></td>
+            <td class="iC"></td>
+            <td class="iC"></td>
+            <td class="iC">Business Scope Criterion. Details</td>
+            <td class="iC">1.0</td>
+            <td class="iC">ABIE</td>
+            <td class="iC">Business Scope Criterion</td>
+            <td class="iC"></td>
+            <td class="iC"></td>
+            <td class="iC"></td>
+            <td class="iC"></td>
+            <td class="iC"></td>
+            <td class="iC"></td>
+         </tr>
+         <tr style="background-color:#ffffff;" class="iR">
+            <td class="iC" rowspan="2"><a name="Table-BusinessScopeCriterion.BusinessScopeCriterionType.Code" href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Summary-BusinessScopeCriterion.BusinessScopeCriterionType.Code">6</a><br><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-BusinessScopeCriterion.Details">^</a></td>
+            <td class="iC" rowspan="2" style="font-weight:bold">BusinessScopeCriterionTypeCode</td>
+            <td class="iC" colspan="14">Identifies the property of the scope by a code.</td>
+         </tr>
+         <tr style="background-color:#ffffff;" class="iR">
+            <td class="iC">XHE_ Parameter. Type. Code</td>
+            <td class="iC">1</td>
+            <td class="iC"><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#UDT-Code.Type">Code</a></td>
+            <td class="iC"></td>
+            <td class="iC">Business Scope Criterion. Business Scope Criterion Type. Code</td>
+            <td class="iC">1.0</td>
+            <td class="iC">BBIE</td>
+            <td class="iC"><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-BusinessScopeCriterion.Details">Business Scope Criterion</a></td>
+            <td class="iC"></td>
+            <td class="iC">Business Scope Criterion</td>
+            <td class="iC">Type</td>
+            <td class="iC">Business Scope Criterion Type</td>
+            <td class="iC"><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#UDT-Code.Type">Code. Type</a></td>
+            <td class="iC"></td>
+         </tr>
+         <tr style="background-color:#ffffff;" class="iR">
+            <td class="iC" rowspan="2"><a name="Table-BusinessScopeCriterion.BusinessScopeCriterionValue.Text" href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Summary-BusinessScopeCriterion.BusinessScopeCriterionValue.Text">7</a><br><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-BusinessScopeCriterion.Details">^</a></td>
+            <td class="iC" rowspan="2" style="font-weight:bold">BusinessScopeCriterionValue</td>
+            <td class="iC" colspan="14">Specifies the value of the given property.</td>
+         </tr>
+         <tr style="background-color:#ffffff;" class="iR">
+            <td class="iC">XHE_ Parameter. Value. Text</td>
+            <td class="iC">1</td>
+            <td class="iC"><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#UDT-Text.Type">Text</a></td>
+            <td class="iC"></td>
+            <td class="iC">Business Scope Criterion. Business Scope Criterion Value. Text</td>
+            <td class="iC">1.0</td>
+            <td class="iC">BBIE</td>
+            <td class="iC"><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-BusinessScopeCriterion.Details">Business Scope Criterion</a></td>
+            <td class="iC"></td>
+            <td class="iC">Business Scope Criterion</td>
+            <td class="iC">Value</td>
+            <td class="iC">Business Scope Criterion Value</td>
+            <td class="iC"><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#UDT-Text.Type">Text. Type</a></td>
+            <td class="iC"></td>
+         </tr>
+         <tr style="background-color:#f898c8;" class="iR">
+            <td class="iC" rowspan="2"><a name="Table-ExternalReference.Details" href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Summary-ExternalReference.Details">8</a></td>
+            <td class="iC" rowspan="2">ExternalReference<br><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-BusinessScope.ExternalReference" title="Business Scope. External Reference">&lt;</a> <a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-Payload.InstanceDecryptionInformation_ExternalReference.ExternalReference" title="Payload. Instance Decryption Information_ External Reference. External Reference">&lt;</a> <a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-Payload.InstanceDecryptionKey_ExternalReference.ExternalReference" title="Payload. Instance Decryption Key_ External Reference. External Reference">&lt;</a> <a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-Payload.Relevant_ExternalReference.ExternalReference" title="Payload. Relevant_ External Reference. External Reference">&lt;</a> <a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-Payload.Payload_ExternalReference.ExternalReference" title="Payload. Payload_ External Reference. External Reference">&lt;</a> 
+            </td>
+            <td class="iC" colspan="14">A reference to a business case, document or other issues which are relevant to the
+               handling of the envelope.
+            </td>
+         </tr>
+         <tr style="background-color:#f898c8;" class="iR">
+            <td class="iC">XHE_ Reference. Details</td>
+            <td class="iC"></td>
+            <td class="iC"></td>
+            <td class="iC"></td>
+            <td class="iC">External Reference. Details</td>
+            <td class="iC">1.0</td>
+            <td class="iC">ABIE</td>
+            <td class="iC">External Reference</td>
+            <td class="iC"></td>
+            <td class="iC"></td>
+            <td class="iC"></td>
+            <td class="iC"></td>
+            <td class="iC"></td>
+            <td class="iC"></td>
+         </tr>
+         <tr style="background-color:#ffffff;" class="iR">
+            <td class="iC" rowspan="2"><a name="Table-ExternalReference.Identifier" href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Summary-ExternalReference.Identifier">9</a><br><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-ExternalReference.Details">^</a></td>
+            <td class="iC" rowspan="2" style="font-weight:bold">ID</td>
+            <td class="iC" colspan="14">Identifies the referenced object by some identifier or URI.</td>
+         </tr>
+         <tr style="background-color:#ffffff;" class="iR">
+            <td class="iC">XHE_ Reference. Identification. Identifier</td>
+            <td class="iC">1</td>
+            <td class="iC"><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#UDT-Identifier.Type">Identifier</a></td>
+            <td class="iC"></td>
+            <td class="iC">External Reference. Identifier</td>
+            <td class="iC">1.0</td>
+            <td class="iC">BBIE</td>
+            <td class="iC"><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-ExternalReference.Details">External Reference</a></td>
+            <td class="iC"></td>
+            <td class="iC"></td>
+            <td class="iC">Identifier</td>
+            <td class="iC">Identifier</td>
+            <td class="iC"><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#UDT-Identifier.Type">Identifier. Type</a></td>
+            <td class="iC"></td>
+         </tr>
+         <tr style="background-color:#ffffff;" class="iR">
+            <td class="iC" rowspan="2"><a name="Table-ExternalReference.AvailabilityStartDateTime.DateTime" href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Summary-ExternalReference.AvailabilityStartDateTime.DateTime">10</a><br><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-ExternalReference.Details">^</a></td>
+            <td class="iC" rowspan="2">AvailabilityStartDateTime</td>
+            <td class="iC" colspan="14">The start date and time when the information is available</td>
+         </tr>
+         <tr style="background-color:#ffffff;" class="iR">
+            <td class="iC">XHE_ Reference. Start_ Availability. Date Time</td>
+            <td class="iC">0..1</td>
+            <td class="iC"><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#UDT-DateTime.Type">Date Time</a></td>
+            <td class="iC"></td>
+            <td class="iC">External Reference. Availability Start Date Time. Date Time</td>
+            <td class="iC">1.0</td>
+            <td class="iC">BBIE</td>
+            <td class="iC"><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-ExternalReference.Details">External Reference</a></td>
+            <td class="iC"></td>
+            <td class="iC">Availability Start</td>
+            <td class="iC">Date Time</td>
+            <td class="iC">Availability Start Date Time</td>
+            <td class="iC"><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#UDT-DateTime.Type">Date Time. Type</a></td>
+            <td class="iC"></td>
+         </tr>
+         <tr style="background-color:#ffffff;" class="iR">
+            <td class="iC" rowspan="2"><a name="Table-ExternalReference.AvailabilityEndDateTime.DateTime" href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Summary-ExternalReference.AvailabilityEndDateTime.DateTime">11</a><br><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-ExternalReference.Details">^</a></td>
+            <td class="iC" rowspan="2">AvailabilityEndDateTime</td>
+            <td class="iC" colspan="14">The end date and time when the information is available</td>
+         </tr>
+         <tr style="background-color:#ffffff;" class="iR">
+            <td class="iC">XHE_ Reference. End_ Availability. Date Time</td>
+            <td class="iC">0..1</td>
+            <td class="iC"><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#UDT-DateTime.Type">Date Time</a></td>
+            <td class="iC"></td>
+            <td class="iC">External Reference. Availability End Date Time. Date Time</td>
+            <td class="iC">1.0</td>
+            <td class="iC">BBIE</td>
+            <td class="iC"><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-ExternalReference.Details">External Reference</a></td>
+            <td class="iC"></td>
+            <td class="iC">Availability End</td>
+            <td class="iC">Date Time</td>
+            <td class="iC">Availability End Date Time</td>
+            <td class="iC"><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#UDT-DateTime.Type">Date Time. Type</a></td>
+            <td class="iC"></td>
+         </tr>
+         <tr style="background-color:#ffffff;" class="iR">
+            <td class="iC" rowspan="2"><a name="Table-ExternalReference.Login.Text" href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Summary-ExternalReference.Login.Text">12</a><br><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-ExternalReference.Details">^</a></td>
+            <td class="iC" rowspan="2">Login</td>
+            <td class="iC" colspan="14">Text describing any login details to access the information.</td>
+         </tr>
+         <tr style="background-color:#ffffff;" class="iR">
+            <td class="iC">XHE_ Reference. Login. Text</td>
+            <td class="iC">0..1</td>
+            <td class="iC"><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#UDT-Text.Type">Text</a></td>
+            <td class="iC"></td>
+            <td class="iC">External Reference. Login. Text</td>
+            <td class="iC">1.0</td>
+            <td class="iC">BBIE</td>
+            <td class="iC"><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-ExternalReference.Details">External Reference</a></td>
+            <td class="iC"></td>
+            <td class="iC"></td>
+            <td class="iC">Login</td>
+            <td class="iC">Login</td>
+            <td class="iC"><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#UDT-Text.Type">Text. Type</a></td>
+            <td class="iC"></td>
+         </tr>
+         <tr style="background-color:#ffffff;" class="iR">
+            <td class="iC" rowspan="2"><a name="Table-ExternalReference.Password.Text" href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Summary-ExternalReference.Password.Text">13</a><br><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-ExternalReference.Details">^</a></td>
+            <td class="iC" rowspan="2">Password</td>
+            <td class="iC" colspan="14">A password needed to access the information.</td>
+         </tr>
+         <tr style="background-color:#ffffff;" class="iR">
+            <td class="iC">XHE_ Reference. Password. Text</td>
+            <td class="iC">0..1</td>
+            <td class="iC"><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#UDT-Text.Type">Text</a></td>
+            <td class="iC"></td>
+            <td class="iC">External Reference. Password. Text</td>
+            <td class="iC">1.0</td>
+            <td class="iC">BBIE</td>
+            <td class="iC"><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-ExternalReference.Details">External Reference</a></td>
+            <td class="iC"></td>
+            <td class="iC"></td>
+            <td class="iC">Password</td>
+            <td class="iC">Password</td>
+            <td class="iC"><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#UDT-Text.Type">Text. Type</a></td>
+            <td class="iC"></td>
+         </tr>
+         <tr style="background-color:#f898c8;" class="iR">
+            <td class="iC" rowspan="2"><a name="Table-Header.Details" href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Summary-Header.Details">14</a></td>
+            <td class="iC" rowspan="2">Header<br><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-XHE.Header" title="XHE. Header">&lt;</a> 
+            </td>
+            <td class="iC" colspan="14">Information relevant to the header/envelope itself, independent of the information
+               it contains or references.
+            </td>
+         </tr>
+         <tr style="background-color:#f898c8;" class="iR">
+            <td class="iC">XHE_ Document. Details</td>
+            <td class="iC"></td>
+            <td class="iC"></td>
+            <td class="iC"></td>
+            <td class="iC">Header. Details</td>
+            <td class="iC">1.0</td>
+            <td class="iC">ABIE</td>
+            <td class="iC">Header</td>
+            <td class="iC"></td>
+            <td class="iC"></td>
+            <td class="iC"></td>
+            <td class="iC"></td>
+            <td class="iC"></td>
+            <td class="iC"></td>
+         </tr>
+         <tr style="background-color:#ffffff;" class="iR">
+            <td class="iC" rowspan="2"><a name="Table-Header.Identifier" href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Summary-Header.Identifier">15</a><br><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-Header.Details">^</a></td>
+            <td class="iC" rowspan="2" style="font-weight:bold">ID</td>
+            <td class="iC" colspan="14">Unique ID of the envelope for tracking purposes.</td>
+         </tr>
+         <tr style="background-color:#ffffff;" class="iR">
+            <td class="iC">XHE_ Document. Identification. Identifier</td>
+            <td class="iC">1</td>
+            <td class="iC"><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#UDT-Identifier.Type">Identifier</a></td>
+            <td class="iC"></td>
+            <td class="iC">Header. Identifier</td>
+            <td class="iC">1.0</td>
+            <td class="iC">BBIE</td>
+            <td class="iC"><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-Header.Details">Header</a></td>
+            <td class="iC"></td>
+            <td class="iC"></td>
+            <td class="iC">Identifier</td>
+            <td class="iC">Identifier</td>
+            <td class="iC"><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#UDT-Identifier.Type">Identifier. Type</a></td>
+            <td class="iC"></td>
+         </tr>
+         <tr style="background-color:#ffffff;" class="iR">
+            <td class="iC" rowspan="2"><a name="Table-Header.UUID.Identifier" href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Summary-Header.UUID.Identifier">16</a><br><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-Header.Details">^</a></td>
+            <td class="iC" rowspan="2">UUID</td>
+            <td class="iC" colspan="14">An additional identifier of the envelope.</td>
+         </tr>
+         <tr style="background-color:#ffffff;" class="iR">
+            <td class="iC">XHE_ Document. UUID. Identifier</td>
+            <td class="iC">0..1</td>
+            <td class="iC"><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#UDT-Identifier.Type">Identifier</a></td>
+            <td class="iC"></td>
+            <td class="iC">Header. UUID. Identifier</td>
+            <td class="iC">1.0</td>
+            <td class="iC">BBIE</td>
+            <td class="iC"><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-Header.Details">Header</a></td>
+            <td class="iC"></td>
+            <td class="iC"></td>
+            <td class="iC">UUID</td>
+            <td class="iC">UUID</td>
+            <td class="iC"><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#UDT-Identifier.Type">Identifier. Type</a></td>
+            <td class="iC"></td>
+         </tr>
+         <tr style="background-color:#ffffff;" class="iR">
+            <td class="iC" rowspan="2"><a name="Table-Header.CreationDateTime.DateTime" href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Summary-Header.CreationDateTime.DateTime">17</a><br><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-Header.Details">^</a></td>
+            <td class="iC" rowspan="2" style="font-weight:bold">CreationDateTime</td>
+            <td class="iC" colspan="14">Date and time when the envelope was created.</td>
+         </tr>
+         <tr style="background-color:#ffffff;" class="iR">
+            <td class="iC">XHE_ Document. Creation. Date Time</td>
+            <td class="iC">1</td>
+            <td class="iC"><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#UDT-DateTime.Type">Date Time</a></td>
+            <td class="iC"></td>
+            <td class="iC">Header. Creation Date Time. Date Time</td>
+            <td class="iC">1.0</td>
+            <td class="iC">BBIE</td>
+            <td class="iC"><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-Header.Details">Header</a></td>
+            <td class="iC"></td>
+            <td class="iC">Creation</td>
+            <td class="iC">Date Time</td>
+            <td class="iC">Creation Date Time</td>
+            <td class="iC"><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#UDT-DateTime.Type">Date Time. Type</a></td>
+            <td class="iC"></td>
+         </tr>
+         <tr style="background-color:#cbfbcb;" class="iR">
+            <td class="iC" rowspan="2"><a name="Table-Header.BusinessScope" href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Summary-Header.BusinessScope">18</a><br><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-Header.Details">^</a></td>
+            <td class="iC" rowspan="2">BusinessScope</td>
+            <td class="iC" colspan="14">Documentation of the scope of business or other contextual details useful to understand
+               the purpose of the envelope and its contents.
+            </td>
+         </tr>
+         <tr style="background-color:#cbfbcb;" class="iR">
+            <td class="iC">XHE_ Document. Scope. XHE_ Context</td>
+            <td class="iC">0..1</td>
+            <td class="iC"><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-BusinessScope.Details">Business Scope</a></td>
+            <td class="iC">Europe vs Asia, Direct-to-Consumer vs Replenishment, or Prepaid vs Credit.</td>
+            <td class="iC">Header. Business Scope</td>
+            <td class="iC">1.0</td>
+            <td class="iC">ASBIE</td>
+            <td class="iC"><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-Header.Details">Header</a></td>
+            <td class="iC"></td>
+            <td class="iC"></td>
+            <td class="iC"></td>
+            <td class="iC">Business Scope</td>
+            <td class="iC"></td>
+            <td class="iC"><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-BusinessScope.Details">Business Scope</a></td>
+         </tr>
+         <tr style="background-color:#cbfbcb;" class="iR">
+            <td class="iC" rowspan="2"><a name="Table-Header.From_Party.Party" href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Summary-Header.From_Party.Party">19</a><br><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-Header.Details">^</a></td>
+            <td class="iC" rowspan="2">FromParty</td>
+            <td class="iC" colspan="14">Information about the party that originated the envelope.</td>
+         </tr>
+         <tr style="background-color:#cbfbcb;" class="iR">
+            <td class="iC">XHE_ Document. Sender. XHE_ Party</td>
+            <td class="iC">0..1</td>
+            <td class="iC"><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-Party.Details">Party</a></td>
+            <td class="iC"></td>
+            <td class="iC">Header. From_ Party. Party</td>
+            <td class="iC">1.0</td>
+            <td class="iC">ASBIE</td>
+            <td class="iC"><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-Header.Details">Header</a></td>
+            <td class="iC">From</td>
+            <td class="iC"></td>
+            <td class="iC"></td>
+            <td class="iC">Party</td>
+            <td class="iC"></td>
+            <td class="iC"><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-Party.Details">Party</a></td>
+         </tr>
+         <tr style="background-color:#cbfbcb;" class="iR">
+            <td class="iC" rowspan="2"><a name="Table-Header.To_Party.Party" href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Summary-Header.To_Party.Party">20</a><br><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-Header.Details">^</a></td>
+            <td class="iC" rowspan="2" style="font-weight:bold">ToParty</td>
+            <td class="iC" colspan="14">Information about the parties to receive the envelope.</td>
+         </tr>
+         <tr style="background-color:#cbfbcb;" class="iR">
+            <td class="iC">XHE_ Document. Recipient. XHE_ Party</td>
+            <td class="iC">1..n</td>
+            <td class="iC"><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-Party.Details">Party</a></td>
+            <td class="iC"></td>
+            <td class="iC">Header. To_ Party. Party</td>
+            <td class="iC">1.0</td>
+            <td class="iC">ASBIE</td>
+            <td class="iC"><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-Header.Details">Header</a></td>
+            <td class="iC">To</td>
+            <td class="iC"></td>
+            <td class="iC"></td>
+            <td class="iC">Party</td>
+            <td class="iC"></td>
+            <td class="iC"><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-Party.Details">Party</a></td>
+         </tr>
+         <tr style="background-color:#f898c8;" class="iR">
+            <td class="iC" rowspan="2"><a name="Table-Party.Details" href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Summary-Party.Details">21</a></td>
+            <td class="iC" rowspan="2">Party<br><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-Header.From_Party.Party" title="Header. From_ Party. Party">&lt;</a> <a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-Header.To_Party.Party" title="Header. To_ Party. Party">&lt;</a> 
+            </td>
+            <td class="iC" colspan="14">The information about a party.</td>
+         </tr>
+         <tr style="background-color:#f898c8;" class="iR">
+            <td class="iC">XHE_ Party. Details</td>
+            <td class="iC"></td>
+            <td class="iC"></td>
+            <td class="iC"></td>
+            <td class="iC">Party. Details</td>
+            <td class="iC">1.0</td>
+            <td class="iC">ABIE</td>
+            <td class="iC">Party</td>
+            <td class="iC"></td>
+            <td class="iC"></td>
+            <td class="iC"></td>
+            <td class="iC"></td>
+            <td class="iC"></td>
+            <td class="iC"></td>
+         </tr>
+         <tr style="background-color:#cbfbcb;" class="iR">
+            <td class="iC" rowspan="2"><a name="Table-Party.PartyIdentification" href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Summary-Party.PartyIdentification">22</a><br><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-Party.Details">^</a></td>
+            <td class="iC" rowspan="2" style="font-weight:bold">PartyIdentification</td>
+            <td class="iC" colspan="14">Unambiguous identifications of a party.</td>
+         </tr>
+         <tr style="background-color:#cbfbcb;" class="iR">
+            <td class="iC">XHE_ Party. Specified. XHE_ Identity</td>
+            <td class="iC">1..n</td>
+            <td class="iC"><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-PartyIdentification.Details">Party Identification</a></td>
+            <td class="iC"></td>
+            <td class="iC">Party. Party Identification</td>
+            <td class="iC">1.0</td>
+            <td class="iC">ASBIE</td>
+            <td class="iC"><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-Party.Details">Party</a></td>
+            <td class="iC"></td>
+            <td class="iC"></td>
+            <td class="iC"></td>
+            <td class="iC">Party Identification</td>
+            <td class="iC"></td>
+            <td class="iC"><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-PartyIdentification.Details">Party Identification</a></td>
+         </tr>
+         <tr style="background-color:#f898c8;" class="iR">
+            <td class="iC" rowspan="2"><a name="Table-PartyIdentification.Details" href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Summary-PartyIdentification.Details">23</a></td>
+            <td class="iC" rowspan="2">PartyIdentification<br><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-Party.PartyIdentification" title="Party. Party Identification">&lt;</a> 
+            </td>
+            <td class="iC" colspan="14">The information about a party's identification.</td>
+         </tr>
+         <tr style="background-color:#f898c8;" class="iR">
+            <td class="iC">XHE_ Identity. Details</td>
+            <td class="iC"></td>
+            <td class="iC"></td>
+            <td class="iC"></td>
+            <td class="iC">Party Identification. Details</td>
+            <td class="iC">1.0</td>
+            <td class="iC">ABIE</td>
+            <td class="iC">Party Identification</td>
+            <td class="iC"></td>
+            <td class="iC"></td>
+            <td class="iC"></td>
+            <td class="iC"></td>
+            <td class="iC"></td>
+            <td class="iC"></td>
+         </tr>
+         <tr style="background-color:#ffffff;" class="iR">
+            <td class="iC" rowspan="2"><a name="Table-PartyIdentification.Identifier" href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Summary-PartyIdentification.Identifier">24</a><br><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-PartyIdentification.Details">^</a></td>
+            <td class="iC" rowspan="2" style="font-weight:bold">ID</td>
+            <td class="iC" colspan="14">An unambiguous identification of a party.</td>
+         </tr>
+         <tr style="background-color:#ffffff;" class="iR">
+            <td class="iC">XHE_ Identity. Identification. Identifier</td>
+            <td class="iC">1</td>
+            <td class="iC"><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#UDT-Identifier.Type">Identifier</a></td>
+            <td class="iC"></td>
+            <td class="iC">Party Identification. Identifier</td>
+            <td class="iC">1.0</td>
+            <td class="iC">BBIE</td>
+            <td class="iC"><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-PartyIdentification.Details">Party Identification</a></td>
+            <td class="iC"></td>
+            <td class="iC"></td>
+            <td class="iC">Identifier</td>
+            <td class="iC">Identifier</td>
+            <td class="iC"><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#UDT-Identifier.Type">Identifier. Type</a></td>
+            <td class="iC"></td>
+         </tr>
+         <tr style="background-color:#f898c8;" class="iR">
+            <td class="iC" rowspan="2"><a name="Table-Payload.Details" href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Summary-Payload.Details">25</a></td>
+            <td class="iC" rowspan="2">Payload<br><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-Payloads.Payload" title="Payloads. Payload">&lt;</a> 
+            </td>
+            <td class="iC" colspan="14">The actual payload instance, such as a single invoice, conveyed within the envelope.</td>
+         </tr>
+         <tr style="background-color:#f898c8;" class="iR">
+            <td class="iC">XHE_ Payload Instance. Details</td>
+            <td class="iC"></td>
+            <td class="iC"></td>
+            <td class="iC"></td>
+            <td class="iC">Payload. Details</td>
+            <td class="iC">1.0</td>
+            <td class="iC">ABIE</td>
+            <td class="iC">Payload</td>
+            <td class="iC"></td>
+            <td class="iC"></td>
+            <td class="iC"></td>
+            <td class="iC"></td>
+            <td class="iC"></td>
+            <td class="iC"></td>
+         </tr>
+         <tr style="background-color:#ffffff;" class="iR">
+            <td class="iC" rowspan="2"><a name="Table-Payload.Identifier" href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Summary-Payload.Identifier">26</a><br><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-Payload.Details">^</a></td>
+            <td class="iC" rowspan="2">ID</td>
+            <td class="iC" colspan="14">A unique identification of this payload instance contained within the envelope.</td>
+         </tr>
+         <tr style="background-color:#ffffff;" class="iR">
+            <td class="iC">XHE_ Payload Instance. Identification. Identifier</td>
+            <td class="iC">0..1</td>
+            <td class="iC"><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#UDT-Identifier.Type">Identifier</a></td>
+            <td class="iC"></td>
+            <td class="iC">Payload. Identifier</td>
+            <td class="iC">1.0</td>
+            <td class="iC">BBIE</td>
+            <td class="iC"><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-Payload.Details">Payload</a></td>
+            <td class="iC"></td>
+            <td class="iC"></td>
+            <td class="iC">Identifier</td>
+            <td class="iC">Identifier</td>
+            <td class="iC"><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#UDT-Identifier.Type">Identifier. Type</a></td>
+            <td class="iC"></td>
+         </tr>
+         <tr style="background-color:#ffffff;" class="iR">
+            <td class="iC" rowspan="2"><a name="Table-Payload.Description.Text" href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Summary-Payload.Description.Text">27</a><br><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-Payload.Details">^</a></td>
+            <td class="iC" rowspan="2">Description</td>
+            <td class="iC" colspan="14">Text description of the payload instance.</td>
+         </tr>
+         <tr style="background-color:#ffffff;" class="iR">
+            <td class="iC">XHE_ Payload Instance. Description. Text</td>
+            <td class="iC">0..n</td>
+            <td class="iC"><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#UDT-Text.Type">Text</a></td>
+            <td class="iC"></td>
+            <td class="iC">Payload. Description. Text</td>
+            <td class="iC">1.0</td>
+            <td class="iC">BBIE</td>
+            <td class="iC"><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-Payload.Details">Payload</a></td>
+            <td class="iC"></td>
+            <td class="iC"></td>
+            <td class="iC">Description</td>
+            <td class="iC">Description</td>
+            <td class="iC"><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#UDT-Text.Type">Text. Type</a></td>
+            <td class="iC"></td>
+         </tr>
+         <tr style="background-color:#ffffff;" class="iR">
+            <td class="iC" rowspan="2"><a name="Table-Payload.DocumentTypeCode.Code" href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Summary-Payload.DocumentTypeCode.Code">28</a><br><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-Payload.Details">^</a></td>
+            <td class="iC" rowspan="2">DocumentTypeCode</td>
+            <td class="iC" colspan="14">Identifies the abstract archetype of the payload instance.</td>
+         </tr>
+         <tr style="background-color:#ffffff;" class="iR">
+            <td class="iC">XHE_ Payload Instance. Document_ Type. Code</td>
+            <td class="iC">0..1</td>
+            <td class="iC"><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#UDT-Code.Type">Code</a></td>
+            <td class="iC"></td>
+            <td class="iC">Payload. Document Type Code. Code</td>
+            <td class="iC">1.0</td>
+            <td class="iC">BBIE</td>
+            <td class="iC"><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-Payload.Details">Payload</a></td>
+            <td class="iC"></td>
+            <td class="iC">Document Type</td>
+            <td class="iC">Code</td>
+            <td class="iC">Document Type Code</td>
+            <td class="iC"><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#UDT-Code.Type">Code. Type</a></td>
+            <td class="iC"></td>
+         </tr>
+         <tr style="background-color:#ffffff;" class="iR">
+            <td class="iC" rowspan="2"><a name="Table-Payload.ContentTypeCode.Code" href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Summary-Payload.ContentTypeCode.Code">29</a><br><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-Payload.Details">^</a></td>
+            <td class="iC" rowspan="2">ContentTypeCode</td>
+            <td class="iC" colspan="14">Identifies the file format or octet representation of the payload instance.</td>
+         </tr>
+         <tr style="background-color:#ffffff;" class="iR">
+            <td class="iC">XHE_ Payload Instance. Content_ Type. Code</td>
+            <td class="iC">0..1</td>
+            <td class="iC"><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#UDT-Code.Type">Code</a></td>
+            <td class="iC"></td>
+            <td class="iC">Payload. Content Type Code. Code</td>
+            <td class="iC">1.0</td>
+            <td class="iC">BBIE</td>
+            <td class="iC"><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-Payload.Details">Payload</a></td>
+            <td class="iC"></td>
+            <td class="iC">Content Type</td>
+            <td class="iC">Code</td>
+            <td class="iC">Content Type Code</td>
+            <td class="iC"><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#UDT-Code.Type">Code. Type</a></td>
+            <td class="iC"></td>
+         </tr>
+         <tr style="background-color:#ffffff;" class="iR">
+            <td class="iC" rowspan="2"><a name="Table-Payload.CustomizationIdentifier.Identifier" href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Summary-Payload.CustomizationIdentifier.Identifier">30</a><br><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-Payload.Details">^</a></td>
+            <td class="iC" rowspan="2">CustomizationID</td>
+            <td class="iC" colspan="14">Identifies the customization that applies to the payload instance.</td>
+         </tr>
+         <tr style="background-color:#ffffff;" class="iR">
+            <td class="iC">XHE_ Payload Instance. Customization. Identifier</td>
+            <td class="iC">0..1</td>
+            <td class="iC"><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#UDT-Identifier.Type">Identifier</a></td>
+            <td class="iC"></td>
+            <td class="iC">Payload. Customization Identifier. Identifier</td>
+            <td class="iC">1.0</td>
+            <td class="iC">BBIE</td>
+            <td class="iC"><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-Payload.Details">Payload</a></td>
+            <td class="iC"></td>
+            <td class="iC">Customization</td>
+            <td class="iC">Identifier</td>
+            <td class="iC">Customization Identifier</td>
+            <td class="iC"><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#UDT-Identifier.Type">Identifier. Type</a></td>
+            <td class="iC"></td>
+         </tr>
+         <tr style="background-color:#ffffff;" class="iR">
+            <td class="iC" rowspan="2"><a name="Table-Payload.ProfileIdentifier.Identifier" href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Summary-Payload.ProfileIdentifier.Identifier">31</a><br><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-Payload.Details">^</a></td>
+            <td class="iC" rowspan="2">ProfileID</td>
+            <td class="iC" colspan="14">Identifies the profile that the payload instance is part of.</td>
+         </tr>
+         <tr style="background-color:#ffffff;" class="iR">
+            <td class="iC">XHE_ Payload Instance. Profile. Identifier</td>
+            <td class="iC">0..1</td>
+            <td class="iC"><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#UDT-Identifier.Type">Identifier</a></td>
+            <td class="iC"></td>
+            <td class="iC">Payload. Profile Identifier. Identifier</td>
+            <td class="iC">1.0</td>
+            <td class="iC">BBIE</td>
+            <td class="iC"><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-Payload.Details">Payload</a></td>
+            <td class="iC"></td>
+            <td class="iC">Profile</td>
+            <td class="iC">Identifier</td>
+            <td class="iC">Profile Identifier</td>
+            <td class="iC"><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#UDT-Identifier.Type">Identifier. Type</a></td>
+            <td class="iC"></td>
+         </tr>
+         <tr style="background-color:#ffffff;" class="iR">
+            <td class="iC" rowspan="2"><a name="Table-Payload.ProfileExecutionIdentifier.Identifier" href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Summary-Payload.ProfileExecutionIdentifier.Identifier">32</a><br><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-Payload.Details">^</a></td>
+            <td class="iC" rowspan="2">ProfileExecutionID</td>
+            <td class="iC" colspan="14">Identifies the particular instance of an executing profile that the payload instance
+               is part of.
+            </td>
+         </tr>
+         <tr style="background-color:#ffffff;" class="iR">
+            <td class="iC">XHE_ Payload Instance. Profile Execution. Identifier</td>
+            <td class="iC">0..1</td>
+            <td class="iC"><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#UDT-Identifier.Type">Identifier</a></td>
+            <td class="iC"></td>
+            <td class="iC">Payload. Profile Execution Identifier. Identifier</td>
+            <td class="iC">1.0</td>
+            <td class="iC">BBIE</td>
+            <td class="iC"><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-Payload.Details">Payload</a></td>
+            <td class="iC"></td>
+            <td class="iC">Profile Execution</td>
+            <td class="iC">Identifier</td>
+            <td class="iC">Profile Execution Identifier</td>
+            <td class="iC"><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#UDT-Identifier.Type">Identifier. Type</a></td>
+            <td class="iC"></td>
+         </tr>
+         <tr style="background-color:#ffffff;" class="iR">
+            <td class="iC" rowspan="2"><a name="Table-Payload.HandlingServiceIdentifier.Identifier" href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Summary-Payload.HandlingServiceIdentifier.Identifier">33</a><br><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-Payload.Details">^</a></td>
+            <td class="iC" rowspan="2">HandlingServiceID</td>
+            <td class="iC" colspan="14">Identifies the service that should process the payload instance.</td>
+         </tr>
+         <tr style="background-color:#ffffff;" class="iR">
+            <td class="iC">XHE_ Payload Instance. Handling Service. Identifier</td>
+            <td class="iC">0..1</td>
+            <td class="iC"><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#UDT-Identifier.Type">Identifier</a></td>
+            <td class="iC"></td>
+            <td class="iC">Payload. Handling Service Identifier. Identifier</td>
+            <td class="iC">1.0</td>
+            <td class="iC">BBIE</td>
+            <td class="iC"><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-Payload.Details">Payload</a></td>
+            <td class="iC"></td>
+            <td class="iC">Handling Service</td>
+            <td class="iC">Identifier</td>
+            <td class="iC">Handling Service Identifier</td>
+            <td class="iC"><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#UDT-Identifier.Type">Identifier. Type</a></td>
+            <td class="iC"></td>
+         </tr>
+         <tr style="background-color:#ffffff;" class="iR">
+            <td class="iC" rowspan="2"><a name="Table-Payload.ValidationTypeCode.Code" href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Summary-Payload.ValidationTypeCode.Code">34</a><br><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-Payload.Details">^</a></td>
+            <td class="iC" rowspan="2">ValidationTypeCode</td>
+            <td class="iC" colspan="14">The type of the payload instance, used for the task of verifying that the grammar
+               is valid.
+            </td>
+         </tr>
+         <tr style="background-color:#ffffff;" class="iR">
+            <td class="iC">XHE_ Payload Instance. Validation_ Type. Code</td>
+            <td class="iC">0..1</td>
+            <td class="iC"><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#UDT-Code.Type">Code</a></td>
+            <td class="iC"></td>
+            <td class="iC">Payload. Validation Type Code. Code</td>
+            <td class="iC">1.0</td>
+            <td class="iC">BBIE</td>
+            <td class="iC"><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-Payload.Details">Payload</a></td>
+            <td class="iC"></td>
+            <td class="iC">Validation Type</td>
+            <td class="iC">Code</td>
+            <td class="iC">Validation Type Code</td>
+            <td class="iC"><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#UDT-Code.Type">Code. Type</a></td>
+            <td class="iC"></td>
+         </tr>
+         <tr style="background-color:#ffffff;" class="iR">
+            <td class="iC" rowspan="2"><a name="Table-Payload.ValidationVersionIdentifier.Identifier" href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Summary-Payload.ValidationVersionIdentifier.Identifier">35</a><br><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-Payload.Details">^</a></td>
+            <td class="iC" rowspan="2">ValidationVersionID</td>
+            <td class="iC" colspan="14">Descriptor containing version information of the validation type.</td>
+         </tr>
+         <tr style="background-color:#ffffff;" class="iR">
+            <td class="iC">XHE_ Payload Instance. Validation Version. Identifier</td>
+            <td class="iC">0..1</td>
+            <td class="iC"><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#UDT-Identifier.Type">Identifier</a></td>
+            <td class="iC"></td>
+            <td class="iC">Payload. Validation Version Identifier. Identifier</td>
+            <td class="iC">1.0</td>
+            <td class="iC">BBIE</td>
+            <td class="iC"><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-Payload.Details">Payload</a></td>
+            <td class="iC"></td>
+            <td class="iC">Validation Version</td>
+            <td class="iC">Identifier</td>
+            <td class="iC">Validation Version Identifier</td>
+            <td class="iC"><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#UDT-Identifier.Type">Identifier. Type</a></td>
+            <td class="iC"></td>
+         </tr>
+         <tr style="background-color:#ffffff;" class="iR">
+            <td class="iC" rowspan="2"><a name="Table-Payload.InstanceEncryptionIndicator.Indicator" href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Summary-Payload.InstanceEncryptionIndicator.Indicator">36</a><br><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-Payload.Details">^</a></td>
+            <td class="iC" rowspan="2" style="font-weight:bold">InstanceEncryptionIndicator</td>
+            <td class="iC" colspan="14">Indicator stating whether the payload instance is encrypted or not.</td>
+         </tr>
+         <tr style="background-color:#ffffff;" class="iR">
+            <td class="iC">XHE_ Payload Instance. Encrypted. Indicator</td>
+            <td class="iC">1</td>
+            <td class="iC"><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#UDT-Indicator.Type">Indicator</a></td>
+            <td class="iC"></td>
+            <td class="iC">Payload. Instance Encryption Indicator. Indicator</td>
+            <td class="iC">1.0</td>
+            <td class="iC">BBIE</td>
+            <td class="iC"><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-Payload.Details">Payload</a></td>
+            <td class="iC"></td>
+            <td class="iC">Instance Encryption</td>
+            <td class="iC">Indicator</td>
+            <td class="iC">Instance Encryption Indicator</td>
+            <td class="iC"><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#UDT-Indicator.Type">Indicator. Type</a></td>
+            <td class="iC"></td>
+         </tr>
+         <tr style="background-color:#ffffff;" class="iR">
+            <td class="iC" rowspan="2"><a name="Table-Payload.InstanceEncryptionMethod.Text" href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Summary-Payload.InstanceEncryptionMethod.Text">37</a><br><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-Payload.Details">^</a></td>
+            <td class="iC" rowspan="2">InstanceEncryptionMethod</td>
+            <td class="iC" colspan="14">Method used to encrypt the payload instance.</td>
+         </tr>
+         <tr style="background-color:#ffffff;" class="iR">
+            <td class="iC">XHE_ Payload Instance. Encryption Method. Text</td>
+            <td class="iC">0..1</td>
+            <td class="iC"><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#UDT-Text.Type">Text</a></td>
+            <td class="iC"></td>
+            <td class="iC">Payload. Instance Encryption Method. Text</td>
+            <td class="iC">1.0</td>
+            <td class="iC">BBIE</td>
+            <td class="iC"><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-Payload.Details">Payload</a></td>
+            <td class="iC"></td>
+            <td class="iC">Instance Encryption</td>
+            <td class="iC">Method</td>
+            <td class="iC">Instance Encryption Method</td>
+            <td class="iC"><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#UDT-Text.Type">Text. Type</a></td>
+            <td class="iC"></td>
+         </tr>
+         <tr style="background-color:#ffffff;" class="iR">
+            <td class="iC" rowspan="2"><a name="Table-Payload.InstanceHashValue.Text" href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Summary-Payload.InstanceHashValue.Text">38</a><br><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-Payload.Details">^</a></td>
+            <td class="iC" rowspan="2">InstanceHashValue</td>
+            <td class="iC" colspan="14">SHA-256 hash total of the unencrypted payload instance.</td>
+         </tr>
+         <tr style="background-color:#ffffff;" class="iR">
+            <td class="iC">XHE_ Payload Instance. Encryption Hash Value. Text</td>
+            <td class="iC">0..1</td>
+            <td class="iC"><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#UDT-Text.Type">Text</a></td>
+            <td class="iC"></td>
+            <td class="iC">Payload. Instance Hash Value. Text</td>
+            <td class="iC">1.0</td>
+            <td class="iC">BBIE</td>
+            <td class="iC"><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-Payload.Details">Payload</a></td>
+            <td class="iC"></td>
+            <td class="iC">Instance Hash</td>
+            <td class="iC">Value</td>
+            <td class="iC">Instance Hash Value</td>
+            <td class="iC"><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#UDT-Text.Type">Text. Type</a></td>
+            <td class="iC"></td>
+         </tr>
+         <tr style="background-color:#cbfbcb;" class="iR">
+            <td class="iC" rowspan="2"><a name="Table-Payload.InstanceDecryptionInformation_ExternalReference.ExternalReference" href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Summary-Payload.InstanceDecryptionInformation_ExternalReference.ExternalReference">39</a><br><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-Payload.Details">^</a></td>
+            <td class="iC" rowspan="2">InstanceDecryptionInformationExternalReference</td>
+            <td class="iC" colspan="14">Decryption information that is available external to the envelope.</td>
+         </tr>
+         <tr style="background-color:#cbfbcb;" class="iR">
+            <td class="iC">XHE_ Payload Instance. Decryption. XHE_ Reference</td>
+            <td class="iC">0..1</td>
+            <td class="iC"><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-ExternalReference.Details">External Reference</a></td>
+            <td class="iC"></td>
+            <td class="iC">Payload. Instance Decryption Information_ External Reference. External Reference</td>
+            <td class="iC">1.0</td>
+            <td class="iC">ASBIE</td>
+            <td class="iC"><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-Payload.Details">Payload</a></td>
+            <td class="iC">Instance Decryption Information</td>
+            <td class="iC"></td>
+            <td class="iC"></td>
+            <td class="iC">External Reference</td>
+            <td class="iC"></td>
+            <td class="iC"><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-ExternalReference.Details">External Reference</a></td>
+         </tr>
+         <tr style="background-color:#cbfbcb;" class="iR">
+            <td class="iC" rowspan="2"><a name="Table-Payload.InstanceDecryptionKey_ExternalReference.ExternalReference" href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Summary-Payload.InstanceDecryptionKey_ExternalReference.ExternalReference">40</a><br><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-Payload.Details">^</a></td>
+            <td class="iC" rowspan="2">InstanceDecryptionKeyExternalReference</td>
+            <td class="iC" colspan="14">Decryption key data that is available external to the envelope.</td>
+         </tr>
+         <tr style="background-color:#cbfbcb;" class="iR">
+            <td class="iC">XHE_ Payload Instance. Decryption Key. XHE_ Reference</td>
+            <td class="iC">0..1</td>
+            <td class="iC"><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-ExternalReference.Details">External Reference</a></td>
+            <td class="iC"></td>
+            <td class="iC">Payload. Instance Decryption Key_ External Reference. External Reference</td>
+            <td class="iC">1.0</td>
+            <td class="iC">ASBIE</td>
+            <td class="iC"><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-Payload.Details">Payload</a></td>
+            <td class="iC">Instance Decryption Key</td>
+            <td class="iC"></td>
+            <td class="iC"></td>
+            <td class="iC">External Reference</td>
+            <td class="iC"></td>
+            <td class="iC"><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-ExternalReference.Details">External Reference</a></td>
+         </tr>
+         <tr style="background-color:#cbfbcb;" class="iR">
+            <td class="iC" rowspan="2"><a name="Table-Payload.Relevant_ExternalReference.ExternalReference" href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Summary-Payload.Relevant_ExternalReference.ExternalReference">41</a><br><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-Payload.Details">^</a></td>
+            <td class="iC" rowspan="2">RelevantExternalReference</td>
+            <td class="iC" colspan="14">A reference to a business case, document or other issues which are relevant to the
+               handling of the payload.
+            </td>
+         </tr>
+         <tr style="background-color:#cbfbcb;" class="iR">
+            <td class="iC">XHE_ Payload Instance. Relevant. XHE_ Reference</td>
+            <td class="iC">0..n</td>
+            <td class="iC"><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-ExternalReference.Details">External Reference</a></td>
+            <td class="iC"></td>
+            <td class="iC">Payload. Relevant_ External Reference. External Reference</td>
+            <td class="iC">1.0</td>
+            <td class="iC">ASBIE</td>
+            <td class="iC"><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-Payload.Details">Payload</a></td>
+            <td class="iC">Relevant</td>
+            <td class="iC"></td>
+            <td class="iC"></td>
+            <td class="iC">External Reference</td>
+            <td class="iC"></td>
+            <td class="iC"><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-ExternalReference.Details">External Reference</a></td>
+         </tr>
+         <tr style="background-color:#cbfbcb;" class="iR">
+            <td class="iC" rowspan="2"><a name="Table-Payload.Payload_ExternalReference.ExternalReference" href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Summary-Payload.Payload_ExternalReference.ExternalReference">42</a><br><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-Payload.Details">^</a></td>
+            <td class="iC" rowspan="2">PayloadExternalReference</td>
+            <td class="iC" colspan="14">The reference to the payload when it is not included within the envelope.</td>
+         </tr>
+         <tr style="background-color:#cbfbcb;" class="iR">
+            <td class="iC">XHE_ Payload Instance. Payload. XHE_ Reference</td>
+            <td class="iC">0..1</td>
+            <td class="iC"><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-ExternalReference.Details">External Reference</a></td>
+            <td class="iC"></td>
+            <td class="iC">Payload. Payload_ External Reference. External Reference</td>
+            <td class="iC">1.0</td>
+            <td class="iC">ASBIE</td>
+            <td class="iC"><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-Payload.Details">Payload</a></td>
+            <td class="iC">Payload</td>
+            <td class="iC"></td>
+            <td class="iC"></td>
+            <td class="iC">External Reference</td>
+            <td class="iC"></td>
+            <td class="iC"><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-ExternalReference.Details">External Reference</a></td>
+         </tr>
+         <tr style="background-color:#f898c8;" class="iR">
+            <td class="iC" rowspan="2"><a name="Table-Payloads.Details" href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Summary-Payloads.Details">43</a></td>
+            <td class="iC" rowspan="2">Payloads<br><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-XHE.Payloads" title="XHE. Payloads">&lt;</a> 
+            </td>
+            <td class="iC" colspan="14">The complete set of payloads.</td>
+         </tr>
+         <tr style="background-color:#f898c8;" class="iR">
+            <td class="iC">XHE_ Payload. Details</td>
+            <td class="iC"></td>
+            <td class="iC"></td>
+            <td class="iC"></td>
+            <td class="iC">Payloads. Details</td>
+            <td class="iC">1.0</td>
+            <td class="iC">ABIE</td>
+            <td class="iC">Payloads</td>
+            <td class="iC"></td>
+            <td class="iC"></td>
+            <td class="iC"></td>
+            <td class="iC"></td>
+            <td class="iC"></td>
+            <td class="iC"></td>
+         </tr>
+         <tr style="background-color:#cbfbcb;" class="iR">
+            <td class="iC" rowspan="2"><a name="Table-Payloads.Payload" href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Summary-Payloads.Payload">44</a><br><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-Payloads.Details">^</a></td>
+            <td class="iC" rowspan="2" style="font-weight:bold">Payload</td>
+            <td class="iC" colspan="14">An individual payload within the set of payloads.</td>
+         </tr>
+         <tr style="background-color:#cbfbcb;" class="iR">
+            <td class="iC">XHE_ Payload. Included. XHE_ Payload Instance</td>
+            <td class="iC">1..n</td>
+            <td class="iC"><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-Payload.Details">Payload</a></td>
+            <td class="iC"></td>
+            <td class="iC">Payloads. Payload</td>
+            <td class="iC">1.0</td>
+            <td class="iC">ASBIE</td>
+            <td class="iC"><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-Payloads.Details">Payloads</a></td>
+            <td class="iC"></td>
+            <td class="iC"></td>
+            <td class="iC"></td>
+            <td class="iC">Payload</td>
+            <td class="iC"></td>
+            <td class="iC"><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-Payload.Details">Payload</a></td>
+         </tr>
+      </tbody></table>
+      <div><a name="UDT"></a><h3>Unqualified data types</h3>
+         <table frame="border" rules="all" summary="Unqualified data types" class="uT">
+            <colgroup>
+               <col width="100pt">
+               <col width="100pt">
+               <col width="100pt">
+               <col width="50pt">
+               <col width="120pt">
+            </colgroup>
+            <tbody><tr>
+               <th valign="top" rowspan="2">Dict.&nbsp;Entry&nbsp;Name<br>(Base&nbsp;type&nbsp;XSD)
+               </th>
+               <th valign="top" colspan="2">Content and supplementary components</th>
+               <th valign="top" rowspan="2">Cardi-<br>nality
+               </th>
+               <th valign="top" rowspan="2">Type<br>(XSD)
+               </th>
+               <th valign="top" rowspan="2">Definition</th>
+            </tr>
+            <tr>
+               <th valign="top">(property)</th>
+               <th valign="top">(attribute)</th>
+            </tr>
+            <tr>
+               <td valign="top" rowspan="3"><a name="UDT-Amount.Type">Amount. Type<br>(xsd:decimal)</a><br></td>
+               <td valign="top"><b>AmountContent</b></td>
+               <td valign="top" colspan="4">A number of monetary units specified using a given unit of currency.</td>
+            </tr>
+            <tr valign="top">
+               <td><b>AmountCurrencyIdentifier</b></td>
+               <td><b>currencyID</b></td>
+               <td>required</td>
+               <td>xsd:normalizedString</td>
+               <td>The currency of the amount.</td>
+            </tr>
+            <tr valign="top">
+               <td>AmountCurrencyCodeListVersionIdentifier</td>
+               <td>currencyCodeListVersionID</td>
+               <td>optional</td>
+               <td>xsd:normalizedString</td>
+               <td>The VersionID of the UN/ECE Rec9 code list.</td>
+            </tr>
+            <tr>
+               <td valign="top" rowspan="7"><a name="UDT-BinaryObject.Type">Binary Object. Type<br>(xsd:base64Binary)</a><br></td>
+               <td valign="top"><b>BinaryObjectContent</b></td>
+               <td valign="top" colspan="4">A set of finite-length sequences of binary octets.</td>
+            </tr>
+            <tr valign="top">
+               <td><b>BinaryObjectMimeCode</b></td>
+               <td><b>mimeCode</b></td>
+               <td>required</td>
+               <td>xsd:normalizedString</td>
+               <td>The mime type of the binary object.</td>
+            </tr>
+            <tr valign="top">
+               <td>BinaryObjectCharacterSetCode</td>
+               <td>characterSetCode</td>
+               <td>optional</td>
+               <td>xsd:normalizedString</td>
+               <td>The character set of the binary object if the mime type is text.</td>
+            </tr>
+            <tr valign="top">
+               <td>BinaryObjectEncodingCode</td>
+               <td>encodingCode</td>
+               <td>optional</td>
+               <td>xsd:normalizedString</td>
+               <td>Specifies the decoding algorithm of the binary object.</td>
+            </tr>
+            <tr valign="top">
+               <td>BinaryObjectFilenameText</td>
+               <td>filename</td>
+               <td>optional</td>
+               <td>xsd:string</td>
+               <td>The filename of the binary object.</td>
+            </tr>
+            <tr valign="top">
+               <td>BinaryObjectFormatText</td>
+               <td>format</td>
+               <td>optional</td>
+               <td>xsd:string</td>
+               <td>The format of the binary content.</td>
+            </tr>
+            <tr valign="top">
+               <td>BinaryObjectUniformResourceIdentifier</td>
+               <td>uri</td>
+               <td>optional</td>
+               <td>xsd:anyURI</td>
+               <td>The Uniform Resource Identifier that identifies where the binary object is located.</td>
+            </tr>
+            <tr>
+               <td valign="top" rowspan="7"><a name="UDT-Graphic.Type">Graphic. Type<br>(xsd:base64Binary)</a><br></td>
+               <td valign="top"><b>BinaryObjectContent</b></td>
+               <td valign="top" colspan="4">A diagram, graph, mathematical curve, or similar representation.</td>
+            </tr>
+            <tr valign="top">
+               <td><b>BinaryObjectMimeCode</b></td>
+               <td><b>mimeCode</b></td>
+               <td>required</td>
+               <td>xsd:normalizedString</td>
+               <td>The mime type of the graphic object.</td>
+            </tr>
+            <tr valign="top">
+               <td>BinaryObjectCharacterSetCode</td>
+               <td>characterSetCode</td>
+               <td>optional</td>
+               <td>xsd:normalizedString</td>
+               <td>The character set of the binary object if the mime type is text.</td>
+            </tr>
+            <tr valign="top">
+               <td>BinaryObjectEncodingCode</td>
+               <td>encodingCode</td>
+               <td>optional</td>
+               <td>xsd:normalizedString</td>
+               <td>Specifies the decoding algorithm of the binary object.</td>
+            </tr>
+            <tr valign="top">
+               <td>BinaryObjectFilenameText</td>
+               <td>filename</td>
+               <td>optional</td>
+               <td>xsd:string</td>
+               <td>The filename of the binary object.</td>
+            </tr>
+            <tr valign="top">
+               <td>BinaryObjectFormatText</td>
+               <td>format</td>
+               <td>optional</td>
+               <td>xsd:string</td>
+               <td>The format of the binary content.</td>
+            </tr>
+            <tr valign="top">
+               <td>BinaryObjectUniformResourceIdentifier</td>
+               <td>uri</td>
+               <td>optional</td>
+               <td>xsd:anyURI</td>
+               <td>The Uniform Resource Identifier that identifies where the binary object is located.</td>
+            </tr>
+            <tr>
+               <td valign="top" rowspan="7"><a name="UDT-Picture.Type">Picture. Type<br>(xsd:base64Binary)</a><br></td>
+               <td valign="top"><b>BinaryObjectContent</b></td>
+               <td valign="top" colspan="4">A diagram, graph, mathematical curve, or similar representation.</td>
+            </tr>
+            <tr valign="top">
+               <td><b>BinaryObjectMimeCode</b></td>
+               <td><b>mimeCode</b></td>
+               <td>required</td>
+               <td>xsd:normalizedString</td>
+               <td>The mime type of the picture object.</td>
+            </tr>
+            <tr valign="top">
+               <td>BinaryObjectCharacterSetCode</td>
+               <td>characterSetCode</td>
+               <td>optional</td>
+               <td>xsd:normalizedString</td>
+               <td>The character set of the binary object if the mime type is text.</td>
+            </tr>
+            <tr valign="top">
+               <td>BinaryObjectEncodingCode</td>
+               <td>encodingCode</td>
+               <td>optional</td>
+               <td>xsd:normalizedString</td>
+               <td>Specifies the decoding algorithm of the binary object.</td>
+            </tr>
+            <tr valign="top">
+               <td>BinaryObjectFilenameText</td>
+               <td>filename</td>
+               <td>optional</td>
+               <td>xsd:string</td>
+               <td>The filename of the binary object.</td>
+            </tr>
+            <tr valign="top">
+               <td>BinaryObjectFormatText</td>
+               <td>format</td>
+               <td>optional</td>
+               <td>xsd:string</td>
+               <td>The format of the binary content.</td>
+            </tr>
+            <tr valign="top">
+               <td>BinaryObjectUniformResourceIdentifier</td>
+               <td>uri</td>
+               <td>optional</td>
+               <td>xsd:anyURI</td>
+               <td>The Uniform Resource Identifier that identifies where the binary object is located.</td>
+            </tr>
+            <tr>
+               <td valign="top" rowspan="7"><a name="UDT-Sound.Type">Sound. Type<br>(xsd:base64Binary)</a><br></td>
+               <td valign="top"><b>BinaryObjectContent</b></td>
+               <td valign="top" colspan="4">An audio representation.</td>
+            </tr>
+            <tr valign="top">
+               <td><b>BinaryObjectMimeCode</b></td>
+               <td><b>mimeCode</b></td>
+               <td>required</td>
+               <td>xsd:normalizedString</td>
+               <td>The mime type of the sound object.</td>
+            </tr>
+            <tr valign="top">
+               <td>BinaryObjectCharacterSetCode</td>
+               <td>characterSetCode</td>
+               <td>optional</td>
+               <td>xsd:normalizedString</td>
+               <td>The character set of the binary object if the mime type is text.</td>
+            </tr>
+            <tr valign="top">
+               <td>BinaryObjectEncodingCode</td>
+               <td>encodingCode</td>
+               <td>optional</td>
+               <td>xsd:normalizedString</td>
+               <td>Specifies the decoding algorithm of the binary object.</td>
+            </tr>
+            <tr valign="top">
+               <td>BinaryObjectFilenameText</td>
+               <td>filename</td>
+               <td>optional</td>
+               <td>xsd:string</td>
+               <td>The filename of the binary object.</td>
+            </tr>
+            <tr valign="top">
+               <td>BinaryObjectFormatText</td>
+               <td>format</td>
+               <td>optional</td>
+               <td>xsd:string</td>
+               <td>The format of the binary content.</td>
+            </tr>
+            <tr valign="top">
+               <td>BinaryObjectUniformResourceIdentifier</td>
+               <td>uri</td>
+               <td>optional</td>
+               <td>xsd:anyURI</td>
+               <td>The Uniform Resource Identifier that identifies where the binary object is located.</td>
+            </tr>
+            <tr>
+               <td valign="top" rowspan="7"><a name="UDT-Video.Type">Video. Type<br>(xsd:base64Binary)</a><br></td>
+               <td valign="top"><b>BinaryObjectContent</b></td>
+               <td valign="top" colspan="4">A video representation.</td>
+            </tr>
+            <tr valign="top">
+               <td><b>BinaryObjectMimeCode</b></td>
+               <td><b>mimeCode</b></td>
+               <td>required</td>
+               <td>xsd:normalizedString</td>
+               <td>The mime type of the video object.</td>
+            </tr>
+            <tr valign="top">
+               <td>BinaryObjectCharacterSetCode</td>
+               <td>characterSetCode</td>
+               <td>optional</td>
+               <td>xsd:normalizedString</td>
+               <td>The character set of the binary object if the mime type is text.</td>
+            </tr>
+            <tr valign="top">
+               <td>BinaryObjectEncodingCode</td>
+               <td>encodingCode</td>
+               <td>optional</td>
+               <td>xsd:normalizedString</td>
+               <td>Specifies the decoding algorithm of the binary object.</td>
+            </tr>
+            <tr valign="top">
+               <td>BinaryObjectFilenameText</td>
+               <td>filename</td>
+               <td>optional</td>
+               <td>xsd:string</td>
+               <td>The filename of the binary object.</td>
+            </tr>
+            <tr valign="top">
+               <td>BinaryObjectFormatText</td>
+               <td>format</td>
+               <td>optional</td>
+               <td>xsd:string</td>
+               <td>The format of the binary content.</td>
+            </tr>
+            <tr valign="top">
+               <td>BinaryObjectUniformResourceIdentifier</td>
+               <td>uri</td>
+               <td>optional</td>
+               <td>xsd:anyURI</td>
+               <td>The Uniform Resource Identifier that identifies where the binary object is located.</td>
+            </tr>
+            <tr>
+               <td valign="top" rowspan="10"><a name="UDT-Code.Type">Code. Type<br>(xsd:normalizedString)</a><br><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-BusinessScopeCriterion.BusinessScopeCriterionType.Code" title="Business Scope Criterion. Business Scope Criterion Type. Code">&lt;</a> <a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-Payload.ContentTypeCode.Code" title="Payload. Content Type Code. Code">&lt;</a> <a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-Payload.DocumentTypeCode.Code" title="Payload. Document Type Code. Code">&lt;</a> <a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-Payload.ValidationTypeCode.Code" title="Payload. Validation Type Code. Code">&lt;</a> 
+               </td>
+               <td valign="top"><b>CodeContent</b></td>
+               <td valign="top" colspan="4">A character string (letters, figures, or symbols) that for brevity and/or language
+                  independence may be used to represent or replace a definitive value or text of an
+                  attribute, together with relevant supplementary information.
+               </td>
+            </tr>
+            <tr valign="top">
+               <td>LanguageIdentifier</td>
+               <td>languageID</td>
+               <td>optional</td>
+               <td>xsd:language</td>
+               <td>The identifier of the language used in the code name.</td>
+            </tr>
+            <tr valign="top">
+               <td>CodeListAgencyIdentifier</td>
+               <td>listAgencyID</td>
+               <td>optional</td>
+               <td>xsd:normalizedString</td>
+               <td>An agency that maintains one or more lists of codes.</td>
+            </tr>
+            <tr valign="top">
+               <td>CodeListAgencyNameText</td>
+               <td>listAgencyName</td>
+               <td>optional</td>
+               <td>xsd:string</td>
+               <td>The name of the agency that maintains the list of codes.</td>
+            </tr>
+            <tr valign="top">
+               <td>CodeListIdentifier</td>
+               <td>listID</td>
+               <td>optional</td>
+               <td>xsd:normalizedString</td>
+               <td>The identification of a list of codes.</td>
+            </tr>
+            <tr valign="top">
+               <td>CodeListNameText</td>
+               <td>listName</td>
+               <td>optional</td>
+               <td>xsd:string</td>
+               <td>The name of a list of codes.</td>
+            </tr>
+            <tr valign="top">
+               <td>CodeListSchemeUniformResourceIdentifier</td>
+               <td>listSchemeURI</td>
+               <td>optional</td>
+               <td>xsd:anyURI</td>
+               <td>The Uniform Resource Identifier that identifies where the code list scheme is located.</td>
+            </tr>
+            <tr valign="top">
+               <td>CodeListUniformResourceIdentifier</td>
+               <td>listURI</td>
+               <td>optional</td>
+               <td>xsd:anyURI</td>
+               <td>The Uniform Resource Identifier that identifies where the code list is located.</td>
+            </tr>
+            <tr valign="top">
+               <td>CodeListVersionIdentifier</td>
+               <td>listVersionID</td>
+               <td>optional</td>
+               <td>xsd:normalizedString</td>
+               <td>The version of the list of codes.</td>
+            </tr>
+            <tr valign="top">
+               <td>CodeNameText</td>
+               <td>name</td>
+               <td>optional</td>
+               <td>xsd:string</td>
+               <td>The textual equivalent of the code content component.</td>
+            </tr>
+            <tr>
+               <td valign="top" rowspan="1"><a name="UDT-DateTime.Type">Date Time. Type<br>(xsd:dateTime)</a><br></td>
+               <td valign="top"><b>DateTimeContent</b></td>
+               <td valign="top" colspan="4">A particular point in the progression of time, together with relevant supplementary
+                  information.
+               </td>
+            </tr>
+            <tr>
+               <td valign="top" rowspan="1"><a name="UDT-Date.Type">Date. Type<br>(xsd:date)</a><br></td>
+               <td valign="top"><b>DateContent</b></td>
+               <td valign="top" colspan="4">One calendar day according the Gregorian calendar.</td>
+            </tr>
+            <tr>
+               <td valign="top" rowspan="1"><a name="UDT-Time.Type">Time. Type<br>(xsd:time)</a><br></td>
+               <td valign="top"><b>TimeContent</b></td>
+               <td valign="top" colspan="4">An instance of time that occurs every day.</td>
+            </tr>
+            <tr>
+               <td valign="top" rowspan="8"><a name="UDT-Identifier.Type">Identifier. Type<br>(xsd:normalizedString)</a><br><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-ExternalReference.Identifier" title="External Reference. Identifier">&lt;</a> <a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-Header.Identifier" title="Header. Identifier">&lt;</a> <a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-Header.UUID.Identifier" title="Header. UUID. Identifier">&lt;</a> <a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-PartyIdentification.Identifier" title="Party Identification. Identifier">&lt;</a> <a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-Payload.CustomizationIdentifier.Identifier" title="Payload. Customization Identifier. Identifier">&lt;</a> <a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-Payload.HandlingServiceIdentifier.Identifier" title="Payload. Handling Service Identifier. Identifier">&lt;</a> <a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-Payload.Identifier" title="Payload. Identifier">&lt;</a> <a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-Payload.ProfileExecutionIdentifier.Identifier" title="Payload. Profile Execution Identifier. Identifier">&lt;</a> <a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-Payload.ProfileIdentifier.Identifier" title="Payload. Profile Identifier. Identifier">&lt;</a> <a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-Payload.ValidationVersionIdentifier.Identifier" title="Payload. Validation Version Identifier. Identifier">&lt;</a> <a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-XHE.CustomizationIdentifier.Identifier" title="XHE. Customization Identifier. Identifier">&lt;</a> <a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-XHE.ProfileExecutionIdentifier.Identifier" title="XHE. Profile Execution Identifier. Identifier">&lt;</a> <a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-XHE.ProfileIdentifier.Identifier" title="XHE. Profile Identifier. Identifier">&lt;</a> <a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-XHE.XHEVersionIdentifier.Identifier" title="XHE. XHE Version Identifier. Identifier">&lt;</a> 
+               </td>
+               <td valign="top"><b>IdentifierContent</b></td>
+               <td valign="top" colspan="4">A character string to identify and uniquely distinguish one instance of an object
+                  in an identification scheme from all other objects in the same scheme, together with
+                  relevant supplementary information.
+               </td>
+            </tr>
+            <tr valign="top">
+               <td>IdentificationSchemeAgencyIdentifier</td>
+               <td>schemeAgencyID</td>
+               <td>optional</td>
+               <td>xsd:normalizedString</td>
+               <td>The identification of the agency that maintains the identification scheme.</td>
+            </tr>
+            <tr valign="top">
+               <td>IdentificationSchemeAgencyNameText</td>
+               <td>schemeAgencyName</td>
+               <td>optional</td>
+               <td>xsd:string</td>
+               <td>The name of the agency that maintains the identification scheme.</td>
+            </tr>
+            <tr valign="top">
+               <td>IdentificationSchemeDataUniformResourceIdentifier</td>
+               <td>schemeDataURI</td>
+               <td>optional</td>
+               <td>xsd:anyURI</td>
+               <td>The Uniform Resource Identifier that identifies where the identification scheme data
+                  is located.
+               </td>
+            </tr>
+            <tr valign="top">
+               <td>IdentificationSchemeIdentifier</td>
+               <td>schemeID</td>
+               <td>optional</td>
+               <td>xsd:normalizedString</td>
+               <td>The identification of the identification scheme.</td>
+            </tr>
+            <tr valign="top">
+               <td>IdentificationSchemeNameText</td>
+               <td>schemeName</td>
+               <td>optional</td>
+               <td>xsd:string</td>
+               <td>The name of the identification scheme.</td>
+            </tr>
+            <tr valign="top">
+               <td>IdentificationSchemeUniformResourceIdentifier</td>
+               <td>schemeURI</td>
+               <td>optional</td>
+               <td>xsd:anyURI</td>
+               <td>The Uniform Resource Identifier that identifies where the identification scheme is
+                  located.
+               </td>
+            </tr>
+            <tr valign="top">
+               <td>IdentificationSchemeVersionIdentifier</td>
+               <td>schemeVersionID</td>
+               <td>optional</td>
+               <td>xsd:normalizedString</td>
+               <td>The version of the identification scheme.</td>
+            </tr>
+            <tr>
+               <td valign="top" rowspan="1"><a name="UDT-Indicator.Type">Indicator. Type<br>(xsd:boolean)</a><br><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-Payload.InstanceEncryptionIndicator.Indicator" title="Payload. Instance Encryption Indicator. Indicator">&lt;</a> 
+               </td>
+               <td valign="top"><b>IndicatorContent</b></td>
+               <td valign="top" colspan="4">A list of two mutually exclusive Boolean values that express the only possible states
+                  of a property.
+               </td>
+            </tr>
+            <tr>
+               <td valign="top" rowspan="3"><a name="UDT-Measure.Type">Measure. Type<br>(xsd:decimal)</a><br></td>
+               <td valign="top"><b>MeasureContent</b></td>
+               <td valign="top" colspan="4">A numeric value determined by measuring an object using a specified unit of measure.</td>
+            </tr>
+            <tr valign="top">
+               <td><b>MeasureUnitCode</b></td>
+               <td><b>unitCode</b></td>
+               <td>required</td>
+               <td>xsd:normalizedString</td>
+               <td>The type of unit of measure.</td>
+            </tr>
+            <tr valign="top">
+               <td>MeasureUnitCodeListVersionIdentifier</td>
+               <td>unitCodeListVersionID</td>
+               <td>optional</td>
+               <td>xsd:normalizedString</td>
+               <td>The version of the measure unit code list.</td>
+            </tr>
+            <tr>
+               <td valign="top" rowspan="2"><a name="UDT-Numeric.Type">Numeric. Type<br>(xsd:decimal)</a><br></td>
+               <td valign="top"><b>NumericContent</b></td>
+               <td valign="top" colspan="4">Numeric information that is assigned or is determined by calculation, counting, or
+                  sequencing. It does not require a unit of quantity or unit of measure.
+               </td>
+            </tr>
+            <tr valign="top">
+               <td>NumericFormatText</td>
+               <td>format</td>
+               <td>optional</td>
+               <td>xsd:string</td>
+               <td>Whether the number is an integer, decimal, real number or percentage.</td>
+            </tr>
+            <tr>
+               <td valign="top" rowspan="2"><a name="UDT-Value.Type">Value. Type<br>(xsd:decimal)</a><br></td>
+               <td valign="top"><b>NumericContent</b></td>
+               <td valign="top" colspan="4">Numeric information that is assigned or is determined by calculation, counting, or
+                  sequencing. It does not require a unit of quantity or unit of measure.
+               </td>
+            </tr>
+            <tr valign="top">
+               <td>NumericFormatText</td>
+               <td>format</td>
+               <td>optional</td>
+               <td>xsd:string</td>
+               <td>Whether the number is an integer, decimal, real number or percentage.</td>
+            </tr>
+            <tr>
+               <td valign="top" rowspan="2"><a name="UDT-Percent.Type">Percent. Type<br>(xsd:decimal)</a><br></td>
+               <td valign="top"><b>NumericContent</b></td>
+               <td valign="top" colspan="4">Numeric information that is assigned or is determined by calculation, counting, or
+                  sequencing and is expressed as a percentage. It does not require a unit of quantity
+                  or unit of measure.
+               </td>
+            </tr>
+            <tr valign="top">
+               <td>NumericFormatText</td>
+               <td>format</td>
+               <td>optional</td>
+               <td>xsd:string</td>
+               <td>Whether the number is an integer, decimal, real number or percentage.</td>
+            </tr>
+            <tr>
+               <td valign="top" rowspan="2"><a name="UDT-Rate.Type">Rate. Type<br>(xsd:decimal)</a><br></td>
+               <td valign="top"><b>NumericContent</b></td>
+               <td valign="top" colspan="4">A numeric expression of a rate that is assigned or is determined by calculation, counting,
+                  or sequencing. It does not require a unit of quantity or unit of measure.
+               </td>
+            </tr>
+            <tr valign="top">
+               <td>NumericFormatText</td>
+               <td>format</td>
+               <td>optional</td>
+               <td>xsd:string</td>
+               <td>Whether the number is an integer, decimal, real number or percentage.</td>
+            </tr>
+            <tr>
+               <td valign="top" rowspan="5"><a name="UDT-Quantity.Type">Quantity. Type<br>(xsd:decimal)</a><br></td>
+               <td valign="top"><b>QuantityContent</b></td>
+               <td valign="top" colspan="4">A counted number of non-monetary units, possibly including a fractional part.</td>
+            </tr>
+            <tr valign="top">
+               <td>QuantityUnitCode</td>
+               <td>unitCode</td>
+               <td>optional</td>
+               <td>xsd:normalizedString</td>
+               <td>The unit of the quantity</td>
+            </tr>
+            <tr valign="top">
+               <td>QuantityUnitCodeListAgencyIdentifier</td>
+               <td>unitCodeListAgencyID</td>
+               <td>optional</td>
+               <td>xsd:normalizedString</td>
+               <td>The identification of the agency that maintains the quantity unit code list</td>
+            </tr>
+            <tr valign="top">
+               <td>QuantityUnitCodeListAgencyNameText</td>
+               <td>unitCodeListAgencyName</td>
+               <td>optional</td>
+               <td>xsd:string</td>
+               <td>The name of the agency which maintains the quantity unit code list.</td>
+            </tr>
+            <tr valign="top">
+               <td>QuantityUnitCodeListIdentifier</td>
+               <td>unitCodeListID</td>
+               <td>optional</td>
+               <td>xsd:normalizedString</td>
+               <td>The quantity unit code list.</td>
+            </tr>
+            <tr>
+               <td valign="top" rowspan="3"><a name="UDT-Text.Type">Text. Type<br>(xsd:string)</a><br><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-BusinessScopeCriterion.BusinessScopeCriterionValue.Text" title="Business Scope Criterion. Business Scope Criterion Value. Text">&lt;</a> <a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-ExternalReference.Login.Text" title="External Reference. Login. Text">&lt;</a> <a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-ExternalReference.Password.Text" title="External Reference. Password. Text">&lt;</a> <a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-Payload.Description.Text" title="Payload. Description. Text">&lt;</a> <a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-Payload.InstanceEncryptionMethod.Text" title="Payload. Instance Encryption Method. Text">&lt;</a> <a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-Payload.InstanceHashValue.Text" title="Payload. Instance Hash Value. Text">&lt;</a> 
+               </td>
+               <td valign="top"><b>TextContent</b></td>
+               <td valign="top" colspan="4">A character string (i.e. a finite set of characters), generally in the form of words
+                  of a language.
+               </td>
+            </tr>
+            <tr valign="top">
+               <td>LanguageIdentifier</td>
+               <td>languageID</td>
+               <td>optional</td>
+               <td>xsd:language</td>
+               <td>The identifier of the language used in the content component.</td>
+            </tr>
+            <tr valign="top">
+               <td>LanguageLocaleIdentifier</td>
+               <td>languageLocaleID</td>
+               <td>optional</td>
+               <td>xsd:normalizedString</td>
+               <td>The identification of the locale of the language.</td>
+            </tr>
+            <tr>
+               <td valign="top" rowspan="3"><a name="UDT-Name.Type">Name. Type<br>(xsd:string)</a><br></td>
+               <td valign="top"><b>TextContent</b></td>
+               <td valign="top" colspan="4">A character string that constitutes the distinctive designation of a person, place,
+                  thing or concept.
+               </td>
+            </tr>
+            <tr valign="top">
+               <td>LanguageIdentifier</td>
+               <td>languageID</td>
+               <td>optional</td>
+               <td>xsd:language</td>
+               <td>The identifier of the language used in the content component.</td>
+            </tr>
+            <tr valign="top">
+               <td>LanguageLocaleIdentifier</td>
+               <td>languageLocaleID</td>
+               <td>optional</td>
+               <td>xsd:normalizedString</td>
+               <td>The identification of the locale of the language.</td>
+            </tr>
+         </tbody></table>
+      </div>
+      <h3><a name="Summary">Summary</a></h3>
+      <p><small>Copyright © UN/CEFACT; Copyright © OASIS Open</small></p>
+      <p>
+         Rendering: 20190911-1750z
+      </p>
+      <table summary="Legends">
+         <tbody><tr>
+            <td rowspan="4" valign="top">Legends:</td>
+            <td>Summary Legend:</td>
+            <td valign="top">Name (<i>Model </i><small><u>line</u> Object</small>)
+               <small>TYPE Description</small></td>
+         </tr>
+         <tr>
+            <td rowspan="2" valign="top">Table Legend:</td>
+            <td valign="top"><span style="color:blue;text-decoration:underline">^</span><span> = up-link to the containing ABIE of the BBIE 
+                  or the ASBIE (hover to see ABIE name)</span></td>
+         </tr>
+         <tr>
+            <td valign="top"><span style="color:blue;text-decoration:underline">&lt;</span><span> = back-link to the ASBIE using the ABIE, or 
+                  to the BBIE using the data type (hover to see destination)</span></td>
+         </tr>
+         <tr>
+            <td valign="top"> Line number links: </td>
+            <td valign="top"><span>alternate between summary view and table view</span></td>
+         </tr>
+      </tbody></table><br><h4>AVA</h4><a name="Index_AVA"></a><table summary="AvailabilityEndDateTime - single model">
+         <tbody><tr>
+            <td class="sC" nowrap=""><a name="Summary-ExternalReference.AvailabilityEndDateTime.DateTime"></a>AvailabilityEndDateTime<span class="uT"> (<a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-ExternalReference.AvailabilityEndDateTime.DateTime">11</a> <a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Summary-ExternalReference.Details">ExternalReference</a>)</span></td>
+            <td style="vertical-align:baseline"><small>BBIE</small></td>
+            <td style="vertical-align:baseline"><small>The end date and time when the information is available</small></td>
+         </tr>
+      </tbody></table>
+      <table summary="AvailabilityStartDateTime - single model">
+         <tbody><tr>
+            <td class="sC" nowrap=""><a name="Summary-ExternalReference.AvailabilityStartDateTime.DateTime"></a>AvailabilityStartDateTime<span class="uT"> (<a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-ExternalReference.AvailabilityStartDateTime.DateTime">10</a> <a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Summary-ExternalReference.Details">ExternalReference</a>)</span></td>
+            <td style="vertical-align:baseline"><small>BBIE</small></td>
+            <td style="vertical-align:baseline"><small>The start date and time when the information is available</small></td>
+         </tr>
+      </tbody></table>
+      <h4>BUS</h4><a name="Index_BUS"></a><table summary="BusinessScope - multiple models">
+         <tbody><tr>
+            <td class="sC" nowrap="">BusinessScope</td>
+         </tr>
+      </tbody></table>
+      <table summary="indentation">
+         <tbody><tr>
+            <td>
+               <p>&nbsp;&nbsp;&nbsp;&nbsp;</p>
+            </td>
+            <td valign="top">
+               <table summary="XHE-CommonLibrary-1.0 - multiple use in given model ">
+                  <tbody><tr>
+                     <td style="vertical-align:baseline" nowrap=""><i>XHE-CommonLibrary-1.0</i></td>
+                  </tr>
+               </tbody></table>
+               <table summary="indentation">
+                  <tbody><tr>
+                     <td>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                     </td>
+                     <td valign="top">
+                        <table summary="BusinessScope - each in given model">
+                           <tbody><tr>
+                              <td class="sC uT" nowrap="">(<a name="Summary-BusinessScope.Details" href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-BusinessScope.Details">2</a>)
+                              </td>
+                              <td style="vertical-align:baseline"><small>ABIE</small></td>
+                              <td style="vertical-align:baseline"><small>Documentation of the scope of business or other contextual details useful to understand
+                                    the purpose of the envelope and its contents.</small></td>
+                           </tr>
+                        </tbody></table>
+                        <table summary="BusinessScope - each in given model">
+                           <tbody><tr>
+                              <td class="sC uT" nowrap="">(<a name="Summary-Header.BusinessScope" href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-Header.BusinessScope">18</a> <a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Summary-Header.Details">Header</a>)
+                              </td>
+                              <td style="vertical-align:baseline"><small>ASBIE</small></td>
+                              <td style="vertical-align:baseline"><small>Documentation of the scope of business or other contextual details useful to understand
+                                    the purpose of the envelope and its contents.</small></td>
+                           </tr>
+                        </tbody></table>
+                     </td>
+                  </tr>
+               </tbody></table>
+            </td>
+         </tr>
+      </tbody></table>
+      <table summary="BusinessScopeCriterion - multiple models">
+         <tbody><tr>
+            <td class="sC" nowrap="">BusinessScopeCriterion</td>
+         </tr>
+      </tbody></table>
+      <table summary="indentation">
+         <tbody><tr>
+            <td>
+               <p>&nbsp;&nbsp;&nbsp;&nbsp;</p>
+            </td>
+            <td valign="top">
+               <table summary="XHE-CommonLibrary-1.0 - multiple use in given model ">
+                  <tbody><tr>
+                     <td style="vertical-align:baseline" nowrap=""><i>XHE-CommonLibrary-1.0</i></td>
+                  </tr>
+               </tbody></table>
+               <table summary="indentation">
+                  <tbody><tr>
+                     <td>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                     </td>
+                     <td valign="top">
+                        <table summary="BusinessScopeCriterion - each in given model">
+                           <tbody><tr>
+                              <td class="sC uT" nowrap="">(<a name="Summary-BusinessScopeCriterion.Details" href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-BusinessScopeCriterion.Details">5</a>)
+                              </td>
+                              <td style="vertical-align:baseline"><small>ABIE</small></td>
+                              <td style="vertical-align:baseline"><small>Documentation of one aspect of the scope of business or other contextual detail useful
+                                    to understand the purpose of the envelope and its contents.</small></td>
+                           </tr>
+                        </tbody></table>
+                        <table summary="BusinessScopeCriterion - each in given model">
+                           <tbody><tr>
+                              <td class="sC uT" nowrap="">(<a name="Summary-BusinessScope.BusinessScopeCriterion" href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-BusinessScope.BusinessScopeCriterion">3</a> <a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Summary-BusinessScope.Details">BusinessScope</a>)
+                              </td>
+                              <td style="vertical-align:baseline"><small>ASBIE</small></td>
+                              <td style="vertical-align:baseline"><small>Internal specification of the scope and/or context of business.</small></td>
+                           </tr>
+                        </tbody></table>
+                     </td>
+                  </tr>
+               </tbody></table>
+            </td>
+         </tr>
+      </tbody></table>
+      <table summary="BusinessScopeCriterionTypeCode - single model">
+         <tbody><tr>
+            <td class="sC" nowrap=""><a name="Summary-BusinessScopeCriterion.BusinessScopeCriterionType.Code"></a>BusinessScopeCriterionTypeCode<span class="uT"> (<a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-BusinessScopeCriterion.BusinessScopeCriterionType.Code">6</a> <a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Summary-BusinessScopeCriterion.Details">BusinessScopeCriterion</a>)</span></td>
+            <td style="vertical-align:baseline"><small>BBIE</small></td>
+            <td style="vertical-align:baseline"><small>Identifies the property of the scope by a code.</small></td>
+         </tr>
+      </tbody></table>
+      <table summary="BusinessScopeCriterionValue - single model">
+         <tbody><tr>
+            <td class="sC" nowrap=""><a name="Summary-BusinessScopeCriterion.BusinessScopeCriterionValue.Text"></a>BusinessScopeCriterionValue<span class="uT"> (<a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-BusinessScopeCriterion.BusinessScopeCriterionValue.Text">7</a> <a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Summary-BusinessScopeCriterion.Details">BusinessScopeCriterion</a>)</span></td>
+            <td style="vertical-align:baseline"><small>BBIE</small></td>
+            <td style="vertical-align:baseline"><small>Specifies the value of the given property.</small></td>
+         </tr>
+      </tbody></table>
+      <h4>CON</h4><a name="Index_CON"></a><table summary="ContentTypeCode - single model">
+         <tbody><tr>
+            <td class="sC" nowrap=""><a name="Summary-Payload.ContentTypeCode.Code"></a>ContentTypeCode<span class="uT"> (<a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-Payload.ContentTypeCode.Code">29</a> <a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Summary-Payload.Details">Payload</a>)</span></td>
+            <td style="vertical-align:baseline"><small>BBIE</small></td>
+            <td style="vertical-align:baseline"><small>Identifies the file format or octet representation of the payload instance.</small></td>
+         </tr>
+      </tbody></table>
+      <h4>CRE</h4><a name="Index_CRE"></a><table summary="CreationDateTime - single model">
+         <tbody><tr>
+            <td class="sC" nowrap=""><a name="Summary-Header.CreationDateTime.DateTime"></a>CreationDateTime<span class="uT"> (<a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-Header.CreationDateTime.DateTime">17</a> <a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Summary-Header.Details">Header</a>)</span></td>
+            <td style="vertical-align:baseline"><small>BBIE</small></td>
+            <td style="vertical-align:baseline"><small>Date and time when the envelope was created.</small></td>
+         </tr>
+      </tbody></table>
+      <h4>CUS</h4><a name="Index_CUS"></a><table summary="CustomizationID - multiple models">
+         <tbody><tr>
+            <td class="sC" nowrap="">CustomizationID</td>
+         </tr>
+      </tbody></table>
+      <table summary="indentation">
+         <tbody><tr>
+            <td>
+               <p>&nbsp;&nbsp;&nbsp;&nbsp;</p>
+            </td>
+            <td valign="top">
+               <table summary="ExchangeHeaderEnvelope - single use in given model">
+                  <tbody><tr>
+                     <td class="sC" nowrap=""><i>ExchangeHeaderEnvelope</i><span class="ut"> (<a name="Summary-XHE.CustomizationIdentifier.Identifier" href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-XHE.CustomizationIdentifier.Identifier">4</a> <a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Summary-XHE.Details">XHE</a>)</span></td>
+                     <td style="vertical-align:baseline"><small>BBIE</small></td>
+                     <td style="vertical-align:baseline"><small>The identification of a customization or use of the envelope model.</small></td>
+                  </tr>
+               </tbody></table>
+               <table summary="XHE-CommonLibrary-1.0 - single use in given model">
+                  <tbody><tr>
+                     <td class="sC" nowrap=""><i>XHE-CommonLibrary-1.0</i><span class="ut"> (<a name="Summary-Payload.CustomizationIdentifier.Identifier" href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-Payload.CustomizationIdentifier.Identifier">30</a> <a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Summary-Payload.Details">Payload</a>)</span></td>
+                     <td style="vertical-align:baseline"><small>BBIE</small></td>
+                     <td style="vertical-align:baseline"><small>Identifies the customization that applies to the payload instance.</small></td>
+                  </tr>
+               </tbody></table>
+            </td>
+         </tr>
+      </tbody></table>
+      <h4>DES</h4><a name="Index_DES"></a><table summary="Description - single model">
+         <tbody><tr>
+            <td class="sC" nowrap=""><a name="Summary-Payload.Description.Text"></a>Description<span class="uT"> (<a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-Payload.Description.Text">27</a> <a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Summary-Payload.Details">Payload</a>)</span></td>
+            <td style="vertical-align:baseline"><small>BBIE</small></td>
+            <td style="vertical-align:baseline"><small>Text description of the payload instance.</small></td>
+         </tr>
+      </tbody></table>
+      <h4>DOC</h4><a name="Index_DOC"></a><table summary="DocumentTypeCode - single model">
+         <tbody><tr>
+            <td class="sC" nowrap=""><a name="Summary-Payload.DocumentTypeCode.Code"></a>DocumentTypeCode<span class="uT"> (<a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-Payload.DocumentTypeCode.Code">28</a> <a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Summary-Payload.Details">Payload</a>)</span></td>
+            <td style="vertical-align:baseline"><small>BBIE</small></td>
+            <td style="vertical-align:baseline"><small>Identifies the abstract archetype of the payload instance.</small></td>
+         </tr>
+      </tbody></table>
+      <h4>EXT</h4><a name="Index_EXT"></a><table summary="ExternalReference - multiple models">
+         <tbody><tr>
+            <td class="sC" nowrap="">ExternalReference</td>
+         </tr>
+      </tbody></table>
+      <table summary="indentation">
+         <tbody><tr>
+            <td>
+               <p>&nbsp;&nbsp;&nbsp;&nbsp;</p>
+            </td>
+            <td valign="top">
+               <table summary="XHE-CommonLibrary-1.0 - multiple use in given model ">
+                  <tbody><tr>
+                     <td style="vertical-align:baseline" nowrap=""><i>XHE-CommonLibrary-1.0</i></td>
+                  </tr>
+               </tbody></table>
+               <table summary="indentation">
+                  <tbody><tr>
+                     <td>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                     </td>
+                     <td valign="top">
+                        <table summary="ExternalReference - each in given model">
+                           <tbody><tr>
+                              <td class="sC uT" nowrap="">(<a name="Summary-ExternalReference.Details" href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-ExternalReference.Details">8</a>)
+                              </td>
+                              <td style="vertical-align:baseline"><small>ABIE</small></td>
+                              <td style="vertical-align:baseline"><small>A reference to a business case, document or other issues which are relevant to the
+                                    handling of the envelope.</small><small><br><span style="white-space:nowrap"><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Summary-Payload.InstanceDecryptionInformation_ExternalReference.ExternalReference">InstanceDecryptionInformationExternalReference</a> (<a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-Payload.InstanceDecryptionInformation_ExternalReference.ExternalReference">39</a> <a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Summary-Payload.Details">Payload</a>)</span> <span style="white-space:nowrap"><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Summary-Payload.InstanceDecryptionKey_ExternalReference.ExternalReference">InstanceDecryptionKeyExternalReference</a> (<a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-Payload.InstanceDecryptionKey_ExternalReference.ExternalReference">40</a> <a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Summary-Payload.Details">Payload</a>)</span> <span style="white-space:nowrap"><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Summary-Payload.Payload_ExternalReference.ExternalReference">PayloadExternalReference</a> (<a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-Payload.Payload_ExternalReference.ExternalReference">42</a> <a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Summary-Payload.Details">Payload</a>)</span> <span style="white-space:nowrap"><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Summary-Payload.Relevant_ExternalReference.ExternalReference">RelevantExternalReference</a> (<a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-Payload.Relevant_ExternalReference.ExternalReference">41</a> <a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Summary-Payload.Details">Payload</a>)</span></small></td>
+                           </tr>
+                        </tbody></table>
+                        <table summary="ExternalReference - each in given model">
+                           <tbody><tr>
+                              <td class="sC uT" nowrap="">(<a name="Summary-BusinessScope.ExternalReference" href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-BusinessScope.ExternalReference">4</a> <a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Summary-BusinessScope.Details">BusinessScope</a>)
+                              </td>
+                              <td style="vertical-align:baseline"><small>ASBIE</small></td>
+                              <td style="vertical-align:baseline"><small>External documentation of the scope and/or context of business.</small></td>
+                           </tr>
+                        </tbody></table>
+                     </td>
+                  </tr>
+               </tbody></table>
+            </td>
+         </tr>
+      </tbody></table>
+      <h4>FRO</h4><a name="Index_FRO"></a><table summary="FromParty - single model">
+         <tbody><tr>
+            <td class="sC" nowrap=""><a name="Summary-Header.From_Party.Party"></a>FromParty<span class="uT"> (<a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-Header.From_Party.Party">19</a> <a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Summary-Header.Details">Header</a>)</span></td>
+            <td style="vertical-align:baseline"><small><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Summary-Party.Details">ASBIE (Party)</a></small></td>
+            <td style="vertical-align:baseline"><small>Information about the party that originated the envelope.</small></td>
+         </tr>
+      </tbody></table>
+      <h4>HAN</h4><a name="Index_HAN"></a><table summary="HandlingServiceID - single model">
+         <tbody><tr>
+            <td class="sC" nowrap=""><a name="Summary-Payload.HandlingServiceIdentifier.Identifier"></a>HandlingServiceID<span class="uT"> (<a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-Payload.HandlingServiceIdentifier.Identifier">33</a> <a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Summary-Payload.Details">Payload</a>)</span></td>
+            <td style="vertical-align:baseline"><small>BBIE</small></td>
+            <td style="vertical-align:baseline"><small>Identifies the service that should process the payload instance.</small></td>
+         </tr>
+      </tbody></table>
+      <h4>HEA</h4><a name="Index_HEA"></a><table summary="Header - multiple models">
+         <tbody><tr>
+            <td class="sC" nowrap="">Header</td>
+         </tr>
+      </tbody></table>
+      <table summary="indentation">
+         <tbody><tr>
+            <td>
+               <p>&nbsp;&nbsp;&nbsp;&nbsp;</p>
+            </td>
+            <td valign="top">
+               <table summary="ExchangeHeaderEnvelope - single use in given model">
+                  <tbody><tr>
+                     <td class="sC" nowrap=""><i>ExchangeHeaderEnvelope</i><span class="ut"> (<a name="Summary-XHE.Header" href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-XHE.Header">7</a> <a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Summary-XHE.Details">XHE</a>)</span></td>
+                     <td style="vertical-align:baseline"><small>ASBIE</small></td>
+                     <td style="vertical-align:baseline"><small>Information relevant to the header/envelope itself, independent of the information
+                           it contains or references.</small></td>
+                  </tr>
+               </tbody></table>
+               <table summary="XHE-CommonLibrary-1.0 - single use in given model">
+                  <tbody><tr>
+                     <td class="sC" nowrap=""><i>XHE-CommonLibrary-1.0</i><span class="ut"> (<a name="Summary-Header.Details" href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-Header.Details">14</a>)</span></td>
+                     <td style="vertical-align:baseline"><small>ABIE</small></td>
+                     <td style="vertical-align:baseline"><small>Information relevant to the header/envelope itself, independent of the information
+                           it contains or references.</small></td>
+                  </tr>
+               </tbody></table>
+            </td>
+         </tr>
+      </tbody></table>
+      <h4>ID</h4><a name="Index_ID"></a><table summary="ID - multiple models">
+         <tbody><tr>
+            <td class="sC" nowrap="">ID</td>
+         </tr>
+      </tbody></table>
+      <table summary="indentation">
+         <tbody><tr>
+            <td>
+               <p>&nbsp;&nbsp;&nbsp;&nbsp;</p>
+            </td>
+            <td valign="top">
+               <table summary="XHE-CommonLibrary-1.0 - multiple use in given model ">
+                  <tbody><tr>
+                     <td style="vertical-align:baseline" nowrap=""><i>XHE-CommonLibrary-1.0</i></td>
+                  </tr>
+               </tbody></table>
+               <table summary="indentation">
+                  <tbody><tr>
+                     <td>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                     </td>
+                     <td valign="top">
+                        <table summary="ID - each in given model">
+                           <tbody><tr>
+                              <td class="sC uT" nowrap="">(<a name="Summary-ExternalReference.Identifier" href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-ExternalReference.Identifier">9</a> <a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Summary-ExternalReference.Details">ExternalReference</a>)
+                              </td>
+                              <td style="vertical-align:baseline"><small>BBIE</small></td>
+                              <td style="vertical-align:baseline"><small>Identifies the referenced object by some identifier or URI.</small></td>
+                           </tr>
+                        </tbody></table>
+                        <table summary="ID - each in given model">
+                           <tbody><tr>
+                              <td class="sC uT" nowrap="">(<a name="Summary-Header.Identifier" href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-Header.Identifier">15</a> <a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Summary-Header.Details">Header</a>)
+                              </td>
+                              <td style="vertical-align:baseline"><small>BBIE</small></td>
+                              <td style="vertical-align:baseline"><small>Unique ID of the envelope for tracking purposes.</small></td>
+                           </tr>
+                        </tbody></table>
+                        <table summary="ID - each in given model">
+                           <tbody><tr>
+                              <td class="sC uT" nowrap="">(<a name="Summary-PartyIdentification.Identifier" href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-PartyIdentification.Identifier">24</a> <a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Summary-PartyIdentification.Details">PartyIdentification</a>)
+                              </td>
+                              <td style="vertical-align:baseline"><small>BBIE</small></td>
+                              <td style="vertical-align:baseline"><small>An unambiguous identification of a party.</small></td>
+                           </tr>
+                        </tbody></table>
+                        <table summary="ID - each in given model">
+                           <tbody><tr>
+                              <td class="sC uT" nowrap="">(<a name="Summary-Payload.Identifier" href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-Payload.Identifier">26</a> <a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Summary-Payload.Details">Payload</a>)
+                              </td>
+                              <td style="vertical-align:baseline"><small>BBIE</small></td>
+                              <td style="vertical-align:baseline"><small>A unique identification of this payload instance contained within the envelope.</small></td>
+                           </tr>
+                        </tbody></table>
+                     </td>
+                  </tr>
+               </tbody></table>
+            </td>
+         </tr>
+      </tbody></table>
+      <h4>INS</h4><a name="Index_INS"></a><table summary="InstanceDecryptionInformationExternalReference - single model">
+         <tbody><tr>
+            <td class="sC" nowrap=""><a name="Summary-Payload.InstanceDecryptionInformation_ExternalReference.ExternalReference"></a>InstanceDecryptionInformationExternalReference<span class="uT"> (<a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-Payload.InstanceDecryptionInformation_ExternalReference.ExternalReference">39</a> <a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Summary-Payload.Details">Payload</a>)</span></td>
+            <td style="vertical-align:baseline"><small><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Summary-ExternalReference.Details">ASBIE (ExternalReference)</a></small></td>
+            <td style="vertical-align:baseline"><small>Decryption information that is available external to the envelope.</small></td>
+         </tr>
+      </tbody></table>
+      <table summary="InstanceDecryptionKeyExternalReference - single model">
+         <tbody><tr>
+            <td class="sC" nowrap=""><a name="Summary-Payload.InstanceDecryptionKey_ExternalReference.ExternalReference"></a>InstanceDecryptionKeyExternalReference<span class="uT"> (<a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-Payload.InstanceDecryptionKey_ExternalReference.ExternalReference">40</a> <a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Summary-Payload.Details">Payload</a>)</span></td>
+            <td style="vertical-align:baseline"><small><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Summary-ExternalReference.Details">ASBIE (ExternalReference)</a></small></td>
+            <td style="vertical-align:baseline"><small>Decryption key data that is available external to the envelope.</small></td>
+         </tr>
+      </tbody></table>
+      <table summary="InstanceEncryptionIndicator - single model">
+         <tbody><tr>
+            <td class="sC" nowrap=""><a name="Summary-Payload.InstanceEncryptionIndicator.Indicator"></a>InstanceEncryptionIndicator<span class="uT"> (<a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-Payload.InstanceEncryptionIndicator.Indicator">36</a> <a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Summary-Payload.Details">Payload</a>)</span></td>
+            <td style="vertical-align:baseline"><small>BBIE</small></td>
+            <td style="vertical-align:baseline"><small>Indicator stating whether the payload instance is encrypted or not.</small></td>
+         </tr>
+      </tbody></table>
+      <table summary="InstanceEncryptionMethod - single model">
+         <tbody><tr>
+            <td class="sC" nowrap=""><a name="Summary-Payload.InstanceEncryptionMethod.Text"></a>InstanceEncryptionMethod<span class="uT"> (<a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-Payload.InstanceEncryptionMethod.Text">37</a> <a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Summary-Payload.Details">Payload</a>)</span></td>
+            <td style="vertical-align:baseline"><small>BBIE</small></td>
+            <td style="vertical-align:baseline"><small>Method used to encrypt the payload instance.</small></td>
+         </tr>
+      </tbody></table>
+      <table summary="InstanceHashValue - single model">
+         <tbody><tr>
+            <td class="sC" nowrap=""><a name="Summary-Payload.InstanceHashValue.Text"></a>InstanceHashValue<span class="uT"> (<a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-Payload.InstanceHashValue.Text">38</a> <a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Summary-Payload.Details">Payload</a>)</span></td>
+            <td style="vertical-align:baseline"><small>BBIE</small></td>
+            <td style="vertical-align:baseline"><small>SHA-256 hash total of the unencrypted payload instance.</small></td>
+         </tr>
+      </tbody></table>
+      <h4>LOG</h4><a name="Index_LOG"></a><table summary="Login - single model">
+         <tbody><tr>
+            <td class="sC" nowrap=""><a name="Summary-ExternalReference.Login.Text"></a>Login<span class="uT"> (<a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-ExternalReference.Login.Text">12</a> <a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Summary-ExternalReference.Details">ExternalReference</a>)</span></td>
+            <td style="vertical-align:baseline"><small>BBIE</small></td>
+            <td style="vertical-align:baseline"><small>Text describing any login details to access the information.</small></td>
+         </tr>
+      </tbody></table>
+      <h4>PAR</h4><a name="Index_PAR"></a><table summary="Party - single model">
+         <tbody><tr>
+            <td class="sC" nowrap=""><a name="Summary-Party.Details"></a>Party<span class="uT"> (<a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-Party.Details">21</a>)</span></td>
+            <td style="vertical-align:baseline"><small>ABIE</small></td>
+            <td style="vertical-align:baseline"><small>The information about a party.</small><small><br><span style="white-space:nowrap"><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Summary-Header.From_Party.Party">FromParty</a> (<a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-Header.From_Party.Party">19</a> <a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Summary-Header.Details">Header</a>)</span> <span style="white-space:nowrap"><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Summary-Header.To_Party.Party">ToParty</a> (<a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-Header.To_Party.Party">20</a> <a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Summary-Header.Details">Header</a>)</span></small></td>
+         </tr>
+      </tbody></table>
+      <table summary="PartyIdentification - multiple models">
+         <tbody><tr>
+            <td class="sC" nowrap="">PartyIdentification</td>
+         </tr>
+      </tbody></table>
+      <table summary="indentation">
+         <tbody><tr>
+            <td>
+               <p>&nbsp;&nbsp;&nbsp;&nbsp;</p>
+            </td>
+            <td valign="top">
+               <table summary="XHE-CommonLibrary-1.0 - multiple use in given model ">
+                  <tbody><tr>
+                     <td style="vertical-align:baseline" nowrap=""><i>XHE-CommonLibrary-1.0</i></td>
+                  </tr>
+               </tbody></table>
+               <table summary="indentation">
+                  <tbody><tr>
+                     <td>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                     </td>
+                     <td valign="top">
+                        <table summary="PartyIdentification - each in given model">
+                           <tbody><tr>
+                              <td class="sC uT" nowrap="">(<a name="Summary-PartyIdentification.Details" href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-PartyIdentification.Details">23</a>)
+                              </td>
+                              <td style="vertical-align:baseline"><small>ABIE</small></td>
+                              <td style="vertical-align:baseline"><small>The information about a party's identification.</small></td>
+                           </tr>
+                        </tbody></table>
+                        <table summary="PartyIdentification - each in given model">
+                           <tbody><tr>
+                              <td class="sC uT" nowrap="">(<a name="Summary-Party.PartyIdentification" href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-Party.PartyIdentification">22</a> <a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Summary-Party.Details">Party</a>)
+                              </td>
+                              <td style="vertical-align:baseline"><small>ASBIE</small></td>
+                              <td style="vertical-align:baseline"><small>Unambiguous identifications of a party.</small></td>
+                           </tr>
+                        </tbody></table>
+                     </td>
+                  </tr>
+               </tbody></table>
+            </td>
+         </tr>
+      </tbody></table>
+      <h4>PAS</h4><a name="Index_PAS"></a><table summary="Password - single model">
+         <tbody><tr>
+            <td class="sC" nowrap=""><a name="Summary-ExternalReference.Password.Text"></a>Password<span class="uT"> (<a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-ExternalReference.Password.Text">13</a> <a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Summary-ExternalReference.Details">ExternalReference</a>)</span></td>
+            <td style="vertical-align:baseline"><small>BBIE</small></td>
+            <td style="vertical-align:baseline"><small>A password needed to access the information.</small></td>
+         </tr>
+      </tbody></table>
+      <h4>PAY</h4><a name="Index_PAY"></a><table summary="Payload - multiple models">
+         <tbody><tr>
+            <td class="sC" nowrap="">Payload</td>
+         </tr>
+      </tbody></table>
+      <table summary="indentation">
+         <tbody><tr>
+            <td>
+               <p>&nbsp;&nbsp;&nbsp;&nbsp;</p>
+            </td>
+            <td valign="top">
+               <table summary="XHE-CommonLibrary-1.0 - multiple use in given model ">
+                  <tbody><tr>
+                     <td style="vertical-align:baseline" nowrap=""><i>XHE-CommonLibrary-1.0</i></td>
+                  </tr>
+               </tbody></table>
+               <table summary="indentation">
+                  <tbody><tr>
+                     <td>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                     </td>
+                     <td valign="top">
+                        <table summary="Payload - each in given model">
+                           <tbody><tr>
+                              <td class="sC uT" nowrap="">(<a name="Summary-Payload.Details" href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-Payload.Details">25</a>)
+                              </td>
+                              <td style="vertical-align:baseline"><small>ABIE</small></td>
+                              <td style="vertical-align:baseline"><small>The actual payload instance, such as a single invoice, conveyed within the envelope.</small></td>
+                           </tr>
+                        </tbody></table>
+                        <table summary="Payload - each in given model">
+                           <tbody><tr>
+                              <td class="sC uT" nowrap="">(<a name="Summary-Payloads.Payload" href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-Payloads.Payload">44</a> <a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Summary-Payloads.Details">Payloads</a>)
+                              </td>
+                              <td style="vertical-align:baseline"><small>ASBIE</small></td>
+                              <td style="vertical-align:baseline"><small>An individual payload within the set of payloads.</small></td>
+                           </tr>
+                        </tbody></table>
+                     </td>
+                  </tr>
+               </tbody></table>
+            </td>
+         </tr>
+      </tbody></table>
+      <table summary="PayloadExternalReference - single model">
+         <tbody><tr>
+            <td class="sC" nowrap=""><a name="Summary-Payload.Payload_ExternalReference.ExternalReference"></a>PayloadExternalReference<span class="uT"> (<a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-Payload.Payload_ExternalReference.ExternalReference">42</a> <a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Summary-Payload.Details">Payload</a>)</span></td>
+            <td style="vertical-align:baseline"><small><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Summary-ExternalReference.Details">ASBIE (ExternalReference)</a></small></td>
+            <td style="vertical-align:baseline"><small>The reference to the payload when it is not included within the envelope.</small></td>
+         </tr>
+      </tbody></table>
+      <table summary="Payloads - multiple models">
+         <tbody><tr>
+            <td class="sC" nowrap="">Payloads</td>
+         </tr>
+      </tbody></table>
+      <table summary="indentation">
+         <tbody><tr>
+            <td>
+               <p>&nbsp;&nbsp;&nbsp;&nbsp;</p>
+            </td>
+            <td valign="top">
+               <table summary="ExchangeHeaderEnvelope - single use in given model">
+                  <tbody><tr>
+                     <td class="sC" nowrap=""><i>ExchangeHeaderEnvelope</i><span class="ut"> (<a name="Summary-XHE.Payloads" href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-XHE.Payloads">8</a> <a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Summary-XHE.Details">XHE</a>)</span></td>
+                     <td style="vertical-align:baseline"><small>ASBIE</small></td>
+                     <td style="vertical-align:baseline"><small>The set of payloads.</small></td>
+                  </tr>
+               </tbody></table>
+               <table summary="XHE-CommonLibrary-1.0 - single use in given model">
+                  <tbody><tr>
+                     <td class="sC" nowrap=""><i>XHE-CommonLibrary-1.0</i><span class="ut"> (<a name="Summary-Payloads.Details" href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-Payloads.Details">43</a>)</span></td>
+                     <td style="vertical-align:baseline"><small>ABIE</small></td>
+                     <td style="vertical-align:baseline"><small>The complete set of payloads.</small></td>
+                  </tr>
+               </tbody></table>
+            </td>
+         </tr>
+      </tbody></table>
+      <h4>PRO</h4><a name="Index_PRO"></a><table summary="ProfileExecutionID - multiple models">
+         <tbody><tr>
+            <td class="sC" nowrap="">ProfileExecutionID</td>
+         </tr>
+      </tbody></table>
+      <table summary="indentation">
+         <tbody><tr>
+            <td>
+               <p>&nbsp;&nbsp;&nbsp;&nbsp;</p>
+            </td>
+            <td valign="top">
+               <table summary="ExchangeHeaderEnvelope - single use in given model">
+                  <tbody><tr>
+                     <td class="sC" nowrap=""><i>ExchangeHeaderEnvelope</i><span class="ut"> (<a name="Summary-XHE.ProfileExecutionIdentifier.Identifier" href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-XHE.ProfileExecutionIdentifier.Identifier">6</a> <a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Summary-XHE.Details">XHE</a>)</span></td>
+                     <td style="vertical-align:baseline"><small>BBIE</small></td>
+                     <td style="vertical-align:baseline"><small>The identification of a particular instance of using the given profile.</small></td>
+                  </tr>
+               </tbody></table>
+               <table summary="XHE-CommonLibrary-1.0 - single use in given model">
+                  <tbody><tr>
+                     <td class="sC" nowrap=""><i>XHE-CommonLibrary-1.0</i><span class="ut"> (<a name="Summary-Payload.ProfileExecutionIdentifier.Identifier" href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-Payload.ProfileExecutionIdentifier.Identifier">32</a> <a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Summary-Payload.Details">Payload</a>)</span></td>
+                     <td style="vertical-align:baseline"><small>BBIE</small></td>
+                     <td style="vertical-align:baseline"><small>Identifies the particular instance of an executing profile that the payload instance
+                           is part of.</small></td>
+                  </tr>
+               </tbody></table>
+            </td>
+         </tr>
+      </tbody></table>
+      <table summary="ProfileID - multiple models">
+         <tbody><tr>
+            <td class="sC" nowrap="">ProfileID</td>
+         </tr>
+      </tbody></table>
+      <table summary="indentation">
+         <tbody><tr>
+            <td>
+               <p>&nbsp;&nbsp;&nbsp;&nbsp;</p>
+            </td>
+            <td valign="top">
+               <table summary="ExchangeHeaderEnvelope - single use in given model">
+                  <tbody><tr>
+                     <td class="sC" nowrap=""><i>ExchangeHeaderEnvelope</i><span class="ut"> (<a name="Summary-XHE.ProfileIdentifier.Identifier" href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-XHE.ProfileIdentifier.Identifier">5</a> <a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Summary-XHE.Details">XHE</a>)</span></td>
+                     <td style="vertical-align:baseline"><small>BBIE</small></td>
+                     <td style="vertical-align:baseline"><small>The identification of a specific profile found within the customization.</small></td>
+                  </tr>
+               </tbody></table>
+               <table summary="XHE-CommonLibrary-1.0 - single use in given model">
+                  <tbody><tr>
+                     <td class="sC" nowrap=""><i>XHE-CommonLibrary-1.0</i><span class="ut"> (<a name="Summary-Payload.ProfileIdentifier.Identifier" href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-Payload.ProfileIdentifier.Identifier">31</a> <a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Summary-Payload.Details">Payload</a>)</span></td>
+                     <td style="vertical-align:baseline"><small>BBIE</small></td>
+                     <td style="vertical-align:baseline"><small>Identifies the profile that the payload instance is part of.</small></td>
+                  </tr>
+               </tbody></table>
+            </td>
+         </tr>
+      </tbody></table>
+      <h4>REL</h4><a name="Index_REL"></a><table summary="RelevantExternalReference - single model">
+         <tbody><tr>
+            <td class="sC" nowrap=""><a name="Summary-Payload.Relevant_ExternalReference.ExternalReference"></a>RelevantExternalReference<span class="uT"> (<a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-Payload.Relevant_ExternalReference.ExternalReference">41</a> <a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Summary-Payload.Details">Payload</a>)</span></td>
+            <td style="vertical-align:baseline"><small><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Summary-ExternalReference.Details">ASBIE (ExternalReference)</a></small></td>
+            <td style="vertical-align:baseline"><small>A reference to a business case, document or other issues which are relevant to the
+                  handling of the payload.</small></td>
+         </tr>
+      </tbody></table>
+      <h4>TOP</h4><a name="Index_TOP"></a><table summary="ToParty - single model">
+         <tbody><tr>
+            <td class="sC" nowrap=""><a name="Summary-Header.To_Party.Party"></a>ToParty<span class="uT"> (<a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-Header.To_Party.Party">20</a> <a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Summary-Header.Details">Header</a>)</span></td>
+            <td style="vertical-align:baseline"><small><a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Summary-Party.Details">ASBIE (Party)</a></small></td>
+            <td style="vertical-align:baseline"><small>Information about the parties to receive the envelope.</small></td>
+         </tr>
+      </tbody></table>
+      <h4>UUI</h4><a name="Index_UUI"></a><table summary="UUID - single model">
+         <tbody><tr>
+            <td class="sC" nowrap=""><a name="Summary-Header.UUID.Identifier"></a>UUID<span class="uT"> (<a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-Header.UUID.Identifier">16</a> <a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Summary-Header.Details">Header</a>)</span></td>
+            <td style="vertical-align:baseline"><small>BBIE</small></td>
+            <td style="vertical-align:baseline"><small>An additional identifier of the envelope.</small></td>
+         </tr>
+      </tbody></table>
+      <h4>VAL</h4><a name="Index_VAL"></a><table summary="ValidationTypeCode - single model">
+         <tbody><tr>
+            <td class="sC" nowrap=""><a name="Summary-Payload.ValidationTypeCode.Code"></a>ValidationTypeCode<span class="uT"> (<a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-Payload.ValidationTypeCode.Code">34</a> <a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Summary-Payload.Details">Payload</a>)</span></td>
+            <td style="vertical-align:baseline"><small>BBIE</small></td>
+            <td style="vertical-align:baseline"><small>The type of the payload instance, used for the task of verifying that the grammar
+                  is valid.</small></td>
+         </tr>
+      </tbody></table>
+      <table summary="ValidationVersionID - single model">
+         <tbody><tr>
+            <td class="sC" nowrap=""><a name="Summary-Payload.ValidationVersionIdentifier.Identifier"></a>ValidationVersionID<span class="uT"> (<a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-Payload.ValidationVersionIdentifier.Identifier">35</a> <a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Summary-Payload.Details">Payload</a>)</span></td>
+            <td style="vertical-align:baseline"><small>BBIE</small></td>
+            <td style="vertical-align:baseline"><small>Descriptor containing version information of the validation type.</small></td>
+         </tr>
+      </tbody></table>
+      <h4>XHE</h4><a name="Index_XHE"></a><table summary="XHE - single model">
+         <tbody><tr>
+            <td class="sC" nowrap=""><a name="Summary-XHE.Details"></a>XHE<span class="uT"> (<a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-XHE.Details">2</a>)</span></td>
+            <td style="vertical-align:baseline"><small>ABIE</small></td>
+            <td style="vertical-align:baseline"><small>The Exchange Header Envelope</small></td>
+         </tr>
+      </tbody></table>
+      <table summary="XHEVersionID - single model">
+         <tbody><tr>
+            <td class="sC" nowrap=""><a name="Summary-XHE.XHEVersionIdentifier.Identifier"></a>XHEVersionID<span class="uT"> (<a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Table-XHE.XHEVersionIdentifier.Identifier">3</a> <a href="https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/mod/XHE-Model-1.0.html#Summary-XHE.Details">XHE</a>)</span></td>
+            <td style="vertical-align:baseline"><small>BBIE</small></td>
+            <td style="vertical-align:baseline"><small>The version of the specific envelope model in use.</small></td>
+         </tr>
+      </tbody></table><pre>
+
+
+
+</pre><small>END</small><pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</pre>
+</body></html>

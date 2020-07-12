@@ -1,0 +1,1029 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Library:           Exchange Header Envelope (XHE) 1.0 CS02
+                     http://www.unece.org/cefact
+                     https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/
+  Release Date:      05 September 2019
+  Module:            xsd/fragments/XHE-AggregateComponents-1.0.xsd
+  Generated on:      2019-09-11 17:48z
+  Copyright (c) UN/CEFACT 2019. All Rights Reserved.
+  Copyright (c) OASIS Open 2019. All Rights Reserved.
+-->
+<xsd:schema xmlns="oasis-cefact-xhe-1.0-AggregateComponents"
+            xmlns:xha="oasis-cefact-xhe-1.0-AggregateComponents"
+            xmlns:xhb="oasis-cefact-xhe-1.0-BasicComponents"
+            xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            xmlns:ccts="urn:un:unece:uncefact:documentation:2"
+            targetNamespace="oasis-cefact-xhe-1.0-AggregateComponents"
+            elementFormDefault="qualified"
+            attributeFormDefault="unqualified"
+            version="1.1">
+   <!-- ===== Imports ===== -->
+   <xsd:import namespace="oasis-cefact-xhe-1.0-BasicComponents"
+               schemaLocation="XHE-BasicComponents-1.0.xsd"/>
+    <!-- ==== Incorporate any desired constraints on the payload -->
+    <xsd:include schemaLocation="XHE-PayloadContentDataType-1.0.xsd"/>
+        
+   <!-- ===== Element Declarations ===== -->
+   <xsd:element name="BusinessScope" type="BusinessScopeType"/>
+   <xsd:element name="BusinessScopeCriterion" type="BusinessScopeCriterionType"/>
+   <xsd:element name="ExternalReference" type="ExternalReferenceType"/>
+   <xsd:element name="FromParty" type="PartyType"/>
+   <xsd:element name="Header" type="HeaderType"/>
+   <xsd:element name="InstanceDecryptionInformationExternalReference"
+                type="ExternalReferenceType"/>
+   <xsd:element name="InstanceDecryptionKeyExternalReference"
+                type="ExternalReferenceType"/>
+   <xsd:element name="Party" type="PartyType"/>
+   <xsd:element name="PartyIdentification" type="PartyIdentificationType"/>
+   <xsd:element name="Payload" type="PayloadType"/>
+   <xsd:element name="PayloadExternalReference" type="ExternalReferenceType"/>
+   <xsd:element name="Payloads" type="PayloadsType"/>
+   <xsd:element name="RelevantExternalReference" type="ExternalReferenceType"/>
+   <xsd:element name="ToParty" type="PartyType"/>
+   <!-- ===== Type Definitions ===== -->
+   <!-- ===== Aggregate Business Information Entity Type Definitions ===== -->
+   <xsd:complexType name="BusinessScopeType">
+      <xsd:annotation>
+         <xsd:documentation>
+            <ccts:Component>
+               <ccts:CEFACTNames>
+                  <ccts:DictionaryEntryName>XHE_ Context. Details</ccts:DictionaryEntryName>
+               </ccts:CEFACTNames>
+               <ccts:OASISNames>
+                  <ccts:ComponentType>ABIE</ccts:ComponentType>
+                  <ccts:DictionaryEntryName>Business Scope. Details</ccts:DictionaryEntryName>
+                  <ccts:Definition>Documentation of the scope of business or other contextual details useful to understand the purpose of the envelope and its contents.</ccts:Definition>
+                  <ccts:ObjectClass>Business Scope</ccts:ObjectClass>
+               </ccts:OASISNames>
+            </ccts:Component>
+         </xsd:documentation>
+      </xsd:annotation>
+      <xsd:sequence>
+         <xsd:element ref="xha:BusinessScopeCriterion"
+                      minOccurs="0"
+                      maxOccurs="unbounded">
+            <xsd:annotation>
+               <xsd:documentation>
+                  <ccts:Component>
+                     <ccts:CEFACTNames>
+                        <ccts:DictionaryEntryName>XHE_ Context. Specified. XHE_ Parameter</ccts:DictionaryEntryName>
+                     </ccts:CEFACTNames>
+                     <ccts:OASISNames>
+                        <ccts:ComponentType>ASBIE</ccts:ComponentType>
+                        <ccts:DictionaryEntryName>Business Scope. Business Scope Criterion</ccts:DictionaryEntryName>
+                        <ccts:Definition>Internal specification of the scope and/or context of business.</ccts:Definition>
+                        <ccts:Cardinality>0..n</ccts:Cardinality>
+                        <ccts:ObjectClass>Business Scope</ccts:ObjectClass>
+                        <ccts:PropertyTerm>Business Scope Criterion</ccts:PropertyTerm>
+                        <ccts:AssociatedObjectClass>Business Scope Criterion</ccts:AssociatedObjectClass>
+                        <ccts:RepresentationTerm>Business Scope Criterion</ccts:RepresentationTerm>
+                     </ccts:OASISNames>
+                  </ccts:Component>
+               </xsd:documentation>
+            </xsd:annotation>
+         </xsd:element>
+         <xsd:element ref="xha:ExternalReference" minOccurs="0" maxOccurs="unbounded">
+            <xsd:annotation>
+               <xsd:documentation>
+                  <ccts:Component>
+                     <ccts:CEFACTNames>
+                        <ccts:DictionaryEntryName>XHE_ Context. Scope. XHE_ Reference</ccts:DictionaryEntryName>
+                     </ccts:CEFACTNames>
+                     <ccts:OASISNames>
+                        <ccts:ComponentType>ASBIE</ccts:ComponentType>
+                        <ccts:DictionaryEntryName>Business Scope. External Reference</ccts:DictionaryEntryName>
+                        <ccts:Definition>External documentation of the scope and/or context of business.</ccts:Definition>
+                        <ccts:Cardinality>0..n</ccts:Cardinality>
+                        <ccts:ObjectClass>Business Scope</ccts:ObjectClass>
+                        <ccts:PropertyTerm>External Reference</ccts:PropertyTerm>
+                        <ccts:AssociatedObjectClass>External Reference</ccts:AssociatedObjectClass>
+                        <ccts:RepresentationTerm>External Reference</ccts:RepresentationTerm>
+                     </ccts:OASISNames>
+                  </ccts:Component>
+               </xsd:documentation>
+            </xsd:annotation>
+         </xsd:element>
+      </xsd:sequence>
+   </xsd:complexType>
+   <xsd:complexType name="BusinessScopeCriterionType">
+      <xsd:annotation>
+         <xsd:documentation>
+            <ccts:Component>
+               <ccts:CEFACTNames>
+                  <ccts:DictionaryEntryName>XHE_ Parameter. Details</ccts:DictionaryEntryName>
+               </ccts:CEFACTNames>
+               <ccts:OASISNames>
+                  <ccts:ComponentType>ABIE</ccts:ComponentType>
+                  <ccts:DictionaryEntryName>Business Scope Criterion. Details</ccts:DictionaryEntryName>
+                  <ccts:Definition>Documentation of one aspect of the scope of business or other contextual detail useful to understand the purpose of the envelope and its contents.</ccts:Definition>
+                  <ccts:ObjectClass>Business Scope Criterion</ccts:ObjectClass>
+               </ccts:OASISNames>
+            </ccts:Component>
+         </xsd:documentation>
+      </xsd:annotation>
+      <xsd:sequence>
+         <xsd:element ref="xhb:BusinessScopeCriterionTypeCode"
+                      minOccurs="1"
+                      maxOccurs="1">
+            <xsd:annotation>
+               <xsd:documentation>
+                  <ccts:Component>
+                     <ccts:CEFACTNames>
+                        <ccts:DictionaryEntryName>XHE_ Parameter. Type. Code</ccts:DictionaryEntryName>
+                     </ccts:CEFACTNames>
+                     <ccts:OASISNames>
+                        <ccts:ComponentType>BBIE</ccts:ComponentType>
+                        <ccts:DictionaryEntryName>Business Scope Criterion. Business Scope Criterion Type. Code</ccts:DictionaryEntryName>
+                        <ccts:Definition>Identifies the property of the scope by a code.</ccts:Definition>
+                        <ccts:Cardinality>1</ccts:Cardinality>
+                        <ccts:ObjectClass>Business Scope Criterion</ccts:ObjectClass>
+                        <ccts:PropertyTerm>Business Scope Criterion Type</ccts:PropertyTerm>
+                        <ccts:RepresentationTerm>Code</ccts:RepresentationTerm>
+                        <ccts:DataType>Code. Type</ccts:DataType>
+                     </ccts:OASISNames>
+                  </ccts:Component>
+               </xsd:documentation>
+            </xsd:annotation>
+         </xsd:element>
+         <xsd:element ref="xhb:BusinessScopeCriterionValue" minOccurs="1" maxOccurs="1">
+            <xsd:annotation>
+               <xsd:documentation>
+                  <ccts:Component>
+                     <ccts:CEFACTNames>
+                        <ccts:DictionaryEntryName>XHE_ Parameter. Value. Text</ccts:DictionaryEntryName>
+                     </ccts:CEFACTNames>
+                     <ccts:OASISNames>
+                        <ccts:ComponentType>BBIE</ccts:ComponentType>
+                        <ccts:DictionaryEntryName>Business Scope Criterion. Business Scope Criterion Value. Text</ccts:DictionaryEntryName>
+                        <ccts:Definition>Specifies the value of the given property.</ccts:Definition>
+                        <ccts:Cardinality>1</ccts:Cardinality>
+                        <ccts:ObjectClass>Business Scope Criterion</ccts:ObjectClass>
+                        <ccts:PropertyTerm>Business Scope Criterion Value</ccts:PropertyTerm>
+                        <ccts:RepresentationTerm>Text</ccts:RepresentationTerm>
+                        <ccts:DataType>Text. Type</ccts:DataType>
+                     </ccts:OASISNames>
+                  </ccts:Component>
+               </xsd:documentation>
+            </xsd:annotation>
+         </xsd:element>
+      </xsd:sequence>
+   </xsd:complexType>
+   <xsd:complexType name="ExternalReferenceType">
+      <xsd:annotation>
+         <xsd:documentation>
+            <ccts:Component>
+               <ccts:CEFACTNames>
+                  <ccts:DictionaryEntryName>XHE_ Reference. Details</ccts:DictionaryEntryName>
+               </ccts:CEFACTNames>
+               <ccts:OASISNames>
+                  <ccts:ComponentType>ABIE</ccts:ComponentType>
+                  <ccts:DictionaryEntryName>External Reference. Details</ccts:DictionaryEntryName>
+                  <ccts:Definition>A reference to a business case, document or other issues which are relevant to the handling of the envelope.</ccts:Definition>
+                  <ccts:ObjectClass>External Reference</ccts:ObjectClass>
+               </ccts:OASISNames>
+            </ccts:Component>
+         </xsd:documentation>
+      </xsd:annotation>
+      <xsd:sequence>
+         <xsd:element ref="xhb:ID" minOccurs="1" maxOccurs="1">
+            <xsd:annotation>
+               <xsd:documentation>
+                  <ccts:Component>
+                     <ccts:CEFACTNames>
+                        <ccts:DictionaryEntryName>XHE_ Reference. Identification. Identifier</ccts:DictionaryEntryName>
+                     </ccts:CEFACTNames>
+                     <ccts:OASISNames>
+                        <ccts:ComponentType>BBIE</ccts:ComponentType>
+                        <ccts:DictionaryEntryName>External Reference. Identifier</ccts:DictionaryEntryName>
+                        <ccts:Definition>Identifies the referenced object by some identifier or URI.</ccts:Definition>
+                        <ccts:Cardinality>1</ccts:Cardinality>
+                        <ccts:ObjectClass>External Reference</ccts:ObjectClass>
+                        <ccts:PropertyTerm>Identifier</ccts:PropertyTerm>
+                        <ccts:RepresentationTerm>Identifier</ccts:RepresentationTerm>
+                        <ccts:DataType>Identifier. Type</ccts:DataType>
+                     </ccts:OASISNames>
+                  </ccts:Component>
+               </xsd:documentation>
+            </xsd:annotation>
+         </xsd:element>
+         <xsd:element ref="xhb:AvailabilityStartDateTime" minOccurs="0" maxOccurs="1">
+            <xsd:annotation>
+               <xsd:documentation>
+                  <ccts:Component>
+                     <ccts:CEFACTNames>
+                        <ccts:DictionaryEntryName>XHE_ Reference. Start_ Availability. Date Time</ccts:DictionaryEntryName>
+                     </ccts:CEFACTNames>
+                     <ccts:OASISNames>
+                        <ccts:ComponentType>BBIE</ccts:ComponentType>
+                        <ccts:DictionaryEntryName>External Reference. Availability Start Date Time. Date Time</ccts:DictionaryEntryName>
+                        <ccts:Definition>The start date and time when the information is available</ccts:Definition>
+                        <ccts:Cardinality>0..1</ccts:Cardinality>
+                        <ccts:ObjectClass>External Reference</ccts:ObjectClass>
+                        <ccts:PropertyTerm>Availability Start Date Time</ccts:PropertyTerm>
+                        <ccts:RepresentationTerm>Date Time</ccts:RepresentationTerm>
+                        <ccts:DataType>Date Time. Type</ccts:DataType>
+                     </ccts:OASISNames>
+                  </ccts:Component>
+               </xsd:documentation>
+            </xsd:annotation>
+         </xsd:element>
+         <xsd:element ref="xhb:AvailabilityEndDateTime" minOccurs="0" maxOccurs="1">
+            <xsd:annotation>
+               <xsd:documentation>
+                  <ccts:Component>
+                     <ccts:CEFACTNames>
+                        <ccts:DictionaryEntryName>XHE_ Reference. End_ Availability. Date Time</ccts:DictionaryEntryName>
+                     </ccts:CEFACTNames>
+                     <ccts:OASISNames>
+                        <ccts:ComponentType>BBIE</ccts:ComponentType>
+                        <ccts:DictionaryEntryName>External Reference. Availability End Date Time. Date Time</ccts:DictionaryEntryName>
+                        <ccts:Definition>The end date and time when the information is available</ccts:Definition>
+                        <ccts:Cardinality>0..1</ccts:Cardinality>
+                        <ccts:ObjectClass>External Reference</ccts:ObjectClass>
+                        <ccts:PropertyTerm>Availability End Date Time</ccts:PropertyTerm>
+                        <ccts:RepresentationTerm>Date Time</ccts:RepresentationTerm>
+                        <ccts:DataType>Date Time. Type</ccts:DataType>
+                     </ccts:OASISNames>
+                  </ccts:Component>
+               </xsd:documentation>
+            </xsd:annotation>
+         </xsd:element>
+         <xsd:element ref="xhb:Login" minOccurs="0" maxOccurs="1">
+            <xsd:annotation>
+               <xsd:documentation>
+                  <ccts:Component>
+                     <ccts:CEFACTNames>
+                        <ccts:DictionaryEntryName>XHE_ Reference. Login. Text</ccts:DictionaryEntryName>
+                     </ccts:CEFACTNames>
+                     <ccts:OASISNames>
+                        <ccts:ComponentType>BBIE</ccts:ComponentType>
+                        <ccts:DictionaryEntryName>External Reference. Login. Text</ccts:DictionaryEntryName>
+                        <ccts:Definition>Text describing any login details to access the information.</ccts:Definition>
+                        <ccts:Cardinality>0..1</ccts:Cardinality>
+                        <ccts:ObjectClass>External Reference</ccts:ObjectClass>
+                        <ccts:PropertyTerm>Login</ccts:PropertyTerm>
+                        <ccts:RepresentationTerm>Text</ccts:RepresentationTerm>
+                        <ccts:DataType>Text. Type</ccts:DataType>
+                     </ccts:OASISNames>
+                  </ccts:Component>
+               </xsd:documentation>
+            </xsd:annotation>
+         </xsd:element>
+         <xsd:element ref="xhb:Password" minOccurs="0" maxOccurs="1">
+            <xsd:annotation>
+               <xsd:documentation>
+                  <ccts:Component>
+                     <ccts:CEFACTNames>
+                        <ccts:DictionaryEntryName>XHE_ Reference. Password. Text</ccts:DictionaryEntryName>
+                     </ccts:CEFACTNames>
+                     <ccts:OASISNames>
+                        <ccts:ComponentType>BBIE</ccts:ComponentType>
+                        <ccts:DictionaryEntryName>External Reference. Password. Text</ccts:DictionaryEntryName>
+                        <ccts:Definition>A password needed to access the information.</ccts:Definition>
+                        <ccts:Cardinality>0..1</ccts:Cardinality>
+                        <ccts:ObjectClass>External Reference</ccts:ObjectClass>
+                        <ccts:PropertyTerm>Password</ccts:PropertyTerm>
+                        <ccts:RepresentationTerm>Text</ccts:RepresentationTerm>
+                        <ccts:DataType>Text. Type</ccts:DataType>
+                     </ccts:OASISNames>
+                  </ccts:Component>
+               </xsd:documentation>
+            </xsd:annotation>
+         </xsd:element>
+      </xsd:sequence>
+   </xsd:complexType>
+   <xsd:complexType name="HeaderType">
+      <xsd:annotation>
+         <xsd:documentation>
+            <ccts:Component>
+               <ccts:CEFACTNames>
+                  <ccts:DictionaryEntryName>XHE_ Document. Details</ccts:DictionaryEntryName>
+               </ccts:CEFACTNames>
+               <ccts:OASISNames>
+                  <ccts:ComponentType>ABIE</ccts:ComponentType>
+                  <ccts:DictionaryEntryName>Header. Details</ccts:DictionaryEntryName>
+                  <ccts:Definition>Information relevant to the header/envelope itself, independent of the information it contains or references.</ccts:Definition>
+                  <ccts:ObjectClass>Header</ccts:ObjectClass>
+               </ccts:OASISNames>
+            </ccts:Component>
+         </xsd:documentation>
+      </xsd:annotation>
+      <xsd:sequence>
+         <xsd:element ref="xhb:ID" minOccurs="1" maxOccurs="1">
+            <xsd:annotation>
+               <xsd:documentation>
+                  <ccts:Component>
+                     <ccts:CEFACTNames>
+                        <ccts:DictionaryEntryName>XHE_ Document. Identification. Identifier</ccts:DictionaryEntryName>
+                     </ccts:CEFACTNames>
+                     <ccts:OASISNames>
+                        <ccts:ComponentType>BBIE</ccts:ComponentType>
+                        <ccts:DictionaryEntryName>Header. Identifier</ccts:DictionaryEntryName>
+                        <ccts:Definition>Unique ID of the envelope for tracking purposes.</ccts:Definition>
+                        <ccts:Cardinality>1</ccts:Cardinality>
+                        <ccts:ObjectClass>Header</ccts:ObjectClass>
+                        <ccts:PropertyTerm>Identifier</ccts:PropertyTerm>
+                        <ccts:RepresentationTerm>Identifier</ccts:RepresentationTerm>
+                        <ccts:DataType>Identifier. Type</ccts:DataType>
+                     </ccts:OASISNames>
+                  </ccts:Component>
+               </xsd:documentation>
+            </xsd:annotation>
+         </xsd:element>
+         <xsd:element ref="xhb:UUID" minOccurs="0" maxOccurs="1">
+            <xsd:annotation>
+               <xsd:documentation>
+                  <ccts:Component>
+                     <ccts:CEFACTNames>
+                        <ccts:DictionaryEntryName>XHE_ Document. UUID. Identifier</ccts:DictionaryEntryName>
+                     </ccts:CEFACTNames>
+                     <ccts:OASISNames>
+                        <ccts:ComponentType>BBIE</ccts:ComponentType>
+                        <ccts:DictionaryEntryName>Header. UUID. Identifier</ccts:DictionaryEntryName>
+                        <ccts:Definition>An additional identifier of the envelope.</ccts:Definition>
+                        <ccts:Cardinality>0..1</ccts:Cardinality>
+                        <ccts:ObjectClass>Header</ccts:ObjectClass>
+                        <ccts:PropertyTerm>UUID</ccts:PropertyTerm>
+                        <ccts:RepresentationTerm>Identifier</ccts:RepresentationTerm>
+                        <ccts:DataType>Identifier. Type</ccts:DataType>
+                     </ccts:OASISNames>
+                  </ccts:Component>
+               </xsd:documentation>
+            </xsd:annotation>
+         </xsd:element>
+         <xsd:element ref="xhb:CreationDateTime" minOccurs="1" maxOccurs="1">
+            <xsd:annotation>
+               <xsd:documentation>
+                  <ccts:Component>
+                     <ccts:CEFACTNames>
+                        <ccts:DictionaryEntryName>XHE_ Document. Creation. Date Time</ccts:DictionaryEntryName>
+                     </ccts:CEFACTNames>
+                     <ccts:OASISNames>
+                        <ccts:ComponentType>BBIE</ccts:ComponentType>
+                        <ccts:DictionaryEntryName>Header. Creation Date Time. Date Time</ccts:DictionaryEntryName>
+                        <ccts:Definition>Date and time when the envelope was created.</ccts:Definition>
+                        <ccts:Cardinality>1</ccts:Cardinality>
+                        <ccts:ObjectClass>Header</ccts:ObjectClass>
+                        <ccts:PropertyTerm>Creation Date Time</ccts:PropertyTerm>
+                        <ccts:RepresentationTerm>Date Time</ccts:RepresentationTerm>
+                        <ccts:DataType>Date Time. Type</ccts:DataType>
+                     </ccts:OASISNames>
+                  </ccts:Component>
+               </xsd:documentation>
+            </xsd:annotation>
+         </xsd:element>
+         <xsd:element ref="xha:BusinessScope" minOccurs="0" maxOccurs="1">
+            <xsd:annotation>
+               <xsd:documentation>
+                  <ccts:Component>
+                     <ccts:CEFACTNames>
+                        <ccts:DictionaryEntryName>XHE_ Document. Scope. XHE_ Context</ccts:DictionaryEntryName>
+                     </ccts:CEFACTNames>
+                     <ccts:OASISNames>
+                        <ccts:ComponentType>ASBIE</ccts:ComponentType>
+                        <ccts:DictionaryEntryName>Header. Business Scope</ccts:DictionaryEntryName>
+                        <ccts:Definition>Documentation of the scope of business or other contextual details useful to understand the purpose of the envelope and its contents.</ccts:Definition>
+                        <ccts:Cardinality>0..1</ccts:Cardinality>
+                        <ccts:ObjectClass>Header</ccts:ObjectClass>
+                        <ccts:PropertyTerm>Business Scope</ccts:PropertyTerm>
+                        <ccts:AssociatedObjectClass>Business Scope</ccts:AssociatedObjectClass>
+                        <ccts:RepresentationTerm>Business Scope</ccts:RepresentationTerm>
+                        <ccts:Examples>Europe vs Asia, Direct-to-Consumer vs Replenishment, or Prepaid vs Credit.</ccts:Examples>
+                     </ccts:OASISNames>
+                  </ccts:Component>
+               </xsd:documentation>
+            </xsd:annotation>
+         </xsd:element>
+         <xsd:element ref="xha:FromParty" minOccurs="0" maxOccurs="1">
+            <xsd:annotation>
+               <xsd:documentation>
+                  <ccts:Component>
+                     <ccts:CEFACTNames>
+                        <ccts:DictionaryEntryName>XHE_ Document. Sender. XHE_ Party</ccts:DictionaryEntryName>
+                     </ccts:CEFACTNames>
+                     <ccts:OASISNames>
+                        <ccts:ComponentType>ASBIE</ccts:ComponentType>
+                        <ccts:DictionaryEntryName>Header. From_ Party. Party</ccts:DictionaryEntryName>
+                        <ccts:Definition>Information about the party that originated the envelope.</ccts:Definition>
+                        <ccts:Cardinality>0..1</ccts:Cardinality>
+                        <ccts:ObjectClass>Header</ccts:ObjectClass>
+                        <ccts:PropertyTermQualifier>From</ccts:PropertyTermQualifier>
+                        <ccts:PropertyTerm>Party</ccts:PropertyTerm>
+                        <ccts:AssociatedObjectClass>Party</ccts:AssociatedObjectClass>
+                        <ccts:RepresentationTerm>Party</ccts:RepresentationTerm>
+                     </ccts:OASISNames>
+                  </ccts:Component>
+               </xsd:documentation>
+            </xsd:annotation>
+         </xsd:element>
+         <xsd:element ref="xha:ToParty" minOccurs="1" maxOccurs="unbounded">
+            <xsd:annotation>
+               <xsd:documentation>
+                  <ccts:Component>
+                     <ccts:CEFACTNames>
+                        <ccts:DictionaryEntryName>XHE_ Document. Recipient. XHE_ Party</ccts:DictionaryEntryName>
+                     </ccts:CEFACTNames>
+                     <ccts:OASISNames>
+                        <ccts:ComponentType>ASBIE</ccts:ComponentType>
+                        <ccts:DictionaryEntryName>Header. To_ Party. Party</ccts:DictionaryEntryName>
+                        <ccts:Definition>Information about the parties to receive the envelope.</ccts:Definition>
+                        <ccts:Cardinality>1..n</ccts:Cardinality>
+                        <ccts:ObjectClass>Header</ccts:ObjectClass>
+                        <ccts:PropertyTermQualifier>To</ccts:PropertyTermQualifier>
+                        <ccts:PropertyTerm>Party</ccts:PropertyTerm>
+                        <ccts:AssociatedObjectClass>Party</ccts:AssociatedObjectClass>
+                        <ccts:RepresentationTerm>Party</ccts:RepresentationTerm>
+                     </ccts:OASISNames>
+                  </ccts:Component>
+               </xsd:documentation>
+            </xsd:annotation>
+         </xsd:element>
+      </xsd:sequence>
+   </xsd:complexType>
+   <xsd:complexType name="PartyType">
+      <xsd:annotation>
+         <xsd:documentation>
+            <ccts:Component>
+               <ccts:CEFACTNames>
+                  <ccts:DictionaryEntryName>XHE_ Party. Details</ccts:DictionaryEntryName>
+               </ccts:CEFACTNames>
+               <ccts:OASISNames>
+                  <ccts:ComponentType>ABIE</ccts:ComponentType>
+                  <ccts:DictionaryEntryName>Party. Details</ccts:DictionaryEntryName>
+                  <ccts:Definition>The information about a party.</ccts:Definition>
+                  <ccts:ObjectClass>Party</ccts:ObjectClass>
+               </ccts:OASISNames>
+            </ccts:Component>
+         </xsd:documentation>
+      </xsd:annotation>
+      <xsd:sequence>
+         <xsd:element ref="xha:PartyIdentification" minOccurs="1" maxOccurs="unbounded">
+            <xsd:annotation>
+               <xsd:documentation>
+                  <ccts:Component>
+                     <ccts:CEFACTNames>
+                        <ccts:DictionaryEntryName>XHE_ Party. Specified. XHE_ Identity</ccts:DictionaryEntryName>
+                     </ccts:CEFACTNames>
+                     <ccts:OASISNames>
+                        <ccts:ComponentType>ASBIE</ccts:ComponentType>
+                        <ccts:DictionaryEntryName>Party. Party Identification</ccts:DictionaryEntryName>
+                        <ccts:Definition>Unambiguous identifications of a party.</ccts:Definition>
+                        <ccts:Cardinality>1..n</ccts:Cardinality>
+                        <ccts:ObjectClass>Party</ccts:ObjectClass>
+                        <ccts:PropertyTerm>Party Identification</ccts:PropertyTerm>
+                        <ccts:AssociatedObjectClass>Party Identification</ccts:AssociatedObjectClass>
+                        <ccts:RepresentationTerm>Party Identification</ccts:RepresentationTerm>
+                     </ccts:OASISNames>
+                  </ccts:Component>
+               </xsd:documentation>
+            </xsd:annotation>
+         </xsd:element>
+      </xsd:sequence>
+   </xsd:complexType>
+   <xsd:complexType name="PartyIdentificationType">
+      <xsd:annotation>
+         <xsd:documentation>
+            <ccts:Component>
+               <ccts:CEFACTNames>
+                  <ccts:DictionaryEntryName>XHE_ Identity. Details</ccts:DictionaryEntryName>
+               </ccts:CEFACTNames>
+               <ccts:OASISNames>
+                  <ccts:ComponentType>ABIE</ccts:ComponentType>
+                  <ccts:DictionaryEntryName>Party Identification. Details</ccts:DictionaryEntryName>
+                  <ccts:Definition>The information about a party's identification.</ccts:Definition>
+                  <ccts:ObjectClass>Party Identification</ccts:ObjectClass>
+               </ccts:OASISNames>
+            </ccts:Component>
+         </xsd:documentation>
+      </xsd:annotation>
+      <xsd:sequence>
+         <xsd:element ref="xhb:ID" minOccurs="1" maxOccurs="1">
+            <xsd:annotation>
+               <xsd:documentation>
+                  <ccts:Component>
+                     <ccts:CEFACTNames>
+                        <ccts:DictionaryEntryName>XHE_ Identity. Identification. Identifier</ccts:DictionaryEntryName>
+                     </ccts:CEFACTNames>
+                     <ccts:OASISNames>
+                        <ccts:ComponentType>BBIE</ccts:ComponentType>
+                        <ccts:DictionaryEntryName>Party Identification. Identifier</ccts:DictionaryEntryName>
+                        <ccts:Definition>An unambiguous identification of a party.</ccts:Definition>
+                        <ccts:Cardinality>1</ccts:Cardinality>
+                        <ccts:ObjectClass>Party Identification</ccts:ObjectClass>
+                        <ccts:PropertyTerm>Identifier</ccts:PropertyTerm>
+                        <ccts:RepresentationTerm>Identifier</ccts:RepresentationTerm>
+                        <ccts:DataType>Identifier. Type</ccts:DataType>
+                     </ccts:OASISNames>
+                  </ccts:Component>
+               </xsd:documentation>
+            </xsd:annotation>
+         </xsd:element>
+      </xsd:sequence>
+   </xsd:complexType>
+   <xsd:complexType name="PayloadType">
+      <xsd:annotation>
+         <xsd:documentation>
+            <ccts:Component>
+               <ccts:CEFACTNames>
+                  <ccts:DictionaryEntryName>XHE_ Payload Instance. Details</ccts:DictionaryEntryName>
+               </ccts:CEFACTNames>
+               <ccts:OASISNames>
+                  <ccts:ComponentType>ABIE</ccts:ComponentType>
+                  <ccts:DictionaryEntryName>Payload. Details</ccts:DictionaryEntryName>
+                  <ccts:Definition>The actual payload instance, such as a single invoice, conveyed within the envelope.</ccts:Definition>
+                  <ccts:ObjectClass>Payload</ccts:ObjectClass>
+               </ccts:OASISNames>
+            </ccts:Component>
+         </xsd:documentation>
+      </xsd:annotation>
+      <xsd:sequence>
+         <xsd:element ref="xhb:ID" minOccurs="0" maxOccurs="1">
+            <xsd:annotation>
+               <xsd:documentation>
+                  <ccts:Component>
+                     <ccts:CEFACTNames>
+                        <ccts:DictionaryEntryName>XHE_ Payload Instance. Identification. Identifier</ccts:DictionaryEntryName>
+                     </ccts:CEFACTNames>
+                     <ccts:OASISNames>
+                        <ccts:ComponentType>BBIE</ccts:ComponentType>
+                        <ccts:DictionaryEntryName>Payload. Identifier</ccts:DictionaryEntryName>
+                        <ccts:Definition>A unique identification of this payload instance contained within the envelope.</ccts:Definition>
+                        <ccts:Cardinality>0..1</ccts:Cardinality>
+                        <ccts:ObjectClass>Payload</ccts:ObjectClass>
+                        <ccts:PropertyTerm>Identifier</ccts:PropertyTerm>
+                        <ccts:RepresentationTerm>Identifier</ccts:RepresentationTerm>
+                        <ccts:DataType>Identifier. Type</ccts:DataType>
+                     </ccts:OASISNames>
+                  </ccts:Component>
+               </xsd:documentation>
+            </xsd:annotation>
+         </xsd:element>
+         <xsd:element ref="xhb:Description" minOccurs="0" maxOccurs="unbounded">
+            <xsd:annotation>
+               <xsd:documentation>
+                  <ccts:Component>
+                     <ccts:CEFACTNames>
+                        <ccts:DictionaryEntryName>XHE_ Payload Instance. Description. Text</ccts:DictionaryEntryName>
+                     </ccts:CEFACTNames>
+                     <ccts:OASISNames>
+                        <ccts:ComponentType>BBIE</ccts:ComponentType>
+                        <ccts:DictionaryEntryName>Payload. Description. Text</ccts:DictionaryEntryName>
+                        <ccts:Definition>Text description of the payload instance.</ccts:Definition>
+                        <ccts:Cardinality>0..n</ccts:Cardinality>
+                        <ccts:ObjectClass>Payload</ccts:ObjectClass>
+                        <ccts:PropertyTerm>Description</ccts:PropertyTerm>
+                        <ccts:RepresentationTerm>Text</ccts:RepresentationTerm>
+                        <ccts:DataType>Text. Type</ccts:DataType>
+                     </ccts:OASISNames>
+                  </ccts:Component>
+               </xsd:documentation>
+            </xsd:annotation>
+         </xsd:element>
+         <xsd:element ref="xhb:DocumentTypeCode" minOccurs="0" maxOccurs="1">
+            <xsd:annotation>
+               <xsd:documentation>
+                  <ccts:Component>
+                     <ccts:CEFACTNames>
+                        <ccts:DictionaryEntryName>XHE_ Payload Instance. Document_ Type. Code</ccts:DictionaryEntryName>
+                     </ccts:CEFACTNames>
+                     <ccts:OASISNames>
+                        <ccts:ComponentType>BBIE</ccts:ComponentType>
+                        <ccts:DictionaryEntryName>Payload. Document Type Code. Code</ccts:DictionaryEntryName>
+                        <ccts:Definition>Identifies the abstract archetype of the payload instance.</ccts:Definition>
+                        <ccts:Cardinality>0..1</ccts:Cardinality>
+                        <ccts:ObjectClass>Payload</ccts:ObjectClass>
+                        <ccts:PropertyTerm>Document Type Code</ccts:PropertyTerm>
+                        <ccts:RepresentationTerm>Code</ccts:RepresentationTerm>
+                        <ccts:DataType>Code. Type</ccts:DataType>
+                     </ccts:OASISNames>
+                  </ccts:Component>
+               </xsd:documentation>
+            </xsd:annotation>
+         </xsd:element>
+         <xsd:element ref="xhb:ContentTypeCode" minOccurs="0" maxOccurs="1">
+            <xsd:annotation>
+               <xsd:documentation>
+                  <ccts:Component>
+                     <ccts:CEFACTNames>
+                        <ccts:DictionaryEntryName>XHE_ Payload Instance. Content_ Type. Code</ccts:DictionaryEntryName>
+                     </ccts:CEFACTNames>
+                     <ccts:OASISNames>
+                        <ccts:ComponentType>BBIE</ccts:ComponentType>
+                        <ccts:DictionaryEntryName>Payload. Content Type Code. Code</ccts:DictionaryEntryName>
+                        <ccts:Definition>Identifies the file format or octet representation of the payload instance.</ccts:Definition>
+                        <ccts:Cardinality>0..1</ccts:Cardinality>
+                        <ccts:ObjectClass>Payload</ccts:ObjectClass>
+                        <ccts:PropertyTerm>Content Type Code</ccts:PropertyTerm>
+                        <ccts:RepresentationTerm>Code</ccts:RepresentationTerm>
+                        <ccts:DataType>Code. Type</ccts:DataType>
+                     </ccts:OASISNames>
+                  </ccts:Component>
+               </xsd:documentation>
+            </xsd:annotation>
+         </xsd:element>
+         <xsd:element ref="xhb:CustomizationID" minOccurs="0" maxOccurs="1">
+            <xsd:annotation>
+               <xsd:documentation>
+                  <ccts:Component>
+                     <ccts:CEFACTNames>
+                        <ccts:DictionaryEntryName>XHE_ Payload Instance. Customization. Identifier</ccts:DictionaryEntryName>
+                     </ccts:CEFACTNames>
+                     <ccts:OASISNames>
+                        <ccts:ComponentType>BBIE</ccts:ComponentType>
+                        <ccts:DictionaryEntryName>Payload. Customization Identifier. Identifier</ccts:DictionaryEntryName>
+                        <ccts:Definition>Identifies the customization that applies to the payload instance.</ccts:Definition>
+                        <ccts:Cardinality>0..1</ccts:Cardinality>
+                        <ccts:ObjectClass>Payload</ccts:ObjectClass>
+                        <ccts:PropertyTerm>Customization Identifier</ccts:PropertyTerm>
+                        <ccts:RepresentationTerm>Identifier</ccts:RepresentationTerm>
+                        <ccts:DataType>Identifier. Type</ccts:DataType>
+                     </ccts:OASISNames>
+                  </ccts:Component>
+               </xsd:documentation>
+            </xsd:annotation>
+         </xsd:element>
+         <xsd:element ref="xhb:ProfileID" minOccurs="0" maxOccurs="1">
+            <xsd:annotation>
+               <xsd:documentation>
+                  <ccts:Component>
+                     <ccts:CEFACTNames>
+                        <ccts:DictionaryEntryName>XHE_ Payload Instance. Profile. Identifier</ccts:DictionaryEntryName>
+                     </ccts:CEFACTNames>
+                     <ccts:OASISNames>
+                        <ccts:ComponentType>BBIE</ccts:ComponentType>
+                        <ccts:DictionaryEntryName>Payload. Profile Identifier. Identifier</ccts:DictionaryEntryName>
+                        <ccts:Definition>Identifies the profile that the payload instance is part of.</ccts:Definition>
+                        <ccts:Cardinality>0..1</ccts:Cardinality>
+                        <ccts:ObjectClass>Payload</ccts:ObjectClass>
+                        <ccts:PropertyTerm>Profile Identifier</ccts:PropertyTerm>
+                        <ccts:RepresentationTerm>Identifier</ccts:RepresentationTerm>
+                        <ccts:DataType>Identifier. Type</ccts:DataType>
+                     </ccts:OASISNames>
+                  </ccts:Component>
+               </xsd:documentation>
+            </xsd:annotation>
+         </xsd:element>
+         <xsd:element ref="xhb:ProfileExecutionID" minOccurs="0" maxOccurs="1">
+            <xsd:annotation>
+               <xsd:documentation>
+                  <ccts:Component>
+                     <ccts:CEFACTNames>
+                        <ccts:DictionaryEntryName>XHE_ Payload Instance. Profile Execution. Identifier</ccts:DictionaryEntryName>
+                     </ccts:CEFACTNames>
+                     <ccts:OASISNames>
+                        <ccts:ComponentType>BBIE</ccts:ComponentType>
+                        <ccts:DictionaryEntryName>Payload. Profile Execution Identifier. Identifier</ccts:DictionaryEntryName>
+                        <ccts:Definition>Identifies the particular instance of an executing profile that the payload instance is part of.</ccts:Definition>
+                        <ccts:Cardinality>0..1</ccts:Cardinality>
+                        <ccts:ObjectClass>Payload</ccts:ObjectClass>
+                        <ccts:PropertyTerm>Profile Execution Identifier</ccts:PropertyTerm>
+                        <ccts:RepresentationTerm>Identifier</ccts:RepresentationTerm>
+                        <ccts:DataType>Identifier. Type</ccts:DataType>
+                     </ccts:OASISNames>
+                  </ccts:Component>
+               </xsd:documentation>
+            </xsd:annotation>
+         </xsd:element>
+         <xsd:element ref="xhb:HandlingServiceID" minOccurs="0" maxOccurs="1">
+            <xsd:annotation>
+               <xsd:documentation>
+                  <ccts:Component>
+                     <ccts:CEFACTNames>
+                        <ccts:DictionaryEntryName>XHE_ Payload Instance. Handling Service. Identifier</ccts:DictionaryEntryName>
+                     </ccts:CEFACTNames>
+                     <ccts:OASISNames>
+                        <ccts:ComponentType>BBIE</ccts:ComponentType>
+                        <ccts:DictionaryEntryName>Payload. Handling Service Identifier. Identifier</ccts:DictionaryEntryName>
+                        <ccts:Definition>Identifies the service that should process the payload instance.</ccts:Definition>
+                        <ccts:Cardinality>0..1</ccts:Cardinality>
+                        <ccts:ObjectClass>Payload</ccts:ObjectClass>
+                        <ccts:PropertyTerm>Handling Service Identifier</ccts:PropertyTerm>
+                        <ccts:RepresentationTerm>Identifier</ccts:RepresentationTerm>
+                        <ccts:DataType>Identifier. Type</ccts:DataType>
+                     </ccts:OASISNames>
+                  </ccts:Component>
+               </xsd:documentation>
+            </xsd:annotation>
+         </xsd:element>
+         <xsd:element ref="xhb:ValidationTypeCode" minOccurs="0" maxOccurs="1">
+            <xsd:annotation>
+               <xsd:documentation>
+                  <ccts:Component>
+                     <ccts:CEFACTNames>
+                        <ccts:DictionaryEntryName>XHE_ Payload Instance. Validation_ Type. Code</ccts:DictionaryEntryName>
+                     </ccts:CEFACTNames>
+                     <ccts:OASISNames>
+                        <ccts:ComponentType>BBIE</ccts:ComponentType>
+                        <ccts:DictionaryEntryName>Payload. Validation Type Code. Code</ccts:DictionaryEntryName>
+                        <ccts:Definition>The type of the payload instance, used for the task of verifying that the grammar is valid.</ccts:Definition>
+                        <ccts:Cardinality>0..1</ccts:Cardinality>
+                        <ccts:ObjectClass>Payload</ccts:ObjectClass>
+                        <ccts:PropertyTerm>Validation Type Code</ccts:PropertyTerm>
+                        <ccts:RepresentationTerm>Code</ccts:RepresentationTerm>
+                        <ccts:DataType>Code. Type</ccts:DataType>
+                     </ccts:OASISNames>
+                  </ccts:Component>
+               </xsd:documentation>
+            </xsd:annotation>
+         </xsd:element>
+         <xsd:element ref="xhb:ValidationVersionID" minOccurs="0" maxOccurs="1">
+            <xsd:annotation>
+               <xsd:documentation>
+                  <ccts:Component>
+                     <ccts:CEFACTNames>
+                        <ccts:DictionaryEntryName>XHE_ Payload Instance. Validation Version. Identifier</ccts:DictionaryEntryName>
+                     </ccts:CEFACTNames>
+                     <ccts:OASISNames>
+                        <ccts:ComponentType>BBIE</ccts:ComponentType>
+                        <ccts:DictionaryEntryName>Payload. Validation Version Identifier. Identifier</ccts:DictionaryEntryName>
+                        <ccts:Definition>Descriptor containing version information of the validation type.</ccts:Definition>
+                        <ccts:Cardinality>0..1</ccts:Cardinality>
+                        <ccts:ObjectClass>Payload</ccts:ObjectClass>
+                        <ccts:PropertyTerm>Validation Version Identifier</ccts:PropertyTerm>
+                        <ccts:RepresentationTerm>Identifier</ccts:RepresentationTerm>
+                        <ccts:DataType>Identifier. Type</ccts:DataType>
+                     </ccts:OASISNames>
+                  </ccts:Component>
+               </xsd:documentation>
+            </xsd:annotation>
+         </xsd:element>
+         <xsd:element ref="xhb:InstanceEncryptionIndicator" minOccurs="1" maxOccurs="1">
+            <xsd:annotation>
+               <xsd:documentation>
+                  <ccts:Component>
+                     <ccts:CEFACTNames>
+                        <ccts:DictionaryEntryName>XHE_ Payload Instance. Encrypted. Indicator</ccts:DictionaryEntryName>
+                     </ccts:CEFACTNames>
+                     <ccts:OASISNames>
+                        <ccts:ComponentType>BBIE</ccts:ComponentType>
+                        <ccts:DictionaryEntryName>Payload. Instance Encryption Indicator. Indicator</ccts:DictionaryEntryName>
+                        <ccts:Definition>Indicator stating whether the payload instance is encrypted or not.</ccts:Definition>
+                        <ccts:Cardinality>1</ccts:Cardinality>
+                        <ccts:ObjectClass>Payload</ccts:ObjectClass>
+                        <ccts:PropertyTerm>Instance Encryption Indicator</ccts:PropertyTerm>
+                        <ccts:RepresentationTerm>Indicator</ccts:RepresentationTerm>
+                        <ccts:DataType>Indicator. Type</ccts:DataType>
+                     </ccts:OASISNames>
+                  </ccts:Component>
+               </xsd:documentation>
+            </xsd:annotation>
+         </xsd:element>
+         <xsd:element ref="xhb:InstanceEncryptionMethod" minOccurs="0" maxOccurs="1">
+            <xsd:annotation>
+               <xsd:documentation>
+                  <ccts:Component>
+                     <ccts:CEFACTNames>
+                        <ccts:DictionaryEntryName>XHE_ Payload Instance. Encryption Method. Text</ccts:DictionaryEntryName>
+                     </ccts:CEFACTNames>
+                     <ccts:OASISNames>
+                        <ccts:ComponentType>BBIE</ccts:ComponentType>
+                        <ccts:DictionaryEntryName>Payload. Instance Encryption Method. Text</ccts:DictionaryEntryName>
+                        <ccts:Definition>Method used to encrypt the payload instance.</ccts:Definition>
+                        <ccts:Cardinality>0..1</ccts:Cardinality>
+                        <ccts:ObjectClass>Payload</ccts:ObjectClass>
+                        <ccts:PropertyTerm>Instance Encryption Method</ccts:PropertyTerm>
+                        <ccts:RepresentationTerm>Text</ccts:RepresentationTerm>
+                        <ccts:DataType>Text. Type</ccts:DataType>
+                     </ccts:OASISNames>
+                  </ccts:Component>
+               </xsd:documentation>
+            </xsd:annotation>
+         </xsd:element>
+         <xsd:element ref="xhb:InstanceHashValue" minOccurs="0" maxOccurs="1">
+            <xsd:annotation>
+               <xsd:documentation>
+                  <ccts:Component>
+                     <ccts:CEFACTNames>
+                        <ccts:DictionaryEntryName>XHE_ Payload Instance. Encryption Hash Value. Text</ccts:DictionaryEntryName>
+                     </ccts:CEFACTNames>
+                     <ccts:OASISNames>
+                        <ccts:ComponentType>BBIE</ccts:ComponentType>
+                        <ccts:DictionaryEntryName>Payload. Instance Hash Value. Text</ccts:DictionaryEntryName>
+                        <ccts:Definition>SHA-256 hash total of the unencrypted payload instance.</ccts:Definition>
+                        <ccts:Cardinality>0..1</ccts:Cardinality>
+                        <ccts:ObjectClass>Payload</ccts:ObjectClass>
+                        <ccts:PropertyTerm>Instance Hash Value</ccts:PropertyTerm>
+                        <ccts:RepresentationTerm>Text</ccts:RepresentationTerm>
+                        <ccts:DataType>Text. Type</ccts:DataType>
+                     </ccts:OASISNames>
+                  </ccts:Component>
+               </xsd:documentation>
+            </xsd:annotation>
+         </xsd:element>
+         <xsd:element ref="xha:InstanceDecryptionInformationExternalReference"
+                      minOccurs="0"
+                      maxOccurs="1">
+            <xsd:annotation>
+               <xsd:documentation>
+                  <ccts:Component>
+                     <ccts:CEFACTNames>
+                        <ccts:DictionaryEntryName>XHE_ Payload Instance. Decryption. XHE_ Reference</ccts:DictionaryEntryName>
+                     </ccts:CEFACTNames>
+                     <ccts:OASISNames>
+                        <ccts:ComponentType>ASBIE</ccts:ComponentType>
+                        <ccts:DictionaryEntryName>Payload. Instance Decryption Information_ External Reference. External Reference</ccts:DictionaryEntryName>
+                        <ccts:Definition>Decryption information that is available external to the envelope.</ccts:Definition>
+                        <ccts:Cardinality>0..1</ccts:Cardinality>
+                        <ccts:ObjectClass>Payload</ccts:ObjectClass>
+                        <ccts:PropertyTermQualifier>Instance Decryption Information</ccts:PropertyTermQualifier>
+                        <ccts:PropertyTerm>External Reference</ccts:PropertyTerm>
+                        <ccts:AssociatedObjectClass>External Reference</ccts:AssociatedObjectClass>
+                        <ccts:RepresentationTerm>External Reference</ccts:RepresentationTerm>
+                     </ccts:OASISNames>
+                  </ccts:Component>
+               </xsd:documentation>
+            </xsd:annotation>
+         </xsd:element>
+         <xsd:element ref="xha:InstanceDecryptionKeyExternalReference"
+                      minOccurs="0"
+                      maxOccurs="1">
+            <xsd:annotation>
+               <xsd:documentation>
+                  <ccts:Component>
+                     <ccts:CEFACTNames>
+                        <ccts:DictionaryEntryName>XHE_ Payload Instance. Decryption Key. XHE_ Reference</ccts:DictionaryEntryName>
+                     </ccts:CEFACTNames>
+                     <ccts:OASISNames>
+                        <ccts:ComponentType>ASBIE</ccts:ComponentType>
+                        <ccts:DictionaryEntryName>Payload. Instance Decryption Key_ External Reference. External Reference</ccts:DictionaryEntryName>
+                        <ccts:Definition>Decryption key data that is available external to the envelope.</ccts:Definition>
+                        <ccts:Cardinality>0..1</ccts:Cardinality>
+                        <ccts:ObjectClass>Payload</ccts:ObjectClass>
+                        <ccts:PropertyTermQualifier>Instance Decryption Key</ccts:PropertyTermQualifier>
+                        <ccts:PropertyTerm>External Reference</ccts:PropertyTerm>
+                        <ccts:AssociatedObjectClass>External Reference</ccts:AssociatedObjectClass>
+                        <ccts:RepresentationTerm>External Reference</ccts:RepresentationTerm>
+                     </ccts:OASISNames>
+                  </ccts:Component>
+               </xsd:documentation>
+            </xsd:annotation>
+         </xsd:element>
+         <xsd:element ref="xha:RelevantExternalReference"
+                      minOccurs="0"
+                      maxOccurs="unbounded">
+            <xsd:annotation>
+               <xsd:documentation>
+                  <ccts:Component>
+                     <ccts:CEFACTNames>
+                        <ccts:DictionaryEntryName>XHE_ Payload Instance. Relevant. XHE_ Reference</ccts:DictionaryEntryName>
+                     </ccts:CEFACTNames>
+                     <ccts:OASISNames>
+                        <ccts:ComponentType>ASBIE</ccts:ComponentType>
+                        <ccts:DictionaryEntryName>Payload. Relevant_ External Reference. External Reference</ccts:DictionaryEntryName>
+                        <ccts:Definition>A reference to a business case, document or other issues which are relevant to the handling of the payload.</ccts:Definition>
+                        <ccts:Cardinality>0..n</ccts:Cardinality>
+                        <ccts:ObjectClass>Payload</ccts:ObjectClass>
+                        <ccts:PropertyTermQualifier>Relevant</ccts:PropertyTermQualifier>
+                        <ccts:PropertyTerm>External Reference</ccts:PropertyTerm>
+                        <ccts:AssociatedObjectClass>External Reference</ccts:AssociatedObjectClass>
+                        <ccts:RepresentationTerm>External Reference</ccts:RepresentationTerm>
+                     </ccts:OASISNames>
+                  </ccts:Component>
+               </xsd:documentation>
+            </xsd:annotation>
+         </xsd:element>
+         <xsd:element ref="xha:PayloadExternalReference" minOccurs="0" maxOccurs="1">
+            <xsd:annotation>
+               <xsd:documentation>
+                  <ccts:Component>
+                     <ccts:CEFACTNames>
+                        <ccts:DictionaryEntryName>XHE_ Payload Instance. Payload. XHE_ Reference</ccts:DictionaryEntryName>
+                     </ccts:CEFACTNames>
+                     <ccts:OASISNames>
+                        <ccts:ComponentType>ASBIE</ccts:ComponentType>
+                        <ccts:DictionaryEntryName>Payload. Payload_ External Reference. External Reference</ccts:DictionaryEntryName>
+                        <ccts:Definition>The reference to the payload when it is not included within the envelope.</ccts:Definition>
+                        <ccts:Cardinality>0..1</ccts:Cardinality>
+                        <ccts:ObjectClass>Payload</ccts:ObjectClass>
+                        <ccts:PropertyTermQualifier>Payload</ccts:PropertyTermQualifier>
+                        <ccts:PropertyTerm>External Reference</ccts:PropertyTerm>
+                        <ccts:AssociatedObjectClass>External Reference</ccts:AssociatedObjectClass>
+                        <ccts:RepresentationTerm>External Reference</ccts:RepresentationTerm>
+                     </ccts:OASISNames>
+                  </ccts:Component>
+               </xsd:documentation>
+            </xsd:annotation>
+         </xsd:element>
+         <xsd:element name="PayloadContent"
+                      minOccurs="0"
+                      maxOccurs="1"
+                      type="PayloadContentType">
+           <xsd:annotation>
+               <xsd:documentation>The content of the payload when it is included in the envelope.</xsd:documentation>
+           </xsd:annotation>
+         </xsd:element>
+        </xsd:sequence>
+   </xsd:complexType>
+   <xsd:complexType name="PayloadsType">
+      <xsd:annotation>
+         <xsd:documentation>
+            <ccts:Component>
+               <ccts:CEFACTNames>
+                  <ccts:DictionaryEntryName>XHE_ Payload. Details</ccts:DictionaryEntryName>
+               </ccts:CEFACTNames>
+               <ccts:OASISNames>
+                  <ccts:ComponentType>ABIE</ccts:ComponentType>
+                  <ccts:DictionaryEntryName>Payloads. Details</ccts:DictionaryEntryName>
+                  <ccts:Definition>The complete set of payloads.</ccts:Definition>
+                  <ccts:ObjectClass>Payloads</ccts:ObjectClass>
+               </ccts:OASISNames>
+            </ccts:Component>
+         </xsd:documentation>
+      </xsd:annotation>
+      <xsd:sequence>
+         <xsd:element ref="xha:Payload" minOccurs="1" maxOccurs="unbounded">
+            <xsd:annotation>
+               <xsd:documentation>
+                  <ccts:Component>
+                     <ccts:CEFACTNames>
+                        <ccts:DictionaryEntryName>XHE_ Payload. Included. XHE_ Payload Instance</ccts:DictionaryEntryName>
+                     </ccts:CEFACTNames>
+                     <ccts:OASISNames>
+                        <ccts:ComponentType>ASBIE</ccts:ComponentType>
+                        <ccts:DictionaryEntryName>Payloads. Payload</ccts:DictionaryEntryName>
+                        <ccts:Definition>An individual payload within the set of payloads.</ccts:Definition>
+                        <ccts:Cardinality>1..n</ccts:Cardinality>
+                        <ccts:ObjectClass>Payloads</ccts:ObjectClass>
+                        <ccts:PropertyTerm>Payload</ccts:PropertyTerm>
+                        <ccts:AssociatedObjectClass>Payload</ccts:AssociatedObjectClass>
+                        <ccts:RepresentationTerm>Payload</ccts:RepresentationTerm>
+                     </ccts:OASISNames>
+                  </ccts:Component>
+               </xsd:documentation>
+            </xsd:annotation>
+         </xsd:element>
+      </xsd:sequence>
+   </xsd:complexType>
+</xsd:schema>
+<!-- ===== Copyright Notice ===== -->
+<!--
+UN/CEFACT
+
+   This document and translations of it may be copied and furnished to others,
+   and derivative works that comment on or otherwise explain it or assist
+   in its implementation may be prepared, copied, published and distributed,
+   in whole or in part, without restriction of any kind, provided that the
+   above copyright notice and this paragraph are included on all such copies
+   and derivative works. However, this document itself may not be modified in
+   any way, such as by removing the copyright notice or references to
+   UN/CEFACT, except as needed for the purpose of developing UN/CEFACT
+   specifications, in which case the procedures for copyrights defined in the
+   UN/CEFACT Intellectual Property Rights document must be followed, or as
+   required to translate it into languages other than English.
+   The limited permissions granted above are perpetual and will not be revoked
+   by UN/CEFACT or its successors or assigns.
+   
+   This document and the information contained herein is provided on an "AS IS"
+   basis and UN/CEFACT DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING
+   BUT NOT LIMITED TO ANY WARRANTY THAT THE USE OF THE INFORMATION HEREIN WILL
+   NOT INFRINGE ANY RIGHTS OR ANY IMPLIED WARRANTIES OF MERCHANTABILITY OR
+   FITNESS FOR A PARTICULAR PURPOSE.
+
+OASIS
+
+  OASIS takes no position regarding the validity or scope of any 
+  intellectual property or other rights that might be claimed to pertain 
+  to the implementation or use of the technology described in this 
+  document or the extent to which any license under such rights 
+  might or might not be available; neither does it represent that it has 
+  made any effort to identify any such rights. Information on OASIS's 
+  procedures with respect to rights in OASIS specifications can be 
+  found at the OASIS website. Copies of claims of rights made 
+  available for publication and any assurances of licenses to be made 
+  available, or the result of an attempt made to obtain a general 
+  license or permission for the use of such proprietary rights by 
+  implementors or users of this specification, can be obtained from 
+  the OASIS Executive Director.
+
+  OASIS invites any interested party to bring to its attention any 
+  copyrights, patents or patent applications, or other proprietary 
+  rights which may cover technology that may be required to 
+  implement this specification. Please address the information to the 
+  OASIS Executive Director.
+  
+  This document and translations of it may be copied and furnished to 
+  others, and derivative works that comment on or otherwise explain 
+  it or assist in its implementation may be prepared, copied, 
+  published and distributed, in whole or in part, without restriction of 
+  any kind, provided that the above copyright notice and this 
+  paragraph are included on all such copies and derivative works. 
+  However, this document itself may not be modified in any way, 
+  such as by removing the copyright notice or references to OASIS, 
+  except as needed for the purpose of developing OASIS 
+  specifications, in which case the procedures for copyrights defined 
+  in the OASIS Intellectual Property Rights document must be 
+  followed, or as required to translate it into languages other than 
+  English. 
+
+  The limited permissions granted above are perpetual and will not be 
+  revoked by OASIS or its successors or assigns. 
+
+  This document and the information contained herein is provided on 
+  an "AS IS" basis and OASIS DISCLAIMS ALL WARRANTIES, 
+  EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY 
+  WARRANTY THAT THE USE OF THE INFORMATION HEREIN 
+  WILL NOT INFRINGE ANY RIGHTS OR ANY IMPLIED 
+  WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A 
+  PARTICULAR PURPOSE.    
+-->

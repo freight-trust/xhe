@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<order:orderMessage xmlns:order="urn:gs1:ecom:order:xsd:3"
+  xmlns:xhe="oasis-cefact-xhe-1.0-ExchangeHeaderEnvelope"
+  xmlns:xha="oasis-cefact-xhe-1.0-AggregateComponents"
+  xmlns:xhb="oasis-cefact-xhe-1.0-BasicComponents"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="urn:gs1:ecom:order:xsd:3 ../Schemas/gs1/ecom/Order-XHE.xsd">
+  <xhe:XHE >
+  
+  <!-- XHE/xhb:XHEVersionID -->
+  <xhb:XHEVersionID>1.0</xhb:XHEVersionID>
+  
+  <xha:Header>
+    
+    <!-- StandardBusinessDocumentHeader/DocumentIdentification/InstanceIdentifier -->
+    <xhb:ID>100002</xhb:ID>
+    
+    <!-- StandardBusinessDocumentHeader/DocumentIdentification/CreationDateAndTime -->
+    <xhb:CreationDateTime>2006-01-10T12:00:01.000-05:00</xhb:CreationDateTime>
+    
+    <xha:BusinessScope>
+    
+    <!--
+      StandardBusinessDocumentHeader/BusinessScope/Scope/Type =
+
+      a code at header level that applies to the entire message.
+      StandardBusinessDocumentHeader/BusinessScope/Scope/InstanceIdentifier
+      StandardBusinessDocumentHeader/BusinessScope/Scope/Identifier
+    -->
+    <xha:BusinessScopeCriterion>
+      <xhb:BusinessScopeCriterionTypeCode listAgencyName="GS1"
+
+        listURI="urn:gs1:gdd:cl:BusinessDocumentProcessingTypeCode"
+
+        listName="BusinessDocumentProcessingTypeCode"
+
+        listVersionID="R1">MESSAGE_STATUS</xhb:BusinessScopeCriterionTypeCode>
+      <xhb:BusinessScopeCriterionValue>Test</xhb:BusinessScopeCriterionValue>
+    </xha:BusinessScopeCriterion>
+    
+    </xha:BusinessScope>
+    
+    <!-- StandardBusinessDocumentHeader/Sender -->
+    <xha:FromParty>
+    <xha:PartyIdentification>
+      <xhb:ID schemeAgencyID="GS1" schemeID="GLN">8764321000003</xhb:ID>
+    </xha:PartyIdentification>
+    </xha:FromParty>
+    
+    <!-- StandardBusinessDocumentHeader/Receiver -->
+    <xha:ToParty>
+    <xha:PartyIdentification>
+      <xhb:ID schemeAgencyID="GS1" schemeID="GLN">8712345000004</xhb:ID>
+    </xha:PartyIdentification>
+    </xha:ToParty>
+    
+  </xha:Header>
+  <xha:Payloads>
+    <xha:Payload>
+    
+    <!-- StandardBusinessDocumentHeader/DocumentIdentification/Type -->
+    <xhb:DocumentTypeCode>Order</xhb:DocumentTypeCode>
+    
+    <!--
+      StandardBusinessDocumentHeader/BusinessScope/Scope/Type =
+
+      a document type identifier.
+      StandardBusinessDocumentHeader/BusinessScope/Scope/InstanceIdentifier
+      StandardBusinessDocumentHeader/BusinessScope/Scope/Identifier
+    -->
+    <xhb:CustomizationID schemeURI="urn:FrugICom:AGF:1.1">
+
+      Dutch Fruit and Vegetable Industry Reference Model v. 1.1
+
+    </xhb:CustomizationID>
+    
+    <!-- StandardBusinessDocumentHeader/DocumentIdentification/Standard -->
+    <xhb:ValidationTypeCode>GS1</xhb:ValidationTypeCode>
+    
+    <!-- StandardBusinessDocumentHeader/DocumentIdentification/TypeVersion -->
+    <xhb:ValidationVersionID>3.0</xhb:ValidationVersionID>
+    
+    <!-- No SBDH equivalent but mandatory in XHE -->
+    <xhb:InstanceEncryptionIndicator>false</xhb:InstanceEncryptionIndicator>
+    
+    </xha:Payload>
+  </xha:Payloads>
+  </xhe:XHE>
+  <order>
+  <creationDateTime>2011-03-11T11:00:00.000-05:00</creationDateTime>
+  <documentStatusCode>ORIGINAL</documentStatusCode>
+  <orderIdentification>
+    <entityIdentification>PO3352</entityIdentification>
+  </orderIdentification>
+  <orderTypeCode>220</orderTypeCode>
+  <isApplicationReceiptAcknowledgementRequired>
+
+    true
+
+  </isApplicationReceiptAcknowledgementRequired>
+  <additionalOrderInstruction languageCode="en">
+
+    Pack all items individually
+
+  </additionalOrderInstruction>
+  <totalMonetaryAmountExcludingTaxes currencyCode="EUR">
+
+    12675
+
+  </totalMonetaryAmountExcludingTaxes>
+  <totalTaxAmount currencyCode="EUR">2661.75</totalTaxAmount>
+  <buyer>
+    <gln>5412345000013</gln>
+  </buyer>
+  <seller>
+    <gln>4098765000010</gln>
+  </seller>
+  <orderLogisticalInformation>
+    <shipFrom>
+    <gln>4098765000010</gln>
+    </shipFrom>
+    <shipTo>
+    <gln>5412345000037</gln>
+    </shipTo>
+  </orderLogisticalInformation>
+  <paymentTerms>
+    <paymentTermsEventCode>AFTER_DATE_OF_DELIVERY</paymentTermsEventCode>
+    <paymentTermsTypeCode>1</paymentTermsTypeCode>
+    <proximoCutOffDay>---31</proximoCutOffDay>
+  </paymentTerms>
+  <orderLineItem>
+    <lineItemNumber>1</lineItemNumber>
+    <requestedQuantity measurementUnitCode="EA">48</requestedQuantity>
+    <additionalOrderLineInstruction languageCode="en">
+
+      FRAGILE
+
+    </additionalOrderLineInstruction>
+    <netAmount currencyCode="EUR">8016</netAmount>
+    <netPrice currencyCode="EUR">167</netPrice>
+    <transactionalTradeItem>
+    <gtin>04098765000027</gtin>
+    </transactionalTradeItem>
+  </orderLineItem>
+  </order>
+</order:orderMessage>

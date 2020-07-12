@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<order:orderMessage xmlns:order="urn:gs1:ecom:order:xsd:3"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="urn:gs1:ecom:order:xsd:3 ../Schemas/gs1/ecom/Order-XHE.xsd ">
+  <xhe:XHE xmlns:xhe="oasis-cefact-xhe-1.0-ExchangeHeaderEnvelope"
+    xmlns:xha="oasis-cefact-xhe-1.0-AggregateComponents"
+    xmlns:xhb="oasis-cefact-xhe-1.0-BasicComponents">

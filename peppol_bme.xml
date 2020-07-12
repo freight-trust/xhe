@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardBusinessDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.unece.org/cefact/namespaces/StandardBusinessDocumentHeader xsd/StandardBusinessDocumentHeader.xsd"
+  xmlns="http://www.unece.org/cefact/namespaces/StandardBusinessDocumentHeader"
+  xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <StandardBusinessDocumentHeader>
+    <!-- XHE/xhb:XHEVersionID -->
+    <HeaderVersion>1.0</HeaderVersion>
+
+    <!-- XHE/xha:Header/xha:FromParty -->
+    <Sender>
+      <Identifier Authority="iso6523-actorid-upis">0088:7315458756324</Identifier>
+    </Sender>
+
+    <!-- XHE/xha:Header/xha:ToParty -->
+    <Receiver>
+      <Identifier Authority="iso6523-actorid-upis">0088:4562458856624</Identifier>
+    </Receiver>
+
+    <DocumentIdentification>
+
+      <!-- XHE/xha:Payloads/xha:Payload/xhb:ValidationTypeCode -->
+      <Standard>urn:oasis:names:specification:ubl:schema:xsd:Invoice-2</Standard>
+
+      <!-- XHE/xha:Payloads/xha:Payload/xhb:ValidationVersionID -->
+      <TypeVersion>2.1</TypeVersion>
+
+      <!-- XHE/xha:Header/xhb:ID -->
+      <InstanceIdentifier>123123</InstanceIdentifier>
+
+      <!-- XHE/xha:Payloads/xha:Payload/xhb:DocumentTypeCode -->
+      <Type>Invoice</Type>
+
+      <!-- XHE/xha:Header/hxb:CreationDateTime -->
+      <CreationDateAndTime>2019-02-01T15:42:10Z</CreationDateAndTime>
+
+    </DocumentIdentification>
+    <BusinessScope>
+
+      <!--
+        BusinessScope/Scope/Type = a Document Type Identifier
+        XHE/xha:Payloads/xha:Payload/xhb:CustomizationID
+      -->
+      <Scope>
+        <Type>DOCUMENTID</Type>
+        <InstanceIdentifier>urn:oasis:names:specification:ubl:schema:xsd:Invoice- 2::Invoice##urn:cen.eu:en16931:2017#compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0::2.1</InstanceIdentifier>
+        <Identifier>busdox-docid-qns</Identifier>
+      </Scope>
+
+      <!--
+        BusinessScope/Scope/Type = a Process Type Identifier
+        XHE/xha:Payloads/xha:Payload/xhb:ProfileID
+      -->
+      <Scope>
+        <Type>PROCESSID</Type>
+        <InstanceIdentifier>
+
+          urn:fdc:peppol.eu:2017:poacc:billing:01:1.0
+
+        </InstanceIdentifier>
+        <Identifier>cenbii-procid-ubl</Identifier>
+      </Scope>
+
+    </BusinessScope>
+  </StandardBusinessDocumentHeader>
+
+  <!-- XHE/xha:Payloads/xha:Payload/xha:PayloadContent -->
+  <Invoice xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+    xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+    xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+    <!-- reduced instance file -->
+  </Invoice>
+</StandardBusinessDocument>
